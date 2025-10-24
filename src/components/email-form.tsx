@@ -218,6 +218,17 @@ export default function EmailForm() {
                   className="block w-full p-4 h-auto border-2 border-indigo-400 rounded-xl focus:ring-indigo-500 focus:border-indigo-500 text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground"
                   placeholder="Escriba el código..."
                 />
+                 {clientCode && !isPending && (
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    onClick={handleClearClientCode}
+                    className="absolute right-[calc(4rem+1rem)] sm:right-[calc(7.5rem+0.5rem)] top-1/2 -translate-y-1/2 h-8 w-8 rounded-full text-blue-500 hover:bg-blue-100/50 hover:text-blue-700"
+                    title="Limpiar búsqueda"
+                  >
+                    <X className="h-5 w-5" />
+                  </Button>
+                )}
                  <Button 
                   onClick={handleSearch} 
                   disabled={isPending}
@@ -226,17 +237,6 @@ export default function EmailForm() {
                   {isPending ? <Loader2 className="h-5 w-5 animate-spin" /> : <Search className="h-5 w-5" />}
                   <span className="sr-only sm:not-sr-only sm:ml-2">Buscar</span>
                 </Button>
-                {clientCode && !isPending && (
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    onClick={handleClearClientCode}
-                    className="absolute right-[calc(4rem+1.5rem)] sm:right-[calc(6rem+0.5rem)] top-1/2 -translate-y-1/2 h-8 w-8 rounded-full text-muted-foreground hover:text-foreground"
-                    title="Limpiar búsqueda"
-                  >
-                    <X className="h-5 w-5" />
-                  </Button>
-                )}
               </div>
             </div>
           </CardContent>
@@ -282,8 +282,8 @@ export default function EmailForm() {
                   className="w-full p-3 rounded-lg text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
                   placeholder="Escribe tu mensaje o usa el dictado por voz..."
                 />
-                <div className="flex justify-between items-center mt-2">
-                  <Button
+                 <div className="flex justify-between items-center mt-2">
+                   <Button
                     size="icon"
                     onClick={handleEnhanceClick}
                     disabled={isEnhancing}
