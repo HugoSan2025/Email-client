@@ -22,7 +22,7 @@ const EnhanceEmailDraftOutputSchema = z.object({
   suggestedImprovements: z
     .string()
     .describe(
-      'AI-powered suggestions for improving the email draft, including alternative wording, grammar corrections, and tone adjustments.'
+      'AI-powered suggestions in Spanish for improving the email draft, including alternative wording, grammar corrections, and tone adjustments.'
     ),
 });
 export type EnhanceEmailDraftOutput = z.infer<typeof EnhanceEmailDraftOutputSchema>;
@@ -35,13 +35,13 @@ const enhanceEmailDraftPrompt = ai.definePrompt({
   name: 'enhanceEmailDraftPrompt',
   input: {schema: EnhanceEmailDraftInputSchema},
   output: {schema: EnhanceEmailDraftOutputSchema},
-  prompt: `You are an AI assistant specialized in improving email drafts.
+  prompt: `You are an AI assistant specialized in improving email drafts in Spanish.
 
-You will receive an email draft and provide suggestions for improvement, including alternative wording, grammar corrections, and adjusting the tone to be more professional.
+You will receive an email draft and provide suggestions for improvement, including alternative wording, grammar corrections, and adjusting the tone to be more professional. The response must be in Spanish.
 
 Email Draft: {{{emailDraft}}}
 
-Suggestions:`, // Added prompt for instructions and context
+Suggestions:`,
 });
 
 const enhanceEmailDraftFlow = ai.defineFlow(
