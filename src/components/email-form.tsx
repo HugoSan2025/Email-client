@@ -251,7 +251,7 @@ export default function EmailForm() {
 
               <div>
                 <Label htmlFor="emailBody" className="block text-sm font-medium mb-1">Cuerpo del Correo</Label>
-                <div className="relative mb-2">
+                <div className="relative">
                   <Textarea
                     id="emailBody"
                     rows={8}
@@ -266,7 +266,7 @@ export default function EmailForm() {
                     size="icon"
                     onClick={handleEnhanceClick}
                     disabled={isEnhancing}
-                    className="p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 bg-purple-500 hover:bg-purple-600 disabled:bg-purple-500 disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 bg-blue-500 hover:bg-blue-600 disabled:bg-blue-500 disabled:opacity-70 disabled:cursor-not-allowed"
                     title="Mejorar texto con IA"
                   >
                     {isEnhancing ? <Loader2 className="h-6 w-6 animate-spin" /> : <Sparkles className="h-6 w-6" />}
