@@ -46,11 +46,11 @@ const prompt = ai.definePrompt({
   input: {schema: GenerateEmailInputSchema},
   output: {schema: GenerateEmailOutputSchema},
   tools: [getClientEmails],
-  prompt: `You are an AI email assistant. Generate a draft email subject and body based on the client code.
+  prompt: `You are an AI email assistant. Generate a draft email subject and body in Spanish based on the client code.
 
   First, use the getClientEmails tool to retrieve the recipient emails for the given client code.
 
-  Then, generate an appropriate subject and body for an email to the client, assuming common communication patterns.
+  Then, generate an appropriate subject and body for an email to the client, assuming common communication patterns. The entire response must be in Spanish.
 
   Client Code: {{{clientCode}}}
 `,
