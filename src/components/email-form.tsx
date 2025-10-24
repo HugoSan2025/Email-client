@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback, useTransition } from 'react';
-import { getEmailData } from '@/app/actions';
+import { getEmailData, enhanceEmail } from '@/app/actions';
 import { useToast } from "@/hooks/use-toast";
 
 import { Button } from "@/components/ui/button";
@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mic, Loader2 } from 'lucide-react';
+import { Mic, Loader2, Sparkles } from 'lucide-react';
 
 // SpeechRecognition might not exist on the window object type in TS.
 declare global {
@@ -30,6 +30,7 @@ export default function EmailForm() {
   const [recognitionAvailable, setRecognitionAvailable] = useState(false);
   
   const [isPending, startTransition] = useTransition();
+  const [isEnhancing, startEnhancingTransition] = useTransition();
   const { toast } = useToast();
 
   const recognitionRef = useRef<any>(null);
@@ -141,6 +142,18 @@ export default function EmailForm() {
     }
   };
 
+  const handleEnhanceClick = () => {
+    if (!body.trim()) {
+        handleMessage('El cuerpo del correo está vacío.', 'destructive', 'Error');
+        return;
+    }
+    startEnhancingTransition(async () => {
+        const result = await enhanceEmail(body);
+        setBody(result.suggestedImprovements);
+        handleMessage('El texto del correo ha sido mejorado.', 'default', 'IA');
+    });
+  };
+
   const generateMailto = () => {
     if (!clientCode) {
       handleMessage('Por favor, introduce un Código de Cliente.', "destructive", "Faltan datos");
@@ -248,10 +261,19 @@ export default function EmailForm() {
                     placeholder="Escribe tu mensaje o usa el dictado por voz..."
                   />
                   <Button
+                    size="icon"
+                    onClick={handleEnhanceClick}
+                    disabled={isEnhancing}
+                    className="absolute bottom-2 left-2 p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 bg-purple-500 hover:bg-purple-600 disabled:bg-purple-500 disabled:opacity-70 disabled:cursor-not-allowed"
+                    title="Mejorar texto con IA"
+                  >
+                    {isEnhancing ? <Loader2 className="h-6 w-6 animate-spin" /> : <Sparkles className="h-6 w-6" />}
+                  </Button>
+                  <Button
                     id="dictationButton"
                     size="icon"
                     onClick={toggleDictation}
-                    disabled={!recognitionAvailable}
+                    disabled={!recognitionAvailable || isDictating}
                     className={`absolute bottom-2 right-2 p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12
                       ${isDictating ? 'bg-green-500 hover:bg-green-600 animate-pulse' : 'bg-blue-500 hover:bg-blue-600'}
                       disabled:bg-blue-500 disabled:opacity-70 disabled:cursor-not-allowed`}
