@@ -5,7 +5,7 @@
  *
  * - generateEmailFromClientCode - A function that generates an email draft based on the client code.
  * - GenerateEmailInput - The input type for the generateEmailFromClientCode function.
- * - GenerateEmailOutput - The return type for the generateEmailFrom-client-code function.
+ * - GenerateEmailOutput - The return type for the generateEmailFromClientCode function.
  */
 
 import {ai} from '@/ai/genkit';
