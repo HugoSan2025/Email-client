@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mic, Loader2, Sparkles } from 'lucide-react';
+import { Mic, Loader2, Sparkles, X } from 'lucide-react';
 
 // SpeechRecognition might not exist on the window object type in TS.
 declare global {
@@ -122,6 +122,16 @@ export default function EmailForm() {
     }, 500); // 500ms debounce
   };
 
+  const handleClearClientCode = () => {
+    setClientCode('');
+    setRecipients([]);
+    setSubject('');
+    setBody('');
+    if (debounceTimeoutRef.current) {
+      clearTimeout(debounceTimeoutRef.current);
+    }
+  };
+
   const toggleDictation = () => {
     if (!recognitionRef.current) {
       handleMessage('La función de dictado no está disponible.', "destructive", "Error");
@@ -213,7 +223,18 @@ export default function EmailForm() {
                   className="block w-full p-4 h-auto border-2 border-indigo-400 rounded-xl focus:ring-indigo-500 focus:border-indigo-500 text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground"
                   placeholder="Escriba el código..."
                 />
-                {isPending && <Loader2 className="absolute right-3 top-1/2 -translate-y-1/2 h-6 w-6 animate-spin text-primary" />}
+                {isPending && <Loader2 className="absolute right-10 top-1/2 -translate-y-1/2 h-6 w-6 animate-spin text-primary" />}
+                {clientCode && !isPending && (
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    onClick={handleClearClientCode}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full text-muted-foreground hover:text-foreground"
+                    title="Limpiar búsqueda"
+                  >
+                    <X className="h-5 w-5" />
+                  </Button>
+                )}
               </div>
             </div>
           </CardContent>
@@ -251,16 +272,14 @@ export default function EmailForm() {
 
               <div>
                 <Label htmlFor="emailBody" className="block text-sm font-medium mb-1">Cuerpo del Correo</Label>
-                <div className="relative">
-                  <Textarea
-                    id="emailBody"
-                    rows={8}
-                    value={body}
-                    onChange={(e) => setBody(e.target.value)}
-                    className="w-full p-3 rounded-lg text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
-                    placeholder="Escribe tu mensaje o usa el dictado por voz..."
-                  />
-                </div>
+                <Textarea
+                  id="emailBody"
+                  rows={8}
+                  value={body}
+                  onChange={(e) => setBody(e.target.value)}
+                  className="w-full p-3 rounded-lg text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
+                  placeholder="Escribe tu mensaje o usa el dictado por voz..."
+                />
                 <div className="flex justify-between items-center mt-2">
                   <Button
                     size="icon"
