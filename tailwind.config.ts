@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        '3xl': '0 15px 30px -10px rgba(3, 48, 87, 0.7), 0 5px 15px -3px rgba(3, 48, 87, 0.5)',
+      },
       fontFamily: {
         body: ['Inter', 'sans-serif'],
         headline: ['Inter', 'sans-serif'],

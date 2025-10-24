@@ -1,1 +1,5 @@
-// Flows will be imported for their side effects in this file.
+import { config } from 'dotenv';
+config();
+
+import '@/ai/flows/enhance-email-drafting-with-ai-suggestions.ts';
+import '@/ai/flows/generate-email-from-client-code.ts';
