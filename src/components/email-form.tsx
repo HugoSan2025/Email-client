@@ -98,13 +98,8 @@ export default function EmailForm() {
       }
       const result = await getEmailData(clientCode);
       setRecipients(result.recipientEmails);
-      if (result.recipientEmails.length > 0) {
-        setSubject(result.subject);
-        setBody(result.body);
-      } else {
-        setSubject('');
-        setBody('');
-      }
+      setSubject(result.subject);
+      setBody(result.body);
     });
   }, [clientCode]);
 

@@ -43,16 +43,20 @@ const getClientEmails = ai.defineTool({
 
 const prompt = ai.definePrompt({
   name: 'generateEmailPrompt',
-  input: {schema: GenerateEmailInputSchema},
+  input: {schema: z.object({
+    clientCode: z.string(),
+    recipientEmails: z.array(z.string()),
+  })},
   output: {schema: GenerateEmailOutputSchema},
   tools: [getClientEmails],
   prompt: `You are an AI email assistant. Generate a draft email subject and body in Spanish based on the client code.
 
-  First, use the getClientEmails tool to retrieve the recipient emails for the given client code.
+  The recipient emails have been provided. You MUST include them in the 'recipientEmails' output field.
 
-  Then, generate an appropriate subject and body for an email to the client, assuming common communication patterns. The entire response must be in Spanish.
+  Generate an appropriate subject and body for an email to the client, assuming common communication patterns. The entire response must be in Spanish.
 
   Client Code: {{{clientCode}}}
+  Recipient Emails: {{{JSONstringify recipientEmails}}}
 `,
 });
 
@@ -63,7 +67,13 @@ const generateEmailFlow = ai.defineFlow(
     outputSchema: GenerateEmailOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
+    const clientEmails = await getClientEmails(input);
+    const {output} = await prompt({
+        clientCode: input.clientCode,
+        recipientEmails: clientEmails,
+    });
+    // Ensure the emails from the tool are what's returned.
+    output!.recipientEmails = clientEmails;
     return output!;
   }
 );
