@@ -231,7 +231,7 @@ export default function EmailForm() {
                     variant="ghost"
                     size="icon"
                     onClick={handleClearClientCode}
-                    className="absolute right-[calc(4rem+1.5rem)] top-1/2 -translate-y-1/2 h-8 w-8 rounded-full text-muted-foreground hover:text-foreground"
+                    className="absolute right-[calc(4rem+1.5rem)] sm:right-[calc(6rem+0.5rem)] top-1/2 -translate-y-1/2 h-8 w-8 rounded-full text-muted-foreground hover:text-foreground"
                     title="Limpiar búsqueda"
                   >
                     <X className="h-5 w-5" />
