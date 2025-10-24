@@ -197,7 +197,7 @@ export default function EmailForm() {
                   id="clientCode"
                   value={clientCode}
                   onChange={handleClientCodeChange}
-                  className="block w-full p-4 h-auto border-2 border-indigo-400 rounded-xl focus:ring-indigo-500 focus:border-indigo-500 uppercase text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground"
+                  className="block w-full p-4 h-auto border-2 border-indigo-400 rounded-xl focus:ring-indigo-500 focus:border-indigo-500 text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground"
                   placeholder="Escriba el código..."
                 />
                 {isPending && <Loader2 className="absolute right-3 top-1/2 -translate-y-1/2 h-6 w-6 animate-spin text-primary" />}
