@@ -260,21 +260,28 @@ export default function EmailForm() {
                     className="w-full p-3 rounded-lg text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
                     placeholder="Escribe tu mensaje o usa el dictado por voz..."
                   />
+                </div>
+                <div className="flex justify-between items-center mt-2">
                   <Button
                     size="icon"
                     onClick={handleEnhanceClick}
                     disabled={isEnhancing}
-                    className="absolute bottom-2 left-2 p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 bg-purple-500 hover:bg-purple-600 disabled:bg-purple-500 disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 bg-purple-500 hover:bg-purple-600 disabled:bg-purple-500 disabled:opacity-70 disabled:cursor-not-allowed"
                     title="Mejorar texto con IA"
                   >
                     {isEnhancing ? <Loader2 className="h-6 w-6 animate-spin" /> : <Sparkles className="h-6 w-6" />}
                   </Button>
+                  
+                  <div className="text-center">
+                    { (dictationStatus) && <p className={`text-sm ${isDictating ? 'text-green-600' : 'text-red-600'}`}>{dictationStatus}</p> }
+                  </div>
+
                   <Button
                     id="dictationButton"
                     size="icon"
                     onClick={toggleDictation}
                     disabled={!recognitionAvailable || isDictating}
-                    className={`absolute bottom-2 right-2 p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12
+                    className={`p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12
                       ${isDictating ? 'bg-green-500 hover:bg-green-600 animate-pulse' : 'bg-blue-500 hover:bg-blue-600'}
                       disabled:bg-blue-500 disabled:opacity-70 disabled:cursor-not-allowed`}
                     title="Iniciar/Detener Dictado por Voz"
@@ -282,7 +289,6 @@ export default function EmailForm() {
                     <Mic className="h-6 w-6" />
                   </Button>
                 </div>
-                { (dictationStatus) && <p className={`text-sm ${isDictating ? 'text-green-600' : 'text-red-600'}`}>{dictationStatus}</p> }
               </div>
             </div>
 
