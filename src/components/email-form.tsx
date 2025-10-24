@@ -208,7 +208,7 @@ export default function EmailForm() {
 
         <Card className="p-4 rounded-lg border-gray-700 shadow-3xl bg-card text-card-foreground transition duration-200 transform hover:-translate-y-0.5">
           <CardHeader className="p-0 mb-3 px-2">
-            <h2 className="text-2xl font-bold">2. Composición de Correo y Dictado</h2>
+            <h2 className="text-2xl font-bold">2. Redactar correo o dictado</h2>
           </CardHeader>
           <CardContent className="p-2">
             <div className="space-y-4">
