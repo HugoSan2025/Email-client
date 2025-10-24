@@ -1,0 +1,20 @@
+{
+  "clients": [
+    {
+      "code": "C001",
+      "emails": ["cliente1@empresa.com", "facturas1@empresa.com", "ventas1@empresa.com"]
+    },
+    {
+      "code": "C002",
+      "emails": ["cliente2@empresa.com", "soporte2@empresa.com"]
+    },
+    {
+      "code": "C003",
+      "emails": ["cliente3@empresa.com"]
+    },
+    {
+      "code": "PROV4",
+      "emails": ["proveedor4@compras.net", "pedidos@compras.net"]
+    }
+  ]
+}

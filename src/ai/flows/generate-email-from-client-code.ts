@@ -10,6 +10,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
+import clientData from '@/lib/client-data.json';
 
 const GenerateEmailInputSchema = z.object({
   clientCode: z.string().describe('The code of the client.'),
@@ -35,16 +36,8 @@ const getClientEmails = ai.defineTool({
   }),
   outputSchema: z.array(z.string()).describe('An array of email addresses associated with the client code.'),
 }, async (input) => {
-  // Mock client data - replace with actual data retrieval from a database or service
-  const clientDataMap = new Map([
-    ['C001', ['cliente1@empresa.com', 'facturas1@empresa.com', 'ventas1@empresa.com']],
-    ['C002', ['cliente2@empresa.com', 'soporte2@empresa.com']],
-    ['C003', ['cliente3@empresa.com']],
-    ['PROV4', ['proveedor4@compras.net', 'pedidos@compras.net']]
-  ]);
-
-  const emails = clientDataMap.get(input.clientCode);
-  return emails || [];
+  const client = clientData.clients.find(c => c.code.toUpperCase() === input.clientCode.toUpperCase());
+  return client ? client.emails : [];
 });
 
 const prompt = ai.definePrompt({
