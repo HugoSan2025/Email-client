@@ -197,7 +197,7 @@ export default function EmailForm() {
                   id="clientCode"
                   value={clientCode}
                   onChange={handleClientCodeChange}
-                  className="block w-full p-4 h-auto border-2 border-indigo-400 rounded-xl focus:ring-indigo-500 focus:border-indigo-500 uppercase text-xl font-extrabold shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground"
+                  className="block w-full p-4 h-auto border-2 border-indigo-400 rounded-xl focus:ring-indigo-500 focus:border-indigo-500 uppercase text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground"
                   placeholder="Escriba el código..."
                 />
                 {isPending && <Loader2 className="absolute right-3 top-1/2 -translate-y-1/2 h-6 w-6 animate-spin text-primary" />}
@@ -254,7 +254,7 @@ export default function EmailForm() {
                     disabled={!recognitionAvailable}
                     className={`absolute bottom-2 right-2 p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12
                       ${isDictating ? 'bg-green-500 hover:bg-green-600 animate-pulse' : 'bg-blue-500 hover:bg-blue-600'}
-                      disabled:bg-blue-500/50 disabled:cursor-not-allowed disabled:opacity-50`}
+                      disabled:bg-blue-500 disabled:opacity-70 disabled:cursor-not-allowed`}
                     title="Iniciar/Detener Dictado por Voz"
                   >
                     <Mic className="h-6 w-6" />
