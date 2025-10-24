@@ -1,20 +1,76 @@
 {
   "clients": [
     {
-      "code": "C001",
-      "emails": ["cliente1@empresa.com", "facturas1@empresa.com", "ventas1@empresa.com"]
+      "code": "44444",
+      "emails": [
+        "cliente1@correo.com",
+        "cliente2@correo.com",
+        "cliente3@correo.com"
+      ]
     },
     {
-      "code": "C002",
-      "emails": ["cliente2@empresa.com", "soporte2@empresa.com"]
+      "code": "33333",
+      "emails": [
+        "cliente4@correo.com",
+        "cliente5@correo.com",
+        "cliente6@correo.com"
+      ]
     },
     {
-      "code": "C003",
-      "emails": ["cliente3@empresa.com"]
+      "code": "55555",
+      "emails": [
+        "cliente7@correo.com",
+        "cliente8@correo.com",
+        "cliente9@correo.com"
+      ]
     },
     {
-      "code": "PROV4",
-      "emails": ["proveedor4@compras.net", "pedidos@compras.net"]
+      "code": "66666",
+      "emails": [
+        "cliente10@correo.com",
+        "cliente11@correo.com",
+        "cliente12@correo.com"
+      ]
+    },
+    {
+      "code": "77777",
+      "emails": [
+        "cliente13@correo.com",
+        "cliente14@correo.com",
+        "cliente15@correo.com"
+      ]
+    },
+    {
+      "code": "88888",
+      "emails": [
+        "cliente16@correo.com",
+        "cliente17@correo.com",
+        "cliente18@correo.com"
+      ]
+    },
+    {
+      "code": "99999",
+      "emails": [
+        "cliente19@correo.com",
+        "cliente20@correo.com",
+        "cliente21@correo.com"
+      ]
+    },
+    {
+      "code": "11111",
+      "emails": [
+        "cliente22@correo.com",
+        "cliente23@correo.com",
+        "cliente24@correo.com"
+      ]
+    },
+    {
+      "code": "22222",
+      "emails": [
+        "cliente25@correo.com",
+        "cliente26@correo.com",
+        "cliente27@correo.com"
+      ]
     }
   ]
 }

@@ -36,7 +36,8 @@ const getClientEmails = ai.defineTool({
   }),
   outputSchema: z.array(z.string()).describe('An array of email addresses associated with the client code.'),
 }, async (input) => {
-  const client = clientData.clients.find(c => c.code.toUpperCase() === input.clientCode.toUpperCase());
+  // The code can be a string or a number, so we compare it loosely.
+  const client = clientData.clients.find(c => c.code == input.clientCode);
   return client ? client.emails : [];
 });
 
