@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mic, Loader2, Sparkles, X } from 'lucide-react';
+import { Mic, Loader2, Sparkles, X, Search } from 'lucide-react';
 
 // SpeechRecognition might not exist on the window object type in TS.
 declare global {
@@ -34,7 +34,6 @@ export default function EmailForm() {
   const { toast } = useToast();
 
   const recognitionRef = useRef<any>(null);
-  const debounceTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Setup Speech Recognition
   useEffect(() => {
@@ -89,15 +88,15 @@ export default function EmailForm() {
     });
   };
 
-  const fetchRecipients = useCallback((code: string) => {
+  const handleSearch = useCallback(() => {
     startTransition(async () => {
-      if (!code) {
+      if (!clientCode) {
         setRecipients([]);
         setSubject('');
         setBody('');
         return;
       }
-      const result = await getEmailData(code);
+      const result = await getEmailData(clientCode);
       setRecipients(result.recipientEmails);
       if (result.recipientEmails.length > 0) {
         setSubject(result.subject);
@@ -107,19 +106,17 @@ export default function EmailForm() {
         setBody('');
       }
     });
-  }, []);
+  }, [clientCode]);
+
 
   const handleClientCodeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const code = e.target.value;
-    setClientCode(code);
-
-    if (debounceTimeoutRef.current) {
-      clearTimeout(debounceTimeoutRef.current);
+    setClientCode(e.target.value);
+  };
+  
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearch();
     }
-
-    debounceTimeoutRef.current = setTimeout(() => {
-      fetchRecipients(code);
-    }, 500); // 500ms debounce
   };
 
   const handleClearClientCode = () => {
@@ -127,9 +124,6 @@ export default function EmailForm() {
     setRecipients([]);
     setSubject('');
     setBody('');
-    if (debounceTimeoutRef.current) {
-      clearTimeout(debounceTimeoutRef.current);
-    }
   };
 
   const toggleDictation = () => {
@@ -214,22 +208,30 @@ export default function EmailForm() {
               <Label htmlFor="clientCode" className="block text-sm font-medium mb-1">
                 Código de Cliente
               </Label>
-              <div className="relative">
+              <div className="relative flex items-center gap-2">
                 <Input
                   type="text"
                   id="clientCode"
                   value={clientCode}
                   onChange={handleClientCodeChange}
+                  onKeyDown={handleKeyDown}
                   className="block w-full p-4 h-auto border-2 border-indigo-400 rounded-xl focus:ring-indigo-500 focus:border-indigo-500 text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground"
                   placeholder="Escriba el código..."
                 />
-                {isPending && <Loader2 className="absolute right-10 top-1/2 -translate-y-1/2 h-6 w-6 animate-spin text-primary" />}
+                 <Button 
+                  onClick={handleSearch} 
+                  disabled={isPending}
+                  className="px-4 py-2 h-auto text-sm font-bold rounded-xl shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-primary hover:bg-accent"
+                >
+                  {isPending ? <Loader2 className="h-5 w-5 animate-spin" /> : <Search className="h-5 w-5" />}
+                  <span className="sr-only sm:not-sr-only sm:ml-2">Buscar</span>
+                </Button>
                 {clientCode && !isPending && (
                   <Button
                     variant="ghost"
                     size="icon"
                     onClick={handleClearClientCode}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full text-muted-foreground hover:text-foreground"
+                    className="absolute right-[calc(4rem+1.5rem)] top-1/2 -translate-y-1/2 h-8 w-8 rounded-full text-muted-foreground hover:text-foreground"
                     title="Limpiar búsqueda"
                   >
                     <X className="h-5 w-5" />
