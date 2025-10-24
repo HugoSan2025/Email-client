@@ -27,6 +27,7 @@ export default function EmailForm() {
   
   const [isDictating, setIsDictating] = useState(false);
   const [dictationStatus, setDictationStatus] = useState('');
+  const [recognitionAvailable, setRecognitionAvailable] = useState(false);
   
   const [isPending, startTransition] = useTransition();
   const { toast } = useToast();
@@ -69,6 +70,7 @@ export default function EmailForm() {
       };
       
       recognitionRef.current = recognition;
+      setRecognitionAvailable(true);
     } else {
         toast({
             variant: "destructive",
@@ -249,10 +251,10 @@ export default function EmailForm() {
                     id="dictationButton"
                     size="icon"
                     onClick={toggleDictation}
-                    disabled={!recognitionRef.current}
+                    disabled={!recognitionAvailable}
                     className={`absolute bottom-2 right-2 p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12
                       ${isDictating ? 'bg-green-500 hover:bg-green-600 animate-pulse' : 'bg-blue-500 hover:bg-blue-600'}
-                      disabled:bg-blue-500/50 disabled:cursor-not-allowed`}
+                      disabled:bg-blue-500/50 disabled:cursor-not-allowed disabled:opacity-50`}
                     title="Iniciar/Detener Dictado por Voz"
                   >
                     <Mic className="h-6 w-6" />
