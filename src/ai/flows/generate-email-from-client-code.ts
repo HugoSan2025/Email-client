@@ -39,7 +39,7 @@ async function findClientEmails(clientCode: string): Promise<string[]> {
     );
     return client ? client.emails : [];
   } catch (error) {
-    console.error(`Failed to read or parse client-data.json for code ${clientCode}`, error);
+    console.error(`Error finding client emails. Failed to read or parse client-data.json for code ${clientCode}. Path: ${path.join(process.cwd(), 'src', 'lib', 'client-data.json')}`, error);
     return [];
   }
 }
