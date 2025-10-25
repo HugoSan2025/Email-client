@@ -10,8 +10,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
-import * as fs from 'fs';
-import * as path from 'path';
+import clientData from '@/lib/client-data.json'; // Import the JSON data directly
 
 const GenerateEmailInputSchema = z.object({
   clientCode: z.string().describe('The code of the client.'),
@@ -29,17 +28,15 @@ export type GenerateEmailOutput = z.infer<
   typeof GenerateEmailOutputSchema
 >;
 
-// This is the direct data-fetching function, moved out of the AI tool.
+// This is the direct data-fetching function, using the imported data.
 async function findClientEmails(clientCode: string): Promise<string[]> {
-  const clientDataPath = path.join(process.cwd(), 'src', 'lib', 'client-data.json');
   try {
-    const clientData = JSON.parse(fs.readFileSync(clientDataPath, 'utf-8'));
     const client = clientData.clients.find(
       (c: { code: any; }) => String(c.code) === String(clientCode)
     );
     return client ? client.emails : [];
   } catch (error) {
-    console.error(`Error finding client emails. Failed to read or parse client-data.json for code ${clientCode}. Path: ${clientDataPath}`, error);
+    console.error(`Error finding client emails for code ${clientCode}.`, error);
     return [];
   }
 }
@@ -78,7 +75,7 @@ const generateEmailFlow = ai.defineFlow(
     outputSchema: GenerateEmailOutputSchema,
   },
   async (input) : Promise<GenerateEmailOutput> => {
-    // Step 1: Reliably get the emails using simple code.
+    // Step 1: Reliably get the emails using the imported data.
     const emails = await findClientEmails(input.clientCode);
 
     // Step 2: Ask the AI to generate only the text.
