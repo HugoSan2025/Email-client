@@ -89,15 +89,21 @@ const generateEmailFlow = ai.defineFlow(
   },
   async input => {
     const {output} = await prompt(input);
+
+    // Fallback robusto: si la IA no devuelve un output, intentamos buscar los emails manualmente.
     if (!output) {
-        // If the AI fails for any reason, try to find emails manually and return a blank body/subject
         console.error("AI output was null. Falling back to manual email retrieval.");
-        const emails = await getClientEmails(input);
-        return {
-            subject: '',
-            body: '',
-            recipientEmails: emails
-        };
+        try {
+            const emails = await getClientEmails(input);
+            return {
+                subject: '',
+                body: '',
+                recipientEmails: emails
+            };
+        } catch (e) {
+             console.error("Fallback failed to get emails.", e);
+             return { subject: '', body: '', recipientEmails: [] };
+        }
     }
     return output;
   }
