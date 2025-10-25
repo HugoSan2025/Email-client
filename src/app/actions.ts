@@ -9,7 +9,7 @@ export async function getEmailData(clientCode: string): Promise<GenerateEmailOut
     return { subject: '', body: '', recipientEmails: [] };
   }
   try {
-    const result = await generateEmailFromClientCode({ clientCode: clientCode.toUpperCase() });
+    const result = await generateEmailFromClientCode({ clientCode: clientCode });
     return result;
   } catch (error) {
     console.error('Error in getEmailData action:', error);
