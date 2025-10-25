@@ -31,15 +31,15 @@ export type GenerateEmailOutput = z.infer<
 
 // This is the direct data-fetching function, moved out of the AI tool.
 async function findClientEmails(clientCode: string): Promise<string[]> {
+  const clientDataPath = path.join(process.cwd(), 'src', 'lib', 'client-data.json');
   try {
-    const clientDataPath = path.join(process.cwd(), 'src', 'lib', 'client-data.json');
     const clientData = JSON.parse(fs.readFileSync(clientDataPath, 'utf-8'));
     const client = clientData.clients.find(
       (c: { code: any; }) => String(c.code) === String(clientCode)
     );
     return client ? client.emails : [];
   } catch (error) {
-    console.error(`Error finding client emails. Failed to read or parse client-data.json for code ${clientCode}. Path: ${path.join(process.cwd(), 'src', 'lib', 'client-data.json')}`, error);
+    console.error(`Error finding client emails. Failed to read or parse client-data.json for code ${clientCode}. Path: ${clientDataPath}`, error);
     return [];
   }
 }
