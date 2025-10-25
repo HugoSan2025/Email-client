@@ -165,23 +165,25 @@ export default function EmailForm() {
 
     const toEmail = recipients[0];
     const ccEmails = recipients.slice(1).join(',');
-    const encodedBody = encodeURIComponent(body.replace(/\n/g, '\r\n'));
 
-    let mailtoLink = `mailto:${toEmail}`;
-    const params = [];
-    if (ccEmails) params.push(`cc=${encodeURIComponent(ccEmails)}`);
-    if (subject) params.push(`subject=${encodeURIComponent(subject)}`);
-    if (body) params.push(`body=${encodedBody}`);
-    if (params.length > 0) mailtoLink += '?' + params.join('&');
-
-    const MAX_MAILTO_LENGTH = 1800;
-    if (mailtoLink.length > MAX_MAILTO_LENGTH) {
-      handleMessage(`El cuerpo del correo es demasiado largo (excede ${MAX_MAILTO_LENGTH} caracteres).`, "destructive", "Error de longitud");
-      return;
+    const baseUrl = "https://outlook.live.com/mail/deeplink/compose";
+    const params = new URLSearchParams();
+    
+    params.set('to', toEmail);
+    if (ccEmails) {
+        params.set('cc', ccEmails);
     }
+    if (subject) {
+        params.set('subject', subject);
+    }
+    if (body) {
+        params.set('body', body);
+    }
+    
+    const outlookUrl = `${baseUrl}?${params.toString()}`;
 
-    window.location.href = mailtoLink;
-    handleMessage('Abriendo cliente de correo electrónico...', "default", "Éxito");
+    window.open(outlookUrl, '_blank', 'noopener,noreferrer');
+    handleMessage('Abriendo Outlook en la web...', "default", "Éxito");
   };
 
   const toEmail = recipients.length > 0 ? recipients[0] : '';
