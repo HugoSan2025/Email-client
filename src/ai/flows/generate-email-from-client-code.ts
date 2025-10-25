@@ -13,12 +13,6 @@ import {z} from 'genkit';
 import * as fs from 'fs';
 import * as path from 'path';
 
-// Lee los datos del cliente desde el archivo JSON de forma síncrona.
-// Esto es más robusto para el entorno de servidor de Next.js en producción.
-const clientDataPath = path.join(process.cwd(), 'src', 'lib', 'client-data.json');
-const clientData = JSON.parse(fs.readFileSync(clientDataPath, 'utf-8'));
-
-
 const GenerateEmailInputSchema = z.object({
   clientCode: z.string().describe('The code of the client.'),
 });
@@ -56,6 +50,11 @@ const getClientEmails = ai.defineTool(
       .describe('An array of email addresses associated with the client code.'),
   },
   async input => {
+    // Lee los datos del cliente desde el archivo JSON de forma síncrona.
+    // Esto es más robusto para el entorno de servidor de Next.js en producción.
+    const clientDataPath = path.join(process.cwd(), 'src', 'lib', 'client-data.json');
+    const clientData = JSON.parse(fs.readFileSync(clientDataPath, 'utf-8'));
+
     // Convert both the client code from the data and the input to strings for reliable comparison.
     const client = clientData.clients.find(
       c => String(c.code) === String(input.clientCode)
