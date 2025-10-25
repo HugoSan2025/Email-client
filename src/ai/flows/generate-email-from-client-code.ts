@@ -50,14 +50,10 @@ const getClientEmails = ai.defineTool(
       .describe('An array of email addresses associated with the client code.'),
   },
   async input => {
-    // Lee los datos del cliente desde el archivo JSON de forma síncrona.
-    // Esto es más robusto para el entorno de servidor de Next.js en producción.
     const clientDataPath = path.join(process.cwd(), 'src', 'lib', 'client-data.json');
     const clientData = JSON.parse(fs.readFileSync(clientDataPath, 'utf-8'));
-
-    // Convert both the client code from the data and the input to strings for reliable comparison.
     const client = clientData.clients.find(
-      c => String(c.code) === String(input.clientCode)
+      (c: { code: any; }) => String(c.code) === String(input.clientCode)
     );
     return client ? client.emails : [];
   }
@@ -90,7 +86,6 @@ const generateEmailFlow = ai.defineFlow(
   async input => {
     const {output} = await prompt(input);
 
-    // Fallback robusto: si la IA no devuelve un output, intentamos buscar los emails manualmente.
     if (!output) {
         console.error("AI output was null. Falling back to manual email retrieval.");
         try {
@@ -105,6 +100,18 @@ const generateEmailFlow = ai.defineFlow(
              return { subject: '', body: '', recipientEmails: [] };
         }
     }
+    
+    // Ensure emails are always returned if found, even if AI forgets
+    if (output.recipientEmails.length === 0) {
+        try {
+            const emails = await getClientEmails(input);
+            output.recipientEmails = emails;
+        } catch (e) {
+            console.error("Error manually fetching emails as a safeguard.", e);
+        }
+    }
+    
     return output;
   }
 );
+
