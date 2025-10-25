@@ -180,10 +180,9 @@ export default function EmailForm() {
     let paramsString = params.toString();
 
     if (body) {
-      // Manually encode the body to use %20 for spaces instead of '+'
-      const encodedBody = encodeURIComponent(body).replace(/%20/g, ' ');
-      const bodyParam = new URLSearchParams({ body: encodedBody }).toString();
-      // Replace the default '+' encoding for spaces with %20
+      // Manually encode the body to use %20 for spaces instead of '+' from URLSearchParams
+      const bodyParam = new URLSearchParams({ body: body }).toString();
+      // Replace the default '+' encoding for spaces with %20, which Outlook Web handles correctly.
       const outlookFriendlyBody = bodyParam.replace(/\+/g, '%20');
       paramsString += `&${outlookFriendlyBody}`;
     }
