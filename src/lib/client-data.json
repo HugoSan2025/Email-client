@@ -2,74 +2,74 @@
   "clients": [
     {
       "code": "44444",
+      "name": "Innovaciones Tech S.A.",
       "emails": [
-        "cliente1@correo.com",
-        "cliente2@correo.com",
-        "cliente3@correo.com"
+        "contacto@innovatech.com",
+        "soporte@innovatech.com",
+        "ventas@innovatech.com"
       ]
     },
     {
       "code": "33333",
+      "name": "Soluciones Globales Co.",
       "emails": [
-        "cliente4@correo.com",
-        "cliente5@correo.com",
-        "cliente6@correo.com"
+        "info@solucionesglobales.com",
+        "admin@solucionesglobales.com"
       ]
     },
     {
       "code": "55555",
+      "name": "Constructora Futuro",
       "emails": [
-        "cliente7@correo.com",
-        "cliente8@correo.com",
-        "cliente9@correo.com"
+        "proyectos@constructorafuturo.com",
+        "rrhh@constructorafuturo.com"
       ]
     },
     {
       "code": "66666",
+      "name": "Logística Express",
       "emails": [
-        "cliente10@correo.com",
-        "cliente11@correo.com",
-        "cliente12@correo.com"
+        "operaciones@logisticaexpress.com",
+        "facturacion@logisticaexpress.com"
       ]
     },
     {
       "code": "77777",
+      "name": "Marketing Creativo Digital",
       "emails": [
-        "cliente13@correo.com",
-        "cliente14@correo.com",
-        "cliente15@correo.com"
+        "hola@marketingcreativo.com"
       ]
     },
     {
       "code": "88888",
+      "name": "Asesores Financieros Pro",
       "emails": [
-        "cliente16@correo.com",
-        "cliente17@correo.com",
-        "cliente18@correo.com"
+        "consultas@asesorespro.com",
+        "direccion@asesorespro.com"
       ]
     },
     {
       "code": "99999",
+      "name": "Servicios Médicos Bienestar",
       "emails": [
-        "cliente19@correo.com",
-        "cliente20@correo.com",
-        "cliente21@correo.com"
+        "citas@bienestar.med",
+        "gestion@bienestar.med"
       ]
     },
     {
       "code": "11111",
+      "name": "Educación Avanzada Online",
       "emails": [
-        "cliente22@correo.com",
-        "cliente23@correo.com",
-        "cliente24@correo.com"
+        "inscripciones@eduavanzada.com",
+        "soporte.alumnos@eduavanzada.com"
       ]
     },
     {
       "code": "22222",
+      "name": "Importaciones del Pacífico",
       "emails": [
-        "cliente25@correo.com",
-        "cliente26@correo.com",
-        "cliente27@correo.com"
+        "compras@impacifico.com",
+        "ventas@impacifico.com"
       ]
     }
   ]

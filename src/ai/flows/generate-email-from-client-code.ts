@@ -12,6 +12,12 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 import clientData from '@/lib/client-data.json'; // Import the JSON data directly
 
+interface Client {
+  code: string;
+  name: string;
+  emails: string[];
+}
+
 const GenerateEmailInputSchema = z.object({
   clientCode: z.string().describe('The code of the client.'),
 });
@@ -28,16 +34,16 @@ export type GenerateEmailOutput = z.infer<
   typeof GenerateEmailOutputSchema
 >;
 
-// This is the direct data-fetching function, using the imported data.
-async function findClientEmails(clientCode: string): Promise<string[]> {
+// This function now finds the entire client object.
+async function findClient(clientCode: string): Promise<Client | undefined> {
   try {
     const client = clientData.clients.find(
-      (c: { code: any; }) => String(c.code) === String(clientCode)
+      (c: Client) => String(c.code) === String(clientCode)
     );
-    return client ? client.emails : [];
+    return client;
   } catch (error) {
-    console.error(`Error finding client emails for code ${clientCode}.`, error);
-    return [];
+    console.error(`Error finding client for code ${clientCode}.`, error);
+    return undefined;
   }
 }
 
@@ -48,15 +54,15 @@ export async function generateEmailFromClientCode(
 }
 
 
-// The prompt no longer knows about emails. It only generates text.
+// The prompt now receives clientName instead of clientCode.
 const prompt = ai.definePrompt({
   name: 'generateEmailTextPrompt',
-  system: `You are an AI email assistant. Your task is to generate a draft email subject and body in Spanish based on a client code.
+  system: `You are an AI email assistant. Your task is to generate a draft email subject and body in Spanish based on a client's name.
 Generate an appropriate subject and body for an email to that client, assuming common communication patterns.
 The entire response, including subject and body, must be in Spanish.
 `,
   input: {
-    schema: z.object({ clientCode: z.string() }),
+    schema: z.object({ clientName: z.string() }),
   },
   output: {
     schema: z.object({
@@ -64,7 +70,7 @@ The entire response, including subject and body, must be in Spanish.
         body: z.string().describe('The body of the email.'),
     }),
   },
-  prompt: `Client Code: {{{clientCode}}}
+  prompt: `Client Name: {{{clientName}}}
 `,
 });
 
@@ -75,16 +81,25 @@ const generateEmailFlow = ai.defineFlow(
     outputSchema: GenerateEmailOutputSchema,
   },
   async (input) : Promise<GenerateEmailOutput> => {
-    // Step 1: Reliably get the emails using the imported data.
-    const emails = await findClientEmails(input.clientCode);
+    // Step 1: Reliably get the client object.
+    const client = await findClient(input.clientCode);
 
-    // Step 2: Ask the AI to generate only the text.
-    const { output: aiText } = await prompt(input);
+    if (!client) {
+      // If client is not found, return an empty structure.
+      return {
+        recipientEmails: [],
+        subject: '',
+        body: '',
+      };
+    }
+
+    // Step 2: Ask the AI to generate text using the client's name.
+    const { output: aiText } = await prompt({ clientName: client.name });
 
     // Step 3: Combine the results.
     // If AI fails, we still return the emails with empty text.
     return {
-      recipientEmails: emails,
+      recipientEmails: client.emails,
       subject: aiText?.subject || '',
       body: aiText?.body || '',
     };
