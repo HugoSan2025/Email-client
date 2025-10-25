@@ -10,7 +10,14 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
-import clientData from '@/lib/client-data.json';
+import * as fs from 'fs';
+import * as path from 'path';
+
+// Lee los datos del cliente desde el archivo JSON de forma síncrona.
+// Esto es más robusto para el entorno de servidor de Next.js en producción.
+const clientDataPath = path.join(process.cwd(), 'src', 'lib', 'client-data.json');
+const clientData = JSON.parse(fs.readFileSync(clientDataPath, 'utf-8'));
+
 
 const GenerateEmailInputSchema = z.object({
   clientCode: z.string().describe('The code of the client.'),
@@ -60,17 +67,18 @@ const getClientEmails = ai.defineTool(
 const prompt = ai.definePrompt({
   name: 'generateEmailPrompt',
   tools: [getClientEmails],
+  system: `You are an AI email assistant. Your task is to generate a draft email subject and body in Spanish based on a client code.
+You MUST use the getClientEmails tool to get the emails for the provided client code and include the found emails in the recipientEmails field of your final response.
+Then, generate an appropriate subject and body for an email to that client, assuming common communication patterns.
+The entire response, including subject and body, must be in Spanish.
+`,
   input: {
     schema: GenerateEmailInputSchema,
   },
   output: {
     schema: GenerateEmailOutputSchema,
   },
-  prompt: `You are an AI email assistant. Generate a draft email subject and body in Spanish based on the client code.
-  Use the getClientEmails tool to get the emails for the client code and include them in the final response.
-  Generate an appropriate subject and body for an email to the client, assuming common communication patterns. The entire response must be in Spanish.
-
-  Client Code: {{{clientCode}}}
+  prompt: `Client Code: {{{clientCode}}}
 `,
 });
 
@@ -82,6 +90,16 @@ const generateEmailFlow = ai.defineFlow(
   },
   async input => {
     const {output} = await prompt(input);
-    return output!;
+    if (!output) {
+        // If the AI fails for any reason, try to find emails manually and return a blank body/subject
+        console.error("AI output was null. Falling back to manual email retrieval.");
+        const emails = await getClientEmails(input);
+        return {
+            subject: '',
+            body: '',
+            recipientEmails: emails
+        };
+    }
+    return output;
   }
 );
