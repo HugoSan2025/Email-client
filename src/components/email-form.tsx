@@ -162,10 +162,10 @@ export default function EmailForm() {
       handleMessage(`No se encontraron correos para el código "${clientCode}".`, "destructive", "Cliente no encontrado");
       return;
     }
-
+  
     const toEmail = recipients[0];
     const ccEmails = recipients.slice(1).join(',');
-
+  
     const baseUrl = "https://outlook.live.com/mail/deeplink/compose";
     const params = new URLSearchParams();
     
@@ -176,12 +176,20 @@ export default function EmailForm() {
     if (subject) {
         params.set('subject', subject);
     }
+    
+    let paramsString = params.toString();
+
     if (body) {
-        params.set('body', body);
+      // Manually encode the body to use %20 for spaces instead of '+'
+      const encodedBody = encodeURIComponent(body).replace(/%20/g, ' ');
+      const bodyParam = new URLSearchParams({ body: encodedBody }).toString();
+      // Replace the default '+' encoding for spaces with %20
+      const outlookFriendlyBody = bodyParam.replace(/\+/g, '%20');
+      paramsString += `&${outlookFriendlyBody}`;
     }
     
-    const outlookUrl = `${baseUrl}?${params.toString()}`;
-
+    const outlookUrl = `${baseUrl}?${paramsString}`;
+  
     window.open(outlookUrl, '_blank', 'noopener,noreferrer');
     handleMessage('Abriendo Outlook en la web...', "default", "Éxito");
   };
