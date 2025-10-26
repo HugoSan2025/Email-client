@@ -166,13 +166,15 @@ export default function EmailForm() {
       return;
     }
   
-    const toEmail = recipients[0];
-    const ccEmails = recipients.slice(1).join(',');
+    const toEmails = recipients.slice(0, 2).join(',');
+    const ccEmails = recipients.slice(2).join(',');
   
     const baseUrl = "https://outlook.live.com/mail/deeplink/compose";
     const params = new URLSearchParams();
     
-    params.set('to', toEmail);
+    if (toEmails) {
+      params.set('to', toEmails);
+    }
     if (ccEmails) {
         params.set('cc', ccEmails);
     }
@@ -196,8 +198,8 @@ export default function EmailForm() {
     handleMessage('Abriendo Outlook en la web...', "default", "Éxito");
   };
 
-  const toEmail = recipients.length > 0 ? recipients[0] : '';
-  const ccEmails = recipients.length > 1 ? recipients.slice(1) : [];
+  const toEmails = recipients.slice(0, 2);
+  const ccEmails = recipients.slice(2);
 
   const wasSearched = !!searchedCode;
   const hasRecipients = recipients.length > 0;
@@ -265,7 +267,7 @@ export default function EmailForm() {
                   <p>Destinatarios: Código "{searchedCode.toUpperCase()}" no encontrado.</p>
                 ) : hasRecipients ? (
                   <>
-                    <p><span className="font-bold text-gray-700">TO:</span> {toEmail}</p>
+                    <p><span className="font-bold text-gray-700">TO:</span> {toEmails.join(', ')}</p>
                     {ccEmails.length > 0 && <p><span className="font-bold text-gray-700">CC:</span> {ccEmails.join(', ')}</p>}
                   </>
                 ) : (
