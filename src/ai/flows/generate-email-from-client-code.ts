@@ -35,13 +35,9 @@ export type GenerateEmailOutput = z.infer<
 >;
 
 async function findClient(clientCode: string): Promise<Client | undefined> {
-  try {
-    const client = (clientData.clients as Client[]).find(c => String(c.code).trim() === clientCode.trim());
-    return client;
-  } catch (error) {
-    console.error(`Error finding client for code ${clientCode}.`, error);
-    return undefined;
-  }
+  // Correctly compare client code by ensuring both values are treated as strings.
+  const client = (clientData.clients as Client[]).find(c => String(c.code) === clientCode);
+  return client;
 }
 
 export async function generateEmailFromClientCode(
