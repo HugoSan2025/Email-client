@@ -90,14 +90,14 @@ export default function EmailForm() {
   };
 
   const handleSearch = useCallback(() => {
+    setSearchedCode(clientCode);
+    if (!clientCode) {
+      setRecipients([]);
+      setSubject('');
+      setBody('');
+      return;
+    }
     startTransition(async () => {
-      setSearchedCode(clientCode);
-      if (!clientCode) {
-        setRecipients([]);
-        setSubject('');
-        setBody('');
-        return;
-      }
       const result = await getEmailData(clientCode);
       setRecipients(result.recipientEmails);
       setSubject(result.subject);
@@ -199,6 +199,9 @@ export default function EmailForm() {
   const toEmail = recipients.length > 0 ? recipients[0] : '';
   const ccEmails = recipients.length > 1 ? recipients.slice(1) : [];
 
+  const wasSearched = !!searchedCode;
+  const hasRecipients = recipients.length > 0;
+  
   return (
     <div className="w-full max-w-4xl shadow-2xl rounded-xl p-6 md:p-10 border border-gray-700 bg-background">
       <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent mb-6 pb-2 text-center border-b border-accent/50 text-shadow-md">
@@ -255,10 +258,12 @@ export default function EmailForm() {
           </CardHeader>
           <CardContent className="p-2">
             <div className="space-y-4">
-              <div id="recipient-display" className={`p-3 rounded-lg text-sm border shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 ${recipients.length > 0 ? 'bg-green-100 text-green-900 border-green-200' : 'bg-yellow-100 text-yellow-900 border-yellow-200'}`}>
-                {searchedCode && !isPending && recipients.length === 0 ? (
+              <div id="recipient-display" className={`p-3 rounded-lg text-sm border shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 ${!wasSearched || hasRecipients ? 'bg-green-100 text-green-900 border-green-200' : 'bg-yellow-100 text-yellow-900 border-yellow-200'}`}>
+                {isPending ? (
+                  <p>Buscando...</p>
+                ) : wasSearched && !hasRecipients ? (
                   <p>Destinatarios: Código "{searchedCode.toUpperCase()}" no encontrado.</p>
-                ) : recipients.length > 0 ? (
+                ) : hasRecipients ? (
                   <>
                     <p><span className="font-bold text-gray-700">TO:</span> {toEmail}</p>
                     {ccEmails.length > 0 && <p><span className="font-bold text-gray-700">CC:</span> {ccEmails.join(', ')}</p>}
