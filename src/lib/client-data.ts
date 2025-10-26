@@ -3100,16 +3100,17 @@ export const clients = [
   },
   {
     "code": "11963",
-    "name": "Municipalidad Metropolitana De Lima",
+    "name": "Instituto De Oncologia Y Radioterapia De La Region Junin S.R.L.",
     "emails": [
-      "gvilchez@munlima.gob.pe",
-      "janeth.delgado@synlab.pe"
+      "janeth.delgado@synlab.pe",
+      "eveling.pariona@synlab.pe"
     ]
   },
   {
     "code": "12068",
-    "name": "",
+    "name": "Municipalidad Metropolitana De Lima",
     "emails": [
+      "gvilchez@munlima.gob.pe",
       "janeth.delgado@synlab.pe"
     ]
   },
@@ -3672,13 +3673,7 @@ export const clients = [
       "janeth.delgado@synlab.pe",
       "eveling.pariona@synlab.pe"
     ]
-  },
-  {
-    "code": "11963",
-    "name": "Instituto De Oncologia Y Radioterapia De La Region Junin S.R.L.",
-    "emails": [
-      "janeth.delgado@synlab.pe",
-      "eveling.pariona@synlab.pe"
-    ]
   }
 ];
+
+    
