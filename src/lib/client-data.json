@@ -1,3 +1,4 @@
+
 {
   "clients": [
     {
@@ -217,11 +218,6 @@
     },
     {
       "code": "16704",
-      "name": "Sanchez Rossell Jose Alberto",
-      "emails": ["laboratorio@buenaventurasalud.com", "christian.atoccza@synlab.pe"]
-    },
-    {
-      "code": "16705",
       "name": "Sanchez Rossell Jose Alberto",
       "emails": ["laboratorio@buenaventurasalud.com", "christian.atoccza@synlab.pe"]
     },
@@ -1009,6 +1005,11 @@
       "code": "13381",
       "name": "Luz Del Sur S.A.A.",
       "emails": ["servsalud@luzdelsur.com.pe", "otorrebl@luzdelsur.com.pe"]
+    },
+    {
+      "code": "7310",
+      "name": "Prueba",
+      "emails": ["prueba@test.com", "christian.atoccza@synlab.pe"]
     }
   ]
 }
