@@ -34,13 +34,9 @@ export type GenerateEmailOutput = z.infer<
   typeof GenerateEmailOutputSchema
 >;
 
-// This function now finds the entire client object.
 async function findClient(clientCode: string): Promise<Client | undefined> {
   try {
-    // FIX: Convert both client.code and clientCode to strings for a reliable comparison.
-    const client = clientData.clients.find(
-      (c: Client) => String(c.code) === String(clientCode)
-    );
+    const client = (clientData.clients as Client[]).find(c => String(c.code).trim() === clientCode.trim());
     return client;
   } catch (error) {
     console.error(`Error finding client for code ${clientCode}.`, error);
