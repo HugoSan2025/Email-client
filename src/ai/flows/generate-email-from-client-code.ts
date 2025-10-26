@@ -37,6 +37,7 @@ export type GenerateEmailOutput = z.infer<
 // This function now finds the entire client object.
 async function findClient(clientCode: string): Promise<Client | undefined> {
   try {
+    // FIX: Convert client.code to a string for a reliable comparison.
     const client = clientData.clients.find(
       (c: Client) => String(c.code) === String(clientCode)
     );
@@ -105,5 +106,3 @@ const generateEmailFlow = ai.defineFlow(
     };
   }
 );
-
-    
