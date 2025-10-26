@@ -297,6 +297,11 @@
       "emails": ["geticalab@gmail.com", "christian.atoccza@synlab.pe"]
     },
     {
+      "code": "1457",
+      "name": "Cliente Ficticio 1457",
+      "emails": ["cliente1457@example.com", "christian.atoccza@synlab.pe"]
+    },
+    {
       "code": "14852",
       "name": "Landa Castillo Juan Josel",
       "emails": ["deteccion.temprana.0@gmail.com", "christian.atoccza@synlab.pe"]
