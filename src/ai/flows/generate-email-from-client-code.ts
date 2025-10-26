@@ -13,9 +13,8 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 import clientData from '@/lib/client-data.json';
 
-// CRITICAL FIX: The interface must match the actual data structure being processed.
 interface Client {
-  code: string;
+  code: string | number;
   name: string;
   emails: string[];
 }
@@ -36,7 +35,6 @@ export type GenerateEmailOutput = z.infer<
   typeof GenerateEmailOutputSchema
 >;
 
-// CRITICAL FIX: The find function now correctly compares strings.
 async function findClient(clientCode: string): Promise<Client | undefined> {
   const client = (clientData.clients as Client[]).find(
     c => c.code.toString() === clientCode.toString()
