@@ -2,8 +2,9 @@
 "use client";
 
 import { useState, useEffect, useRef, useTransition } from 'react';
-import { getEmailData, enhanceEmail } from '@/app/actions';
+import { enhanceEmail } from '@/app/actions';
 import { useToast } from "@/hooks/use-toast";
+import { clients } from '@/lib/client-data';
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -19,6 +20,13 @@ declare global {
     webkitSpeechRecognition: any;
   }
 }
+
+interface Client {
+  code: string;
+  name: string;
+  emails: string[];
+}
+
 
 export default function EmailForm() {
   const [clientCode, setClientCode] = useState('');
@@ -90,22 +98,35 @@ export default function EmailForm() {
     });
   };
 
+  const findClient = (code: string): Client | undefined => {
+    return clients.find(c => c.code.trim() === code.trim());
+  };
+
   const handleSearch = (code: string) => {
-    const codeToSearch = code.trim();
-    setSearchedCode(codeToSearch);
+    startTransition(() => {
+      const codeToSearch = code.trim();
+      setSearchedCode(codeToSearch);
 
-    if (!codeToSearch) {
-      setRecipients([]);
-      setSubject('');
-      setBody('');
-      return;
-    }
+      if (!codeToSearch) {
+        setRecipients([]);
+        setSubject('');
+        setBody('');
+        return;
+      }
 
-    startTransition(async () => {
-      const result = await getEmailData(codeToSearch);
-      setRecipients(result.recipientEmails);
-      setSubject(result.subject);
-      setBody(result.body);
+      const client = findClient(codeToSearch);
+
+      if (client) {
+        setRecipients(client.emails);
+        const newSubject = `Comunicación con ${client.name}`;
+        const newBody = `Estimado equipo de ${client.name},\n\nNos ponemos en contacto con ustedes para...`;
+        setSubject(newSubject);
+        setBody(newBody);
+      } else {
+        setRecipients([]);
+        setSubject('');
+        setBody('');
+      }
     });
   };
 
@@ -161,12 +182,12 @@ export default function EmailForm() {
   };
 
   const generateMailto = () => {
-    if (!clientCode) {
-      handleMessage('Por favor, introduce un Código de Cliente.', "destructive", "Faltan datos");
+    if (!searchedCode) {
+      handleMessage('Por favor, introduce y busca un Código de Cliente.', "destructive", "Faltan datos");
       return;
     }
     if (recipients.length === 0) {
-      handleMessage(`No se encontraron correos para el código "${clientCode}".`, "destructive", "Cliente no encontrado");
+      handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
       return;
     }
   
