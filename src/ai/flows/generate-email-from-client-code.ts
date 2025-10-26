@@ -37,7 +37,8 @@ export type GenerateEmailOutput = z.infer<
 // This function now finds the entire client object.
 async function findClient(clientCode: string): Promise<Client | undefined> {
   try {
-    const client = clientData.clients.find(
+    // FIX: The imported JSON is an array of clients, not an object with a 'clients' key.
+    const client = clientData.find(
       (c: Client) => String(c.code) === String(clientCode)
     );
     return client;
