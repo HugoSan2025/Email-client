@@ -13,7 +13,7 @@ import {z} from 'genkit';
 import clientData from '@/lib/client-data.json'; // Import the JSON data directly
 
 interface Client {
-  code: string | number; // Allow code to be string or number
+  code: string; // code is always a string now
   name: string;
   emails: string[];
 }
