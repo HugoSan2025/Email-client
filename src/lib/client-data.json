@@ -1,82 +1,18 @@
 {
   "clients": [
     {
-      "code": "44444",
-      "name": "Innovaciones Tech S.A.",
-      "emails": [
-        "contacto@innovatech.com",
-        "soporte@innovatech.com",
-        "ventas@innovatech.com"
-      ]
-    },
-    {
-      "code": "33333",
-      "name": "Soluciones Globales Co.",
-      "emails": [
-        "info@solucionesglobales.com",
-        "admin@solucionesglobales.com"
-      ]
-    },
-    {
-      "code": "55555",
-      "name": "Constructora Futuro",
-      "emails": [
-        "proyectos@constructorafuturo.com",
-        "rrhh@constructorafuturo.com"
-      ]
-    },
-    {
-      "code": "66666",
-      "name": "Logística Express",
-      "emails": [
-        "operaciones@logisticaexpress.com",
-        "facturacion@logisticaexpress.com"
-      ]
-    },
-    {
-      "code": "77777",
-      "name": "Marketing Creativo Digital",
-      "emails": [
-        "hola@marketingcreativo.com"
-      ]
-    },
-    {
-      "code": "88888",
-      "name": "Asesores Financieros Pro",
-      "emails": [
-        "consultas@asesorespro.com",
-        "direccion@asesorespro.com"
-      ]
-    },
-    {
-      "code": "99999",
-      "name": "Servicios Médicos Bienestar",
-      "emails": [
-        "citas@bienestar.med",
-        "gestion@bienestar.med"
-      ]
-    },
-    {
-      "code": "11111",
-      "name": "Educación Avanzada Online",
-      "emails": [
-        "inscripciones@eduavanzada.com",
-        "soporte.alumnos@eduavanzada.com"
-      ]
-    },
-    {
-      "code": "22222",
-      "name": "Importaciones del Pacífico",
-      "emails": [
-        "compras@impacifico.com",
-        "ventas@impacifico.com"
-      ]
-    },
-    {
       "code": "7267",
-      "name": "Consultoría Ágil 7267",
+      "name": "Cliente de Prueba",
       "emails": [
-        "contacto@consultoria7267.com"
+        "prueba@ejemplo.com",
+        "soporte@ejemplo.com"
+      ]
+    },
+    {
+      "code": "12345",
+      "name": "Otro Cliente",
+      "emails": [
+        "otro@ejemplo.com"
       ]
     }
   ]
