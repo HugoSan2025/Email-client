@@ -71,6 +71,13 @@
         "compras@impacifico.com",
         "ventas@impacifico.com"
       ]
+    },
+    {
+      "code": "7267",
+      "name": "Consultoría Ágil 7267",
+      "emails": [
+        "contacto@consultoria7267.com"
+      ]
     }
   ]
 }
