@@ -24,6 +24,7 @@ export default function EmailForm() {
   const [recipients, setRecipients] = useState<string[]>([]);
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
+  const [searchedCode, setSearchedCode] = useState('');
   
   const [isDictating, setIsDictating] = useState(false);
   const [dictationStatus, setDictationStatus] = useState('');
@@ -90,6 +91,7 @@ export default function EmailForm() {
 
   const handleSearch = useCallback(() => {
     startTransition(async () => {
+      setSearchedCode(clientCode);
       if (!clientCode) {
         setRecipients([]);
         setSubject('');
@@ -119,6 +121,7 @@ export default function EmailForm() {
     setRecipients([]);
     setSubject('');
     setBody('');
+    setSearchedCode('');
   };
 
   const toggleDictation = () => {
@@ -253,8 +256,8 @@ export default function EmailForm() {
           <CardContent className="p-2">
             <div className="space-y-4">
               <div id="recipient-display" className={`p-3 rounded-lg text-sm border shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 ${recipients.length > 0 ? 'bg-green-100 text-green-900 border-green-200' : 'bg-yellow-100 text-yellow-900 border-yellow-200'}`}>
-                {clientCode && !isPending && recipients.length === 0 ? (
-                    <p>Destinatarios: Código "{clientCode.toUpperCase()}" no encontrado.</p>
+                {searchedCode && !isPending && recipients.length === 0 ? (
+                  <p>Destinatarios: Código "{searchedCode.toUpperCase()}" no encontrado.</p>
                 ) : recipients.length > 0 ? (
                   <>
                     <p><span className="font-bold text-gray-700">TO:</span> {toEmail}</p>
