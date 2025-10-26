@@ -171,28 +171,28 @@ export default function EmailForm() {
     const ccEmailsString = recipients.slice(2).join(',');
   
     const baseUrl = "https://outlook.live.com/mail/deeplink/compose";
-    const params = new URLSearchParams();
     
+    // Manually build the query string to control encoding
+    let paramsArray: string[] = [];
+
     if (toEmailsString) {
-      params.set('to', toEmailsString);
+      paramsArray.push(`to=${encodeURIComponent(toEmailsString)}`);
     }
     if (ccEmailsString) {
-        params.set('cc', ccEmailsString);
+      paramsArray.push(`cc=${encodeURIComponent(ccEmailsString)}`);
     }
     if (subject) {
-        params.set('subject', subject);
+      // Manually encode to use %20 for spaces
+      const encodedSubject = encodeURIComponent(subject).replace(/%20/g, '+');
+      paramsArray.push(`subject=${encodedSubject.replace(/\+/g, '%20')}`);
     }
-    
-    let paramsString = params.toString();
-
     if (body) {
-      // Manually encode the body to use %20 for spaces instead of '+' from URLSearchParams
-      const bodyParam = new URLSearchParams({ body: body }).toString();
-      // Replace the default '+' encoding for spaces with %20, which Outlook Web handles correctly.
-      const outlookFriendlyBody = bodyParam.replace(/\+/g, '%20');
-      paramsString += `&${outlookFriendlyBody}`;
+      // Manually encode to use %20 for spaces
+      const encodedBody = encodeURIComponent(body).replace(/%20/g, '+');
+      paramsArray.push(`body=${encodedBody.replace(/\+/g, '%20')}`);
     }
     
+    const paramsString = paramsArray.join('&');
     const outlookUrl = `${baseUrl}?${paramsString}`;
   
     window.open(outlookUrl, '_blank', 'noopener,noreferrer');
