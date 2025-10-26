@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect, useRef, useCallback, useTransition } from 'react';
@@ -166,17 +167,17 @@ export default function EmailForm() {
       return;
     }
   
-    const toEmails = recipients.slice(0, 2).join(',');
-    const ccEmails = recipients.slice(2).join(',');
+    const toEmailsString = recipients.slice(0, 2).join(',');
+    const ccEmailsString = recipients.slice(2).join(',');
   
     const baseUrl = "https://outlook.live.com/mail/deeplink/compose";
     const params = new URLSearchParams();
     
-    if (toEmails) {
-      params.set('to', toEmails);
+    if (toEmailsString) {
+      params.set('to', toEmailsString);
     }
-    if (ccEmails) {
-        params.set('cc', ccEmails);
+    if (ccEmailsString) {
+        params.set('cc', ccEmailsString);
     }
     if (subject) {
         params.set('subject', subject);
