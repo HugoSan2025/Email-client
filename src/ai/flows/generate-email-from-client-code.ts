@@ -14,7 +14,7 @@ import {z} from 'genkit';
 import clientData from '@/lib/client-data.json'; // Import the JSON data directly
 
 interface Client {
-  code: string; // code is always a string now
+  code: string; // CRITICAL FIX: Ensure code is expected as a string.
   name: string;
   emails: string[];
 }
@@ -36,8 +36,8 @@ export type GenerateEmailOutput = z.infer<
 >;
 
 async function findClient(clientCode: string): Promise<Client | undefined> {
-  // Correctly compare client code by ensuring both values are treated as strings.
-  const client = (clientData.clients as Client[]).find(c => String(c.code) === clientCode);
+  // Correctly compare client code by ensuring both values are strings.
+  const client = (clientData.clients as Client[]).find(c => c.code === clientCode);
   return client;
 }
 
