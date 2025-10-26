@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState, useEffect, useRef, useCallback, useTransition } from 'react';
+import { useState, useEffect, useRef, useTransition } from 'react';
 import { getEmailData, enhanceEmail } from '@/app/actions';
 import { useToast } from "@/hooks/use-toast";
 
@@ -90,21 +90,24 @@ export default function EmailForm() {
     });
   };
 
-  const handleSearch = useCallback(() => {
-    setSearchedCode(clientCode);
-    if (!clientCode) {
+  const handleSearch = (code: string) => {
+    const codeToSearch = code.trim();
+    setSearchedCode(codeToSearch);
+
+    if (!codeToSearch) {
       setRecipients([]);
       setSubject('');
       setBody('');
       return;
     }
+
     startTransition(async () => {
-      const result = await getEmailData(clientCode);
+      const result = await getEmailData(codeToSearch);
       setRecipients(result.recipientEmails);
       setSubject(result.subject);
       setBody(result.body);
     });
-  }, [clientCode]);
+  };
 
 
   const handleClientCodeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -113,7 +116,7 @@ export default function EmailForm() {
   
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
-      handleSearch();
+      handleSearch(clientCode);
     }
   };
 
@@ -243,7 +246,7 @@ export default function EmailForm() {
                   </Button>
                 )}
                  <Button 
-                  onClick={handleSearch} 
+                  onClick={() => handleSearch(clientCode)} 
                   disabled={isPending}
                   className="px-4 py-2 h-auto text-sm font-bold rounded-xl shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-primary hover:bg-accent"
                 >
