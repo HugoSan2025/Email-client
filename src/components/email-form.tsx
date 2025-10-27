@@ -68,7 +68,7 @@ export default function EmailForm() {
         console.error('Error de reconocimiento de voz:', event.error);
         let errorMsg = `Error en el dictado: ${event.error}.`;
         if (event.error === 'not-allowed') {
-          errorMsg = 'Acceso al micrófono denegado.';
+          errorMsg = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
           handleMessage(errorMsg, "destructive", "Error de Permiso");
         } else if (event.error === 'no-speech') {
             errorMsg = 'No se detectó voz. Inténtalo de nuevo.';
@@ -93,7 +93,7 @@ export default function EmailForm() {
             description: "Dictado por voz no es soportado en este navegador.",
         })
     }
-  }, [toast]);
+  }, [toast, dictationStatus]);
 
   const handleMessage = (description: string, variant: "default" | "destructive" = "default", title?: string) => {
     toast({
@@ -172,15 +172,16 @@ export default function EmailForm() {
         } catch (error) {
             console.error('No se pudo iniciar el dictado:', error);
             let errorMessage = 'No se pudo iniciar el dictado. Inténtalo de nuevo.';
-            // Catch specific errors if possible, though the 'onerror' event is more reliable.
             if (error instanceof Error && (error.name === 'NotAllowedError' || error.message.includes('permission'))) {
                 errorMessage = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
             } else if (error instanceof Error && error.name === 'InvalidStateError') {
-                 errorMessage = 'El dictado ya está activo. Deténlo antes de iniciar de nuevo.';
+                 // This can happen if start() is called while it's already running.
+                 // The 'isDictating' state should prevent this, but as a fallback:
+                 errorMessage = 'El dictado ya está activo.';
             }
             setDictationStatus(errorMessage);
             handleMessage(errorMessage, "destructive", "Error de dictado");
-            setIsDictating(false); // Ensure we are not in a dictating state
+            setIsDictating(false);
         }
     }
   };
@@ -228,7 +229,6 @@ export default function EmailForm() {
         params.append('body', body);
     }
 
-    // Outlook Web no maneja bien '+' para los espacios, así que lo reemplazamos por %20
     const queryString = params.toString().replace(/\+/g, '%20');
     const url = `${baseUrl}?${queryString}`;
     
@@ -363,7 +363,7 @@ export default function EmailForm() {
                     disabled={!recognitionAvailable}
                     className={`p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12
                       ${isDictating ? 'bg-red-500 hover:bg-red-600 animate-pulse' : 'bg-blue-500 hover:bg-blue-600'}
-                      disabled:bg-blue-300 disabled:cursor-not-allowed`}
+                      disabled:bg-gray-400 disabled:cursor-not-allowed`}
                     title={isDictating ? "Detener Dictado" : "Iniciar Dictado por Voz"}
                   >
                     <Mic className="h-6 w-6" />
