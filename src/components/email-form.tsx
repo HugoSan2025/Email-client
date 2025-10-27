@@ -188,7 +188,8 @@ export default function EmailForm() {
     const toEmails = recipients.slice(0, 2);
     const ccEmails = recipients.slice(2);
     
-    let mailtoLink = `https://outlook.live.com/mail/0/deeplink/compose?to=${toEmails.join(',')}`;
+    // Use outlook.office.com for corporate M365 accounts
+    let mailtoLink = `https://outlook.office.com/mail/deeplink/compose?to=${toEmails.join(',')}`;
 
     const params = new URLSearchParams();
     if(ccEmails.length > 0) {
@@ -203,6 +204,7 @@ export default function EmailForm() {
         mailtoLink += `&${paramString}`;
     }
 
+    // This parameter is not standard for outlook.office.com but doesn't hurt
     if(ccEmails.length > 0) {
         mailtoLink += '&showcc=1';
     }
