@@ -9,7 +9,8 @@
     "build": "NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "convert-client-data": "node -e \"const fs = require('fs'); const path = require('path'); const data = fs.readFileSync(path.join('src', 'temp-data.txt'), 'utf8'); const lines = data.split(/\\r?\\n/); const clients = []; for (const line of lines) { if (!line.trim()) continue; const parts = line.split('\\t'); const [code, name, ...emails] = parts; if (code && name) { const validEmails = emails.map(e => e.trim()).filter(e => e && e.includes('@')); if (validEmails.length > 0) { clients.push({ code: String(code).trim(), name: name.trim().replace(/\\\"/g, '\\\\\"'), emails: validEmails }); } } } const tsContent = 'export const clients = ' + JSON.stringify(clients, null, 2) + ';'; fs.writeFileSync(path.join('src', 'lib', 'client-data.ts'), tsContent); console.log('Conversion complete! src/lib/client-data.ts has been generated.');\""
   },
   "dependencies": {
     "@genkit-ai/google-genai": "^1.20.0",

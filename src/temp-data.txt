@@ -1,0 +1,1244 @@
+code	name	correo 1	correo 2	correo 3	correo 4
+2083	Clinica Medica San Martin E.I.R.L.	clinicasanmartin598@gmail.com	christian.atoccza@synlab.pe		
+16447	Policlinico Viralab Chincha S.A.C.	Viralab_medic@hotmail.com	christian.atoccza@synlab.pe		
+2475	Ecobio-Mediclab S.A.C.	ecobiomediclab@gmail.com	christian.atoccza@synlab.pe		
+4480	Suarez Espino Martha	moon_light_762@hotmail.com	christian.atoccza@synlab.pe		
+11273	Servicio De Laboratorio Clinico Especializado Servilab S.A.C	informes@servilabperú.com	christian.atoccza@synlab.pe		
+11564	Levano Campos Maximo Alfredo	consultorio_sanmartindeporres_1315@hotmail.com	christian.atoccza@synlab.pe		
+11833	Clinica Tu Salud S.A.	clinicatusalud.lab@gmail.com	christian.atoccza@synlab.pe		
+13034	Centro Medico Renal Villasol S.A.C	jose.millones@neframedicalcare.com	christian.atoccza@synlab.pe		
+14593	Advance Diagnostic Sac	clinicalvirtualab@gmail.com	christian.atoccza@synlab.pe		
+14905	Servicios Medicos F & N S.A.C.	erikm_0705@hotmail.com	christian.atoccza@synlab.pe		
+15364	Villar Ticlavilca Aldo Joel	rumecrisdcr@gmail.com	christian.atoccza@synlab.pe		
+15794	Diagnosticsalud E.I.R.L.	resultadosds@gmail.com	christian.atoccza@synlab.pe		
+15813	Medic Center Villa E.I.R.L.	resultados@medicentervilla.com	christian.atoccza@synlab.pe		
+15992	Clinica El Salvador Del Sur S.A.C.	xesuar@gmail.com	christian.atoccza@synlab.pe		
+16063	Caballero Alva Liz Geraldine	chaparrita030892@gmail.com	christian.atoccza@synlab.pe		
+16341	Clinica Estarbien S.A.C.	estarbien@synlab.pe	christian.atoccza@synlab.pe		
+16415	Elam Salud S.A.C.	aponcebmc@hotmail.com	christian.atoccza@synlab.pe		
+16418	Medical Center Del Peru S.A.C.	Katia_1872@hotmail.com	christian.atoccza@synlab.pe		
+16430	Zanabria Cardenas Elizabeth Magdalena	e99936248@gmail.com	christian.atoccza@synlab.pe		
+16451	Consultorio Medico Familiar 1° De Mayo D & S S.A.C.S.	vacundaici@yahoo.es	christian.atoccza@synlab.pe		
+16520	Servicios De Salud Horeb S.A.C.	DAVE_JC@HOTMAIL.COM	christian.atoccza@synlab.pe		
+16545	Clinica El Salvador Del Sur S.A.C.	xesuar@gmail.com	christian.atoccza@synlab.pe		
+4489	Palacios Rojas Evelyn Raquel	laboratoriobiolabmc@gmail.com	christian.atoccza@synlab.pe		
+16600	Corporacion Barizal Sociedad Anonima Cerrada - Corpobarizals	Policlinicobarizal97@gmail.com	christian.atoccza@synlab.pe		
+16611	Graos Valdivia Jesus Antonio	jgconsultoriomedico@gmail.com	christian.atoccza@synlab.pe		
+16658	Arribas Harten Cristina	cristina@cristinaarribas.com	christian.atoccza@synlab.pe		
+7267	Sermed Servicios Integrales En Medicina Especializada S.A.C.	ronytalledo@sermed.com.pe	christian.atoccza@synlab.pe		
+16677	Vasquez Medina Mirtha Jimena	Drajimenavasquez@gmail.com	christian.atoccza@synlab.pe		
+2000	Help Med S.A.C.	maryarcelles@hotmail.com	christian.atoccza@synlab.pe		
+16270	Ruiz Yarleque Patricia	diagnostikalab20@gmail.com	christian.atoccza@synlab.pe		
+1217	Brycer Laboratorios S.R.Ltda.	Brycerlaboratorios@gmail.com	christian.atoccza@synlab.pe		
+1487	Boston Centro De Diagnostico Sociedad Anonima Cerrada - Bcd Sac	bcd_imag@hotmail.com	christian.atoccza@synlab.pe		
+11306	Hormone Lab S.A.C.	hormonelabsac@gmail.com	christian.atoccza@synlab.pe		
+15599	Corporacion Viermafe S.A.C.	enfermerasatodahora@gmail.com	christian.atoccza@synlab.pe		
+15949	Sanchez Perez Jorge Andres	labveselperu@gmail.com	christian.atoccza@synlab.pe		
+16023	Inbiomedic S.A.C.	laboratorio.predice@inbiomedic.com	christian.atoccza@synlab.pe		
+12519	Asociacion De Los Testigos De Jehova	fannyalfaro143@gmail.com	christian.atoccza@synlab.pe		
+16696	Cread Salud E.I.R.L.	Evelynpalacios111@gmail.com	christian.atoccza@synlab.pe		
+16698	V & G Laboratorios E.I.R.L.	gisselab241057@gmil.com	christian.atoccza@synlab.pe		
+12411	Clinica Los Angeles & Asociados S.A.C.	liliabenaventecordova@gmail.com	christian.atoccza@synlab.pe		
+16700	Medical Huascar S.A.C.S.	huascarlab@gmail.com	christian.atoccza@synlab.pe		
+2076	Policlinico Madre Del Amor Hermoso S.A.	eduardo0466@yahoo.es	christian.atoccza@synlab.pe		
+15059	Centro Medico Medi Vida E.I.R.L.	jsiguas1312@gmail.com	christian.atoccza@synlab.pe		
+16704	Sanchez Rossell Jose Alberto	laboratorio@buenaventurasalud.com	christian.atoccza@synlab.pe		
+16705	Sanchez Rossell Jose Alberto	laboratorio@buenaventurasalud.com	christian.atoccza@synlab.pe		
+16756	CDC Diagnostica Empresa Individual De Responsabilidad Limita	willybj51@hotmail.com	christian.atoccza@synlab.pe		
+2443	Centro Medico Galenos Empresa Individual De Responsabilidad Limitada	CMGALENOS_LAB@hotmail.com	christian.atoccza@synlab.pe		
+16789	VLC Servicios Medicos S.A.C.	cvegaleon@gmail.com	christian.atoccza@synlab.pe		
+16829	Hospital De La Mujer E.I.R.L.	hospitaldelamujer24@gmail.com	christian.atoccza@synlab.pe		
+4448	Laboratorio Clinico & Distribuidora San Diego E.I.R.L.	lab_sandiego@hotmail.com	christian.atoccza@synlab.pe		
+16915	SJT Imagenes Medicas Y Laboratorio S.A.C.	Ivett_aas@hotmail.com	christian.atoccza@synlab.pe		
+16923	Clinica Corazon De Jesus Sac.	clinicacorazondejesus@gmail.com	christian.atoccza@synlab.pe		
+16960	Servicios Medicos Prexa Salud S.A.C.	serviciosmedicosprexasalud@gmail.com	christian.atoccza@synlab.pe		
+16966	Carrion Sanchez Joseling Gizet	christian.atoccza@synlab.pe	christian.atoccza@synlab.pe		
+12553	Instituto Neuro Cardiovascular De Las Americas Sociedad Anonima Cerrada	laboratorio@inca.org.pe	christian.atoccza@synlab.pe		
+1987	Clinica San Vicente Sa	jacky_140672@outlook.com	christian.atoccza@synlab.pe		
+4477	Vidalab E.I.R.L	vidalabcorreo@gmail.com	christian.atoccza@synlab.pe		
+11827	Morales & Suxe Asociados S.A.C.	yosmelsc@gmail.com	christian.atoccza@synlab.pe		
+13607	Cardenas Perea Alexis Francisco	AFCP.CARDENAS@GMAIL.COM	christian.atoccza@synlab.pe		
+13969	Medicina De Laboratorio Geticalab S.A.C.	geticalab@gmail.com	christian.atoccza@synlab.pe		
+14852	Landa Castillo Juan Josel	deteccion.temprana.0@gmail.com	christian.atoccza@synlab.pe		
+15279	D' Angeles S.R.L.	laboratorio.d.angeles@gmail.com	resultadosdangeles@gmail.com	christian.atoccza@synlab.pe	
+15754	D & E Lab S.A.C.	marlenymontes084@gmail.com	christian.atoccza@synlab.pe		
+15853	Defyslab Medical Sac	defyslab@gmail.com	christian.atoccza@synlab.pe		
+15931	Laboratorios Mendozalab E.I.R.L.	job_m20@hotmail.com	christian.atoccza@synlab.pe		
+16019	Red Preventiva Peru E.I.R.L.	preventivaperusac@gmail.com	christian.atoccza@synlab.pe		
+16041	Yangua Calle Patricia	labmacromedic@outlook.es	christian.atoccza@synlab.pe		
+16184	Vissalab Empresa Individual De Responsabilidad Limitada	winivs2007@hotmail.com	christian.atoccza@synlab.pe		
+16195	Campos Tafur Jenny Magaly	Jcampos_7510@hotmail.com	christian.atoccza@synlab.pe		
+16214	Corporacion Hnos. Moreno S.A.C.	solismorenotito@gmail.com	christian.atoccza@synlab.pe		
+16276	Centro Especializado Ketlab S.A.C.	laboratoriobioanalizate@gmail.com	christian.atoccza@synlab.pe		
+16350	Pastrana Colquichagua Isabel Jessica	Pascolab20@gmail.com	christian.atoccza@synlab.pe		
+16399	Huerta Bravo Omar Felix Jose	Sinceromar@hotmail.com	christian.atoccza@synlab.pe		
+16458	Apac Echevarria Patricia Aracely	innova.ginecolab21@gmail.com	christian.atoccza@synlab.pe		
+16462	Siluruma S.A.C.	laboratoriosdarobia@gmail.com	christian.atoccza@synlab.pe		
+15772	Homeslab-Analisis Clinicos A Domicilio E.I.R.L.	homeslaboratorios@gmail.com	christian.atoccza@synlab.pe		
+15639	Pafe Medigrup E.I.R.L.	PAFE.MEDIGRUP@GMAIL.COM	christian.atoccza@synlab.pe		
+11396	Thexmedic Bhiox Peruana Sac	jose.roca@laboratoriorolab.pe	christian.atoccza@synlab.pe		
+13011	Gutierrez Flores Martin Cesar	marguflo@hotmail.com	christian.atoccza@synlab.pe		
+16549	Servicios Medicos El Trebol Sociedad Anonima Cerrada	LABORATORIO@CENTROMEDICOELTREBOL.COM	christian.atoccza@synlab.pe		
+16550	Valencia Mallma Edith Obdulia	Eo_valencia_m@yahoo.com	christian.atoccza@synlab.pe		
+16553	Tello Apaza Noemi	ghl.lab.peru@gmail.com	christian.atoccza@synlab.pe		
+16564	Corporacion Nor Salud S.A.C.	serviciosmedicosnorsalud@gmail.com	christian.atoccza@synlab.pe		
+13595	Aguirre Dueñas Jonathan Smit	jonasaguirredane@gmail.com	christian.atoccza@synlab.pe		
+16591	Bocanegra Sotomayor Vicky Monica	vickymonicabocanegrasotomayor@gmail.com	christian.atoccza@synlab.pe		
+15254	Solf Lab Patologia Oncologica E.I.R.L.	anny.fiorella.2023@gmail.com	christian.atoccza@synlab.pe		
+16395	Servicios Medicos Lima Norte E.I.R.L.	serviciosmedicoslimanorte@gmail.com	christian.atoccza@synlab.pe		
+14005	Grupo Diagnostico Genblut S.A.C.	servicios@genblutperu.com	christian.atoccza@synlab.pe		
+16590	Fem Care Salud De La Mujer S.R.L.	recepcionfemcare@gmail.com	christian.atoccza@synlab.pe		
+16653	Llacza Briceno Manuel Fernando	kmlaboratorioclinico@outlook.es	christian.atoccza@synlab.pe		
+16527	Lopez Lopez Richar	milagrosbazalardelaguila@gmail.com	christian.atoccza@synlab.pe		
+15740	B & G Labs S.A.C	byglabs@gmail.com	christian.atoccza@synlab.pe		
+15461	Huamancaja Pérez Rosana Del Socorro	huamancajarosana@gmail.com	christian.atoccza@synlab.pe		
+16130	Servicios De Diagnostico Clinico S.A.C.	SEDICLIN23@GMAIL.COM	christian.atoccza@synlab.pe		
+16743	Clinica San Sebastian Peru S.A.C.	Sansebastian.traumatologia@gmail.com	christian.atoccza@synlab.pe		
+16769	Verona Velasquez Julia Esperanza	Jveve5rubi@gmail.com	christian.atoccza@synlab.pe		
+16808	Da & Ce Medic S.A.C.	syslab.metrouni@gmail.com	christian.atoccza@synlab.pe		
+16810	Da & Ce Medic S.A.C.	syslab.metrouni@gmail.com	christian.atoccza@synlab.pe		
+13454	Centro Especializado De Salud Madre Y Niño S.A.C.	hola.cesmyn@gmail.com	christian.atoccza@synlab.pe		
+16922	Laboratorio Progenie E.I.R.L.	s.castello@laboratorioprogenie.com	christian.atoccza@synlab.pe		
+16968	Mañuico Rosales Mirella Esther	rosalesmanuico77@gmail.com	christian.atoccza@synlab.pe		
+13004	Servicios Profesionales De Enfermeria Sociedad Anonima Cerrada	analisis.clinicos@grupobestservice.com	christian.atoccza@synlab.pe		
+13435	Genes Peru Lab Sociedad Anonima Cerrada	christian.atoccza@synlab.pe	christian.atoccza@synlab.pe		
+15824	Focus Safety And Environmental Solutions E.I.R.L	axel.ortiz@focus.pe	christian.atoccza@synlab.pe		
+16057	Integral Medic Lb E.I.R.L.	luzmariabardalesruiz@gmail.com	christian.atoccza@synlab.pe		
+1717	Grupo Sapiens Medica E.I.R.L.	tmedicos2021@gmail.com	christian.atoccza@synlab.pe		
+1932	Laboratorio Clinico Diagnolab Empresa Individual De Responsabilidad Limitada - Diagnolab E.I.R.L.	christian.atoccza@synlab.pe	christian.atoccza@synlab.pe		
+2074	Montoya Mori Milagros Susana	juanmo_1@hotmail.com	christian.atoccza@synlab.pe		
+2079	Labsa Diagnostic Sociedad Comercial De Responsabilidad Limitada	labsa_diagnostic@hotmail.com	christian.atoccza@synlab.pe		
+2379	Proyectos Mantenimientos Quimicos Reactivos Y Servicios Afines E.I.R.L.	laboratorio-calidad@promaquirsa.com	christian.atoccza@synlab.pe		
+12026	KS Servicios Medicos E.I.R.L.	labsure1@gmail.com	liliana.mendez@synlab.pe		
+12488	Novus Laboratorio E.I.R.L.	novuslaboratorio@gmail.com	christian.atoccza@synlab.pe		
+13618	Grupo Medico Ama E.I.R.L.	administracion@amaclinica.com	christian.atoccza@synlab.pe		
+13940	Huayanay Campos Maria Isabel	isabel23_4@yahoo.es	christian.atoccza@synlab.pe		
+14045	El Olivar Servicios Medicos Especializados E.I.R.L.	Jane.andia1290@gmail.com	christian.atoccza@synlab.pe		
+14429	Integral Medical Care S.A.C.	ANDREA.LOBATON15@GMAIL.COM	christian.atoccza@synlab.pe		
+14806	Centro Medico Endoscopico Gastromedic S.A.C.	agastromedic@gmail.com	christian.atoccza@synlab.pe		
+15213	Medcor S.A.C.	c.ponce@medcor.pe	christian.atoccza@synlab.pe		
+15535	C-Medic E.I.R.L.	CMEDIC2022@GMAIL.COM	christian.atoccza@synlab.pe		
+15827	Preventiva Peru S.A.C.	preventivaprogramaciones@gmail.com	christian.atoccza@synlab.pe		
+16109	Sapiens Lab S.A.C.	PEDROSUAZO@SAPIENSLAB.COM.PE	christian.atoccza@synlab.pe		
+16339	Centro De Diagnosticos Loayza S.A.C.	cindyparion@gmail.com	christian.atoccza@synlab.pe		
+16353	Labotec Salud S.A.C.	labotecsalud@gmail.com	christian.atoccza@synlab.pe		
+16446	Inversiones & Negocios Orbegoso S.A.C.	Monicacn2023@hotmail.com	christian.atoccza@synlab.pe		
+16473	Grupo Xiomed S.A.C.	grupoxiomed@gmail.com	christian.atoccza@synlab.pe		
+14466	Cedimax Salud S.A.C.	cedimaxsalud@gmail.com	christian.atoccza@synlab.pe		
+16514	Klufast Lab S.A.C.	administracion@klufastcorp.com	christian.atoccza@synlab.pe		
+11837	Cardiomedic S A	mjasaui@cardiomedic.com.pe	christian.atoccza@synlab.pe		
+16562	Administradora Clinica Ricardo Palma S.A.	achauran@crp.com.pe	christian.atoccza@synlab.pe		
+14047	Panduro Noriega Jaber	labsanantonio05@gmail.com	christian.atoccza@synlab.pe		
+16597	Instituto Peruano De La Vision S.A.C.	RSILVA@CPV.COM.PE	christian.atoccza@synlab.pe		
+16690	Quispe Arotoma Noemi	NOEMIQAROTOMA@GMAIL.COM	christian.atoccza@synlab.pe		
+16699	Ortho Fisio Trauma S.A.C.	ceosaludorthofisio@gmail.com	christian.atoccza@synlab.pe		
+16369	Adn Paternidad S.R.L. - Adn Pat	adnpaternidadperu@gmail.com	christian.atoccza@synlab.pe		
+16726	A & M Oncolgogia Cyc S.A.C.	dr.apestegui.intervenciones@gmail.com	christian.atoccza@synlab.pe		
+16734	Medical Assistem S.A.C.	laboratorio@arthrosalud.pe	christian.atoccza@synlab.pe		
+16765	Vecar Servicios Radiologicos S.A.C	vecarserviciosradiologicossac@gmail.com	christian.atoccza@synlab.pe		
+16804	Gemk Medicina Integral Y Laboratorio Especializado S.A.C. - 	compras.gemkmilab@gmail.com	christian.atoccza@synlab.pe		
+14738	RIJ Chary Salud Sociedad Anonima Cerrada	ventas.rijcharysalud@gmail.com	christian.atoccza@synlab.pe		
+16828	Gastrovitalita Medic S.A.C.	compras.gemkmilab@gmail.com	christian.atoccza@synlab.pe		
+16837	Labchuan E.I.R.L.	juanaventurogago48@hotmail.com	liliana.mendez@synlab.pe		
+16899	Servicio De Apoyo Al Diagnostico Terapeutico Sociedad Anomina Cerrada - Sadt S.A.C.	resultadossadt@gmail.com	christian.atoccza@synlab.pe		
+4493	Centro De Diagnostico Integral Médicos Y Laboratorios Eirl	cdmedilab@hotmail.es	christian.atoccza@synlab.pe		
+11653	Brumlab E.I.R.L.	laboratoriobrumlab@gmail.com	christian.atoccza@synlab.pe		
+12683	Servicios Medicos Doctor Apaza S.A.C.	clinicasaludlima@gmail.com	christian.atoccza@synlab.pe		
+12786	De La Cruz Carrasco Augusto Rodolfo	vguadalupe2018@gmail.com	christian.atoccza@synlab.pe		
+12790	Medical Tai S.R.L.	laboratorio@medicaltai.com	christian.atoccza@synlab.pe		
+12819	Cirtramef S.A.C.	labfloratristan@gmail.com	christian.atoccza@synlab.pe		
+12829	Clinica Tu Salud Del Peru S.A.	lesliecarhuaz@gmail.com	christian.atoccza@synlab.pe		
+13891	Rejuvenecimiento Y Estetica Cabani Sociedad Comercial De Responsabilidad Limitada - R.E.C. S.R.L.	laboratorio@cabani.pe	christian.atoccza@synlab.pe		
+13893	Salma Medycal E.I.R.L.	rrm0204@hotmail.com	christian.atoccza@synlab.pe		
+14007	Laboratorio Clinico Divino Niño De Jesus E.I.R.L.	pilarlab_divnijes@hotmail.com	christian.atoccza@synlab.pe		
+14805	Hernandez Carrera Mari Elena	mari.hernandez.ca@gmail.com	christian.atoccza@synlab.pe		
+14904	Laboratorios Clinicos Eirl	KETTYGALVAN@HOTMAIL.COM	christian.atoccza@synlab.pe		
+14983	Centro De Apoyo Diagnostico Virgen De La Puerta S.A.C.	egarciallanos@gmail.com	christian.atoccza@synlab.pe		
+15703	Labtecnomedica E.I.R.L.	labcheckperu@gmail.com	christian.atoccza@synlab.pe		
+16075	R & A Medic Instruments S.A.C.	riveraarteta@gmail.com	christian.atoccza@synlab.pe		
+16136	Laboratorio Clinico Peru Labs E.I.R.L.	JORVAS89@GMAIL.COM	christian.atoccza@synlab.pe		
+16193	Santa Catalina Centro De Especialidades Medicas Y Medicina Ocupacional Sac	recepcion@santacatalinacem.com	christian.atoccza@synlab.pe		
+16351	Carrizales Garcia Ana Maria	gamfer.laboratorio@gmail.com	christian.atoccza@synlab.pe		
+16426	Salazar Hurtado Said Antony	chiquidulce10@gmail.com	christian.atoccza@synlab.pe		
+16478	Labtecnomedica E.I.R.L.	labcheckperu@gmail.com	christian.atoccza@synlab.pe		
+15731	Laboratorio Clinico Rochem Diagnostic Sociedad Anonima Cerrada	rochemdiagnostic.adm@gmail.com	christian.atoccza@synlab.pe		
+16229	Clinica Star Salud S.A.C.	adallancari@gmail.com	christian.atoccza@synlab.pe		
+16560	Anglas Meza Melissa Beatriz	manglasmeza@gmail.com	christian.atoccza@synlab.pe		
+16592	Policlinico Cayetano Peru S.R.L.	carmenrosadiazdiaz1993@gmail.com	christian.atoccza@synlab.pe		
+16058	Medicentro San Marcos E.I.R.L	Maxfredybl@gmail.com	christian.atoccza@synlab.pe		
+16603	Special Home Care S.A.C.	balfaro@cuidarte.pe	christian.atoccza@synlab.pe		
+15256	Clinica De Enfermedades Respiratorias Y Alergias Respira Vida S.A.C.-Clinica Respira Vida S.A.C.	respiravidalab@gmail.com	christian.atoccza@synlab.pe		
+15726	Guevara Vasquez Luis Daniel	luis_22_inspd@hotmail.com	christian.atoccza@synlab.pe		
+15256	Clinica De Enfermedades Respiratorias Y Alergias Respira Vida S.A.C.-Clinica Respira Vida S.A.C.	ronalds2@hotmail.com	christian.atoccza@synlab.pe		
+12847	Redlab Peru S.A.C.	perusi1176@gmail.com	christian.atoccza@synlab.pe		
+16887	Cauti - Boza Oftalmologos E.I.R.L.	armandocauti@hotmail.com	magdana.postigo@synlab.pe		
+16942	Corporacion Umallig S.A.C.	Consultorioselprogreso@gmail.com	christian.atoccza@synlab.pe		
+11567	Tecnomed Laboratorio Clinico E.I.R.L.	tecnomedlab@hotmail.com	christian.atoccza@synlab.pe		
+14081	Policlinico Jamns E.I.R.L.	aracelycalixtocalixto@gmail.com	christian.atoccza@synlab.pe		
+1223	Mont Group Sac	cmoreno@montgroup.com.pe	christian.atoccza@synlab.pe		
+11463	Diagnostica Medica E.I.R.L.	eangarcia61@hotmail.com	christian.atoccza@synlab.pe		
+14822	Coralab E.I.R.L.	resultados@coralab.pe	christian.atoccza@synlab.pe		
+15987	Cdc Diagnostica Empresa Individual De Responsabilidad Limita	willybj51@hotmail.com	christian.atoccza@synlab.pe		
+16169	Inversiones Medicas M & D S.A.C.	elena_1918@hotmail.com	christian.atoccza@synlab.pe		
+16500	Xima Health E.I.R.L.	ximahealth.lab@gmail.com	christian.atoccza@synlab.pe		
+2215	Lab Fray S.A.C.	f.acuna@labfray.pe	christian.atoccza@synlab.pe		
+4443	Medi-La E.I.R.L.	medilabsac@hotmail.com	christian.atoccza@synlab.pe		
+11865	Efralab E.I.R.L.	efralabeirl@gmail.com	christian.atoccza@synlab.pe		
+14080	Diagnostic Sac	diagnosticpat@gmail.com	christian.atoccza@synlab.pe		
+14323	Guem S.A.C.	jec_19-12@hotmail.com	christian.atoccza@synlab.pe		
+14795	Similab S.A.C.	similabsac.servicios@gmail.com	christian.atoccza@synlab.pe		
+15841	Myn Diagnostics S.A.C.	laboratorio@bioclinic.pe	christian.atoccza@synlab.pe		
+16194	Maslab Peru S.A.C.	maslabperu@gmail.com	christian.atoccza@synlab.pe		
+16400	Lam Yactayo Ayme	aymelamy08@gmail.com	christian.atoccza@synlab.pe		
+15919	Consultoria En Laboratorio S.A.C.	GERENCIA@ICLAB.PE	christian.atoccza@synlab.pe		
+16537	Corp Ajva Cordova E.I.R.L.	psjlab@hotmail.com	christian.atoccza@synlab.pe		
+16192	MC Lab E.I.R.L.	laboratorio@mclab.pe	christian.atoccza@synlab.pe		
+16238	Vasquez Retuerto Quemerly Alejandra	ale12.vas12@gmail.com	christian.atoccza@synlab.pe		
+16223	Oncology Body Care S.A.C.	andrea.castillo@obcteam.com.pe	christian.atoccza@synlab.pe		
+16272	Farmagen Peru Sociedad Anonima Cerrada - Farmagen Peru S.A.C	yorlialexi@gmail.com	christian.atoccza@synlab.pe		
+16481	Grupo Qovalmedic S.A.C.	qovalmedic@gmail.com	christian.atoccza@synlab.pe		
+16739	Meclab Safe Diagnostico S.A.C.	safediagnosticomeclab@gmail.com	christian.atoccza@synlab.pe		
+16888	Grupo De Inversion Life S.A.C.	grupo.lifecenterperu@gmail.com	christian.atoccza@synlab.pe		
+16939	Servis Medic S.A.C.	castilloanaly96@gmail.com	christian.atoccza@synlab.pe		
+16969	Prevencion Medica Y Salud Ocupacional S.A.C.	administracion@prevemedicaperu.com	christian.atoccza@synlab.pe		
+13381	Luz Del Sur S.A.A.	servsalud@luzdelsur.com.pe / otorrebl@luzdelsur.com.pe	 		
+7310	Consultoria Medico Legal La Solucion E.I.R.L.	Jessica47120799@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+1457	Centro Medico Reategui E.I.R.L.	centrosmedico_reategui@hotmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+1524	Vasquez Bentos Agustin	royagustin.1993@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+1584	Serv. Med. Grales San Juan S.R.L	plopez2809@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+1721	Asoc. Past. De Serv. Medico Asist. Clinica Adventista Ana Stahl De La Iglesia Adv. Del Septimo Dia	laboratorio.coordinador@clinicaanastahl.org.pe	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+1855	Asociación Civil Selva Amazónica	jparraguez@acsaperu.org	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+4479	Laboratorios Analisis Clinicos Ricci D Y G E.I.R.L.	laboratoriosricci@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+11412	Fda Bioservices S.A.C.	fdabioservice@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+11430	Centro Integral De Salud Amazonica E.I.R.L.- Ceinsaa E.I.R.L.	ceinsaa.resultados@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+11453	Nedlab Empresa Individual De Responsabilidad Limitada	mquerezapata@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+11507	Tramazon S.A.C.	tramazonlab@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+11778	Centro Medico Especializado Misalud Iquitos S.A.C.	referencias.iquitos@synlab.pe	dario.vega@synlab.pe		
+11797	Centro Medico Obstetrico Maria Fe S.A.C.	mariafe1818@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+11930	Centro Medico Gineco Obstetrico Loreto S.R.L.	eduderams@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+11977	Chota Torres Michael	michtorres2010@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+11986	Centro Medico La Fe E.I.R.L.	ostincito@hotmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+12010	Clinica Especializada Emanuel Sociedad Anonima Cerrada	laboratorioclinicaemanuel@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+12464	Galan Garcia Lucerito De Jesus	lab.biohersa@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+12655	Ochoa Pinche Edson Gaston	tizziano1945@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+12856	Wisar Salud Iquitos	rodrigo.vasquez@wisarsalud.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+14185	Amazonas Salud S.A.C.	KEYDONNARIRI@GMAIL.COM	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15079	Corporacion Asher Milan Rv Empresa Individual De Responsabilidad Limitada	referencias.iquitos@synlab.pe	dario.vega@synlab.pe		
+15379	Galeno Medical Y Equipos S.R.L	referencias.iquitos@synlab.pe	dario.vega@synlab.pe		
+15459	Laboratorio Clinico Gaplab E.I.R.L.	referencias.iquitos@synlab.pe	dario.vega@synlab.pe		
+15519	Centro Medico Oams Grau E.I.R.L.	Jhoncochaches@hotmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15539	Urquia Rengifo Carlos Luis	lab.70.urquia@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15603	Iman Chumpitaz Noelia Isabel	previene.centro.medicoobst@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15798	Gastroarias Servicios Medicos Empresa Individual De Responsabilidad Limitada	Tattoysolita@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15834	Ssaralab Sociedad Comercial De Responsabilidad Limitada	Laboratorio.ssaralab@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15913	Biosciencie S.A.C.	cellservice37@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15914	Corporacion Los Angeles Centro Medico Quirurgico Especializado Empresa Individual De Responsabilidad	losangeles2024clinica@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15916	Arias Del Aguila Cesar Alberto	cariasdelaguila@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15957	Cardiored S.A.C.	zaidatello26@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15959	Gestamedical E.I.R.L.	adrian_adrianna@hotmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15971	Botica Policlinico Contamana E.I.R.L.	INFOAMAZONTOURS@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16061	Servicios Médicos Sosalud Sociedad Anonima Cerrada	Laboratorio.susalud@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16089	Linares Yuyarima Pamela Del Carmen	biotestlab04@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16102	Garcia Garcia Clara Aurora	andreinacp26@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16132	Servicios Medicos Especializados Goba Sociedad Comercial De 	sthe.fani.barmor.obsm@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16249	Piel Zamora Dermatologia Integral E.I.R.L.	mariadefatimatorresramos@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16309	Ramirez Pinedo Manuel Christian	manuelchristianrp@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16322	Donayre Vasquez Guillermo Maximiliano	narotuanamavalentina@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16338	Gomez Diaz Milagros Del Rocio	miodentiquitos@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16367	Centro Especializados De Imagenes Medicas E.I.R.L.	ceimiquitos@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16406	Centro De Atencion Medica Especializada Cardio Vida E.I.R.L.	gerenciaad.cv@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16471	Eco Vida Iquitos S.A.C.	dahita64@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+1729	Servicios Medicos Clinica Santa Anita Sr L	ellavpra22@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16574	Gallo & Puyo E.I.R.L.	margarita.mcps@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16676	Galeno Medical Services Empresa Individual De Responsabilida	galenomeds@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+1513	Pillpe Hurtado Leonidas Alberto	LABSERVIS.peru@outlook.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16067	Vallejos Mori Eni	leninemerbenancio@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16287	Jara Muñoz Cynthia	Bioteclablaboratorioclinico@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15482	Messancorp S.A.C.	admision.messanlab@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+12419	Clinica Especializada Sargento Lores S.R	clinicasarloriqt@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16060	Carfavo Diagnostico E.I.R.L.	dasi@outlook.com.pe	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16813	Centro Especializado Emasalud S.A.C.	laboratorioclinicaemanuel@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16818	Servicios Medicos Marlita Empresa Individual De Responsabilidad Limitada	mrengifoarce@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16874	Rh Biomedical E.I.R.L	romero120389@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16944	Centro Medico Camones S.A.C.	acamones1958@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+16946	Briceño Ostolaza Juan Victor	webmaverick2001@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+15961	Morales Saboya David Arnulfo	arnulfomoraleslozano@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+17087	Duende Rosas Littman Manolo	manololitmanduende@gmail.com	referencias.iquitos@synlab.pe	dario.vega@synlab.pe	
+7314	Astahuaman Parejas Gimm Pedro	pedrito_oxa@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+7421	Centro Medico Especializado Los Jardines S.C.R.L.	lcgermana@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+14911	Fassa Centro Medico Especializado E.I.R.L.	kelvinfs@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15240	Group Da Vinci Empresa Individual De Responsabilidad Limitad	BRAYTON_LM@HOTMAIL.COM	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15849	Ingaruca Rojas Tania Nidia	tingaruca@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15883	Centro Médico Barzola & Diaz S.R.L.	carmenrosadiazdiaz1993@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15982	Citobiolab E.I.R.L.	citobiolabhyo@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16032	Clinica San Antonio De Padua E.I.R.L.	PSAPADUAOXAP@GMAIL.COM	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16095	Ghemo Lab Servicios Medicos Empresa Individual De Responsabilidad Limitada	ghemolabsm@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16423	Corporación Global C & R E.I.R.L.	Corporacionglobalcyr@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16436	Medical Center San Pablo E.I.R.L.	Pedrovalle@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16443	Clinica Santo Domingo S.C.R.L.Tda.	german.tito.2018@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16602	Navas Guerra Gladys Edith	zenonsr@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16605	Javes Corp E.I.R.L.	javescorpsatipo@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+2182	Oncolab E.I.R.L.	ONCOLAB2010@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+13970	Florentino Contreras Fortunato	policlinicosantoremedio@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15785	Lorenzo Campos Karina Nizana	ltdiagnosticslab@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16152	Policlinico Tu Salud Empresa Individual De Responsabilidad Limitada	noratello985@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16244	Yabaja Medic E.I.R.L.	laboratorio@yabaja.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16533	Centro Medico Especializado Santa Patricia E.I.R.L	flowers2603@hotmail.es	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15346	Laboratorios Perez Aldave Empresa Individual De Responsabili	antonioperez5411@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15848	Inversiones En Salud Jgym S.R.L.	vitros.lab.hyo@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+1512	Centro De Diagnostico Y Consultorio Medico Eirl	labsmp@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+2467	Trujillo Roman Elmer Ernesto	elmertrujillo@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+7265	Mori Nonato Greta	mori_nonato@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+7336	Insanor S.A.C.	laboratorio.insanor@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+7371	Segalab E.I.R.L.	segalab_huacho@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+7423	Clinica La Solidaridad Barranca Srl	clinicalasolidaridadbarranca@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+11372	Suclupe Chayan Roberto Jhony	jschayan@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+11570	Centro Parroquial Santa Rosa De Lima	cristz_19@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+11597	Diaz Yarleque Carlos Francis Paul	Carlosdiazyarleque@outlook.es	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+11636	Servicios Medicos Cemafe S.A.C	cemafe_2017@outlook.es	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+11756	Rojas Sosa Alvaro Cesar	alvacero2241@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+11937	Bernal Diaz Orlando Raul	informes.bmlabperu@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+11946	Suarez Coz Miguel Angel	suarezcozmiguel91@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+11995	Cediclab Sociedad Anonima Cerrada Cediclab S.A.C.	cediclab01@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+12079	La Cruz Nicho Javier Eduardo	eduardo2439@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+12377	Onco Vida Salud S.A.C.	linkolab@outlook.es	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+12403	Artega Espejo Rosa Amparo	oyolab_0815@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+12404	Carhuapoma Vargas Vilma	vilma062010@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+12454	Inversiones Medicas Pacheco S.A.C.	imedpachecosac@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+12530	Chavez Vargas Luis Pedro	clinica.lafamilia@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+12646	Rojas Guardia Eusebia	euge28rojas@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+12793	Corporacion Ehos Medical S.A.C.	guseca10@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+12825	M & N Medical Solution Sac	clinicasanjose.huacho@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+13000	Otero Rodriguez, Zoraida	florcapillo_21@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+13324	Legama Salud Sb E.I.R.L.	marimer0105@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+13797	Clinife Sociedad Anonima Cerrada - Clinife S.A.C.	administracion@clinifeperu.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+13928	Silverio Ugarte Timna Loida	loidasilverio@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+14138	Anfalab Servicios Medicos Y Ocupacionales Eirl	informes_anfalab@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+14236	Moreno Barrientos Giovanna Esther	soloestrella7@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+14481	Laboratorios Hubber E.I.R.L.	Laboratoriohubber@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+14944	Inversiones Integra Salud S.A.C.	integrasaludhuacho@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15299	Servicios Medicos Elylab E.I.R.L.	servicioselylab@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15322	Rodriguez Bermudez Christian Jesus	LUREN2MEDICLAB@GMAIL.COM	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15373	Samanamud Osorio Christian Jesus	samanamud2017@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15429	Laboratorio San Judas Tadeo E.I.R.L.	fransheska_upch@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15436	Teresita Producciones Eirl	teresaludhuaral@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15496	Ninolab E.I.R.L.	ninohemerson@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15525	Obispo Damaso Pablo Cesar	pablo.obispo.damaso@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15555	Epylp Corp S.A.C	gerencia@sanrafaelcentromedico.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15556	Roman Canales Abigail Tania Miluska	Miluska_lv_picis@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15618	San Agustin Laboratorios S.A.C.	labsanagustin20@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15669	Up Grade Lab Del Norte S.A.C	upgradelabnorte@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15855	Altasalud S.A.C.	altasalud.barranca@synlab.pe	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15856	Altasalud S.A.C.	altasalud.sanisidro@synlab.pe	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15863	Clinica Privada San Andres S.A.C.	clinicasanandres.resultados@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15970	Chiroque Flores Anali Rosmery	ani_ch_fl15@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16068	Carreño Patricio Danilo Eduardo	danicar1077@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16096	Juan De Dios Rosario Antonia Felicita	doc_leonita@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16158	Alfaro Bazan Diana Estefany	neurologia.clinica.060@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16286	Tecnolab-Huacho E.I.R.L.	lab.tecnolabhuacho2226@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16336	Timana Pastor Gabriel Enrique	servilab.labclinic@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16412	Inversiones Biomedicas A&D E.I.R.L.	policlinicocentralsalud@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+11274	Clinica Ramazinni S.A.C.	administrador@clinicaramazinni.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15736	Grupo Diagnostico Lizzetti E.I.R.L	gerencia@lizzettisalud.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+14918	Trujillo Tafur Walter Jony	wjtt_20@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16614	Chilet Arevalo Andree Luigui	CHILET228@GMAIL.COM	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16711	Sam Medic E.I.R.L.	cmsammedic@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16719	Centro Nefrologico Integral Renal Care Sociedad Anonima Cerr	sandhorlabs@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16720	Espinoza Rivera De Menacho Maria Eugenia	BAKURYU27@GMAIL.COM	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16489	Hemolab E.I.R.L.	hemolabdiagnostics@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16733	Pineda Suarez Joseline	JOSELINEPINEDASUAREZ7@GMAIL.COM	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16738	Servicio Medico Salud Renacer S.A.C.	asaludrenacer@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16744	Policlinico Esperanza Y Generosidad S.A.C.	poliesperanzaygenerosidad@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+11492	Maza Ramirez Claudia Monica	Claudia_monica21@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16764	Corporacion Castro Palomino S.A.C.	centraltadeo@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16362	Zevallos Falcon Yenifer Mirella	oncomedilab2024@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16812	Efrain Pablo Montes Hijar	precilab_valentino@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+15747	Servicios Medicos Alfamedic E.I.R.L.	gerencia@alfamedicperu.pe	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16836	Centro Medico Cepresalud & Urolab E.I.R.L.	rous8386@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16878	Gawebe S.A.C	doc_leonita@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16879	Centro Medico Suarez E.I.R.L.	ELIANACARRILLO211@GMAIL.COM	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16889	Empresa Medical Center International Los Angeles Sociedad Anonima Cerrada-Medical Center Internation	empresamedicalcenter@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16901	Hosaka De Suzuki Miryan	jose.torres.p@polisakura.org	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+16919	Grupo Portugal E.I.R.L	luis.mendoza@villavictoria.com.pe	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+17030	De La Cruz Aliaga Eric Paul	polsitho231192@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+17042	Clinica De Especialidades Quirurgicas Y Traumatologica Cifuentes S.A.C.	clinicacifuentesoficial@gmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+17043	Medilab Healthcare E.I.Rl.	medilab.huancayo@hotmail.com	janeth.delgado@synlab.pe	eveling.pariona@synlab.pe	
+1842	Castro Cruz Miguel Enrique	laboratoriocastroreadioxapampa@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+1844	Hospital Privado Del Peru Sociedad Anonima Cerrada - Hospital Privado Del Peru S.A.C	personal_lab@hpp.com.pe	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+1850	Cheng Linares Oscar Enrique	lab.sanfrancisco9496@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+1851	Perez Zapata Marilu Antonieta	marilupz70@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+1935	Luque Ramos Juan Carlos	juanc_luque@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+2226	Clinica San Juan Bosco Y Agustin S.R.L.	referencias.iquitos@synlab.pe	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+2348	Bimedic Eirl	endolabcid@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+7268	Centro Integral De Servicios Medicos "Bayovar" S.A.C.	cismedic@cismedicbayobar.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+7431	Laboratorio De Analisis Clinicos Bioanalisis Piura S.A.C.	info@bioanalisis.pe	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+11279	Centro Medico Santa Maria De Los Angeles S.R.L.	laboratoriopiura@gruposama.pe	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+11281	Centro De Especialidades Medicas Santa Maria S.A.C	laboratorio_santamariasac@yahoo.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+11303	Urbina Jimenez Reynaldo	SUBETY1304@GMAIL.COM	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+11404	G + G Quality Lab S.A.C.	risip285@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+11444	Prevenir Seguridad Salud Ocupacional Sociedad Anónima Cerrada	prevenir.laboratorio@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+11598	Grupo Carita Feliz Sociedad Anónima - Grupo Carita Feliz S.A.	andrea.seminario@clinicacaritafeliz.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+11614	Mio Aponte Hedelmit	hedel1985@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+11617	Fiestas Pintado Victor Manuel	Fiestasyenny186@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+11816	Rivas Ramos Milton Xavier	mxrivasr@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+11926	Pintado Ubillus Carlos Joel	goldenlab02@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+12075	Divlab Laboratorio Clinico Empresa Individual De Responsabil	referencias.iquitos@synlab.pe	dario.vega@synlab.pe		
+12447	Diagnosticalaboratorio S.R.L.	diagnosticalab.c@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+12476	Clinica Madre Del Perpetuo Socorro E.I.R.L.	erickaquinde19@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+12498	Juan Carlos Morillas Palacios	referencias.iquitos@synlab.pe	dario.vega@synlab.pe		
+12609	Laboratorio Clinico Mclab E.I.R.L.	Laboratorioclinicomclab@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+12639	Pacherre Seminario Harlinson Smit	smipase@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+12685	Ramirez Cueva Marco Aurelio	mrc1609@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+12687	Laboratorio Clinico San Agustin S.A.C	melvyflores@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+12694	Panta Zeña Julio Nestor	julio.24pz@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+12747	Bardales Lab S.A.C.	bardaleslab@centromedicodigital.pe	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+12749	Camacho Rea Zobeida	labsaludyvida@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+13503	Medisalud Empresa Individual De Responsabilidad Limitada-Medisalud Eirl	noemicamposflores@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+13956	Carbonell Ortiz Elizabeth	cmcorazondemaria@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+13983	Hefaselab E.I.R.L.	hefase.lab@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+14279	Centro De Especialidades Medicas - Laboratorio Clinico Nort Lab S.A.C.	santalucia.laboratorio@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+14368	Eche Purizaca Manuel Oscar	jarita.1388@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+14485	Servicios Medicos Gomez Salud Sociedad Anonima Cerrada	referencias.iquitos@synlab.pe	dario.vega@synlab.pe		
+14486	Centro De Apoyo Medico Y Diagnostico Diagnosticlab E.I.R.L.	diagnosticlab11@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+14679	Medipath Empresa Individual De Responsabilidad Limitada	pathmediclab@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+14826	Biosalud Laboratorio Clinico Empresa Individual De Responsabilidad Limitada	analisisbiosalud@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+15234	Quezada Aleman Rosita Mercedes	referencias.iquitos@synlab.pe	dario.vega@synlab.pe		
+15246	Salud Ocupacional J&C Inmaculada S.A.C.	referencias.iquitos@synlab.pe	dario.vega@synlab.pe		
+15320	Laboratorio Biofast S.A.C.	laboratoriobiofastsac@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+15321	Medgastro E.I.R.L.	LABORATORIO@CLINICASANTAEMILIA.COM	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+15573	"Radiolab" Empresa Individual De Responsabilidad Limitada-"Radiolab" E.I.R.L.	dahomey.chumacero@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+15637	Corporacion Rq S.A.C.	rayza_suarez_jim@outlook.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16027	Centro Medico Ab Familia Y Salud E.I.R.L.	rocio.a.borrero@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16070	Sarango Sernaque Tania Elizabeth	eliza.junifer@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16115	Hospital Privado San Benito Sociedad Comercial De Responsabilidad Limitada	vladimirmaza946@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16135	Acosta Jimenez Liliam Jennypier Stephanie	jhonnygarciabereche@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16138	Soluciones De Ingenieria Y Salud Sociedad Anonima Cerrada - Soi Salud S.A.C.	soisaludpiura@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16222	Clínica La Florida Sociedad Anonima Cerrada - Clínica La Florida S.A.C.	laboratorioclinicalaflorida@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16274	Biosolutions Group Empresa Individual De Responsabilidad Lim	verocernavega@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16340	La Serna Laboratorio Clinico Empresa Individual De Responsab	emymer11@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16396	Divino Niño Jesus Centro De Ayuda Diagnostica S.A.C. - Divin	rsolangethalia@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16440	San Judas Tadeo Salud S.A.C.	sjt.salud@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16448	Biology And Construction Sociedad Comercial De Responsabilid	byconlab@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16515	Medilab Cristo Rey Sociedad Anonima Cerrada	MILTONXAVIERRIVASRAMOS@GMAIL.COM	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16522	Diagnostico Mlr Lab S.A.C.	diagnosticomlrlab@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+13877	Innova Salud, Seguridad & Medio Ambiente S.A.C.	asistente.contabilidad@innovassma.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16557	Santa Inmaculada Centro De Dialisis S.A.C.	natypr280411@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16578	Barrantes Vargas Victoria Esther	ca.santamaria9496@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16610	Grupo Alvaros S.A.C.	boticapartnermedic@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16688	La Serna Cienfuegos Christy Iris	cilc@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16697	Centro Nefrologico Integral Renal Care Sociedad Anonima Cerr	sandhorlabs@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16706	Morales Coba Maria Cinthia	moralescobamaria0909@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+11460	Rojas Hernandez Juan Manuel	Jumarohe84@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+12000	Valladolid Olivos Deysi Noemi	rosales.2829@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16778	Santa Beatriz Servicios Médicos S.A.C	darwindreiser@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16797	Instituto Medico En Salud Ocupacional Soy Diabetico E.I.R.L.	laboratoriobiofastsac@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16817	Arevalo Ruiz Luis Alberto	luis36.arevalo@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16881	Tissieres Servicios Medicos E.I.R.L.	melvyflores@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16893	Goldenlab Laboratorios S.A.C.	goldenlab02@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16894	Bimedic Eirl	endolabcid@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+14392	Adanaque Zapata Orlando	orlandoadanaquezapata2@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16936	Bustamante Vasquez Cielo	cielo1234.cb@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+16967	Centro Medico En Buenas Manos-Servicios Generales E.I.R.L.	cmenbuenasmanos@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17008	Chunga More Jose Antonio	Chungamorejose312@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17044	Agurto Carlin Eduardo Arturo	aleduardoac@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+12465	Centro De Analisis Clinicos 'Labonorte' Empresa Individual De Responsabilidad Limitada	labonortes@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17077	Sanchez Abad Gerardo	gerardosanchezabad12@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17094	Zapata Oviedo Ninoska Katherine	nikaza06@hotmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17096	Burga Vasquez Karla Giovana	sermediq1985@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17097	Provitalab E.I.R.L.	margaritaelenazapatacordova@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17101	Obando Cango Deybis Alexir	deybisalexiro@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17102	Clinica Virgen Del Pilar Sociedad Anonima Cerrada	ecguerrero@clinicavirgendelpilar.pe	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17103	San Jose Lab S.A.C.	GINAYOVE10@GMAIL.COM	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17104	Vitalysis Centro De Especialidades Medicas Sociedad Anonima Cerrada	siancasfloresw@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17112	Lab Avimec S.A.C.	luzmavi1062@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+17114	Chiroque Herrera Brenda Marina	dvidalaboratorio@gmail.com	referencias.piura@synlab.pe	julissa.crisanto@synlab.pe	
+15362	Universidad Peruana Cayetano Heredia	Alfredo.stuart@upch.pe	kiara.morales@synlab.pe		
+1296	B G L Laboratorios Centro De Apoyo Al Diagnostico S.R.L	contactos@bgllaboratorios.com	kiara.morales@synlab.pe		
+1950	Clinica Medica Cayetano Heredia S.A.	laboratoriorecepcion@cmch.com.pe	kiara.morales@synlab.pe		
+7398	Servicio De Diagnostico De La Salud E.I.R.L.	sedisalud1@gmail.com	kiara.morales@synlab.pe		
+11439	Sg Lab E.I.R.L.	laboratorio_sg@hotmail.com	kiara.morales@synlab.pe		
+11627	Clinica Universitaria Del Norte S.A.C.	CLINICAUNIVERSITARIA.LABORATORIO@HOTMAIL.COM	kiara.morales@synlab.pe		
+11761	Ddp Servicios E.I.R.L.	adplaboratorio@hotmail.com	kiara.morales@synlab.pe		
+12830	Confia Lab Soluciones En Salud S.A.C.	RECEPCION.MUESTRAS@CONFIALAB.COM.PE	kiara.morales@synlab.pe		
+14981	Universidad Peruana Cayetano Heredia	tropicaleslab@oficinas-upch.pe	kiara.morales@synlab.pe		
+15053	Adler & Kreuzberg S.A.C.	info@Adler.com.pe	kiara.morales@synlab.pe		
+15232	Nebri Lab E.I.R.L	laboratorioinkamay@gmail.com	kiara.morales@synlab.pe		
+15302	Corporacion Gnr S.A.C.	CORPORACIONGNR.SAC@GMAIL.COM	kiara.morales@synlab.pe		
+15580	M.A. Famylab S.A.C.	Famylab@hotmail.com	kiara.morales@synlab.pe		
+15930	Laboratorio Clinico Laya S.A.C.	PROCESOS@LAYALAB.PE	kiara.morales@synlab.pe		
+16044	Endometabolic E.I.R.L	citas@diabetesyobesidad.org	kiara.morales@synlab.pe		
+16045	Representaciones Y Servicios Josam S.A.C.	laboratoriojosammedic@gmail.com	kiara.morales@synlab.pe		
+16119	Vitality Group E.I.R.L.	teflabdomicilio@gmail.com	kiara.morales@synlab.pe		
+16482	Laboratorio Clinico Laya S.A.C.	PROCESOS@LAYALAB.PE	kiara.morales@synlab.pe		
+16483	Soluciones Medicas Jerusalema Peru S.A.C.	resultados@labcinar.com	kiara.morales@synlab.pe		
+16503	Cesmed Lima Norte S.A.C.	cesmedlimanorte.losolivos@gmail.com			
+16532	Laboratorio Clinico Laya S.A.C.	PROCESOS@LAYALAB.PE	kiara.morales@synlab.pe		
+4483	Laboratorios Clinicos Multiples S.A.C.	personallosolivos@multilab.com.pe	kiara.morales@synlab.pe		
+1663	Nova Salud Sociedad Anonima Cerrada	novasaludlab@gmail.com	kiara.morales@synlab.pe		
+11589	Biolab & Inmunomed Del Peru Sac	BCORDOVAG@BIOLABINMUNOMED.COM	kiara.morales@synlab.pe		
+11591	Biolab & Inmunomed Del Peru Sac	proveedores.biolab@gmail.com	kiara.morales@synlab.pe		
+11927	Qualab Sociedad Anonima Cerrada	tercerizaciones@qualab.com.pe	kiara.morales@synlab.pe		
+11929	Qualab Sociedad Anonima Cerrada	tercerizaciones@qualab.com.pe	kiara.morales@synlab.pe		
+11942	Qualab Sociedad Anonima Cerrada	tercerizaciones@qualab.com.pe	kiara.morales@synlab.pe		
+11947	Qualab Sociedad Anonima Cerrada	tercerizaciones@qualab.com.pe	kiara.morales@synlab.pe		
+11951	Qualab Sociedad Anonima Cerrada	tercerizaciones@qualab.com.pe	kiara.morales@synlab.pe		
+12413	Qualab Sociedad Anonima Cerrada	tercerizaciones@qualab.com.pe	kiara.morales@synlab.pe		
+12997	Control De Analisis Clinico,Patologico Lima Norte E.I.R.L.	conaclipa@hotmail.com	kiara.morales@synlab.pe		
+14741	Control De Analisis Clinico,Patologico Lima Norte E.I.R.L.	conaclipa@hotmail.com	kiara.morales@synlab.pe		
+14951	Biolab & Inmunomed Del Peru Sac	noemibiolabinmunomed@gmail.com	kiara.morales@synlab.pe		
+15303	Biolab & Inmunomed Del Peru Sac	bcordovag@biolabinmunomed.com	kiara.morales@synlab.pe		
+15527	Biolab & Inmunomed Del Peru Sac	biolabinmunomedchimbote@hotmail.com	kiara.morales@synlab.pe		
+16723	Laboratorios Adx S.A.C	labadix@yahoo.es	kiara.morales@synlab.pe		
+16839	Nebri Lab Solutions E.I.R.L.	laboratorioinkamay@gmail.com	kiara.morales@synlab.pe		
+16841	Nebri Lab People Partners E.I.R.L.	laboratorioinkamay@gmail.com	kiara.morales@synlab.pe		
+13887	Syslab Sociedad Anonima Cerrada - Syslab S.A.C.	syslab.metrouni@gmail.com	kiara.morales@synlab.pe		
+15557	Laboratorio Rous S.A.C.	roxany080236@gmail.com	kiara.morales@synlab.pe		
+17095	Grupo Biolaq Laboratorios S.A.C.	dttito@laboratoriobiolaq.com	kiara.morales@synlab.pe		
+13041	Centro De Investigacion En Diabetes, Obesidad Y Nutricion E.	marvevelezdevilla@yahoo.com	liliana.mendez@synlab.pe		
+15029	Cabañas Santillan Maria Veronica	Tulaboratorioacasa@gmail.com	liliana.mendez@synlab.pe		
+1490	Tecnologia Analitica Peruana S.A.C	resultados@drlab.pe	liliana.mendez@synlab.pe		
+95	Laboratorios Organizados S.A.	labor@clinicagonzalez.com	liliana.mendez@synlab.pe		
+1213	Instituto Peruano De Paternidad Respons.	1213_2352_INPPPARES@synlabRZV.onmicrosoft.com	liliana.mendez@synlab.pe		
+2352	Instituto Peruano De Paternidad Respons.	1213_2352_INPPPARES@synlabRZV.onmicrosoft.com	liliana.mendez@synlab.pe		
+11712	Lopez Prado Luis Marco Antonio	h.ylabperu@hotmail.com	liliana.mendez@synlab.pe		
+12459	Novolab Salud E.I.R.L.	novolabsalud@gmail.com	liliana.mendez@synlab.pe		
+12979	Optima Salud S.A.C.	GISELLA.AGUILAR.PADILLA@GMAIL.COM	liliana.mendez@synlab.pe		
+13345	Tello Guerra Carlos Fernando	marsavel@hotmail.com	liliana.mendez@synlab.pe		
+14341	Jacm Peru E.I.R.L.	josec_am@hotmail.com	liliana.mendez@synlab.pe		
+15130	Servicios Medicos Repromedic S.Ac.	reprolab585@gmail.com	liliana.mendez@synlab.pe		
+15288	Asociacion Peruana De Neurociencias Ong Para La Salud	investigacion.ipn.pe@gmail.com	liliana.mendez@synlab.pe		
+15653	Clinica San Clemente S.A.C.	SANCLEMENTELAB@GMAIL.COM	liliana.mendez@synlab.pe		
+16146	Ser Servicio Especializado Renal S.A.C.	ser.peru23@gmail.com	liliana.mendez@synlab.pe		
+16165	Centro Neurologico Digital S.A.C	laboratoriosalaverry1@gmail.com	liliana.mendez@synlab.pe		
+1134	Medicina Avanzada S.A.	medavan@synlab.pe	liliana.mendez@synlab.pe		
+16558	Biro S.A.C.	bcollantes@birosac.com	liliana.mendez@synlab.pe		
+2247	Syslab Sociedad Anonima Cerrada - Syslab S.A.C.	informacion@syslabperu.com	liliana.mendez@synlab.pe		
+8	Chequeos Medicos Y Serv. Asistenciales S .A.C	laboratorio@chemsa.com.pe	liliana.mendez@synlab.pe		
+1284	Asociacion Peruano Japonesa	coordinacionlab@apj.org.pe	liliana.mendez@synlab.pe		
+1382	Rodsuma Salud S.A.C.	asistente.patologo@gmail.com	liliana.mendez@synlab.pe		
+1615	Instituto Integral Vida Plena S.A.C.	institutovidaplena@gmail.com	liliana.mendez@synlab.pe		
+2387	Centro Medico De Ayuda Diagnostica E.I.R.L.	cmad.salud.pe@gmail.com	liliana.mendez@synlab.pe		
+2477	Lsc Diagnostics S.A.C.	epunchin@lscdiagnosticsperu.com	liliana.mendez@synlab.pe		
+2480	Neurociencias Integradas S.A.C.	davidliraaqp@hotmail.com; contacto@ipn.pe	liliana.mendez@synlab.pe		
+2496	Efectiva Salud S.A.C.	supervisor.sede@aptus.pe	liliana.mendez@synlab.pe		
+7400	Centro Medico De Ayuda Diagnostica E.I.R.L.	cmad.salud.pe@gmail.com	liliana.mendez@synlab.pe		
+7449	Laboratorio Clinico Patologico Principe S.A.C.	lucylabprincipe@gmail.com	liliana.mendez@synlab.pe		
+11309	Centro De Reproduccion Humana De Lima Sociedad Anonima Cerrada	nacer@synlab.pe	liliana.mendez@synlab.pe		
+12006	4G Integral S.A.C.	laboratorio-4g@hotmail.com	liliana.mendez@synlab.pe		
+12699	Laboratorio Del Norte S.A.C.	qualis@synlab.pe	liliana.mendez@synlab.pe		
+13699	Rodsuma Salud S.A.C.	laboratorio@clinicarisso.com	liliana.mendez@synlab.pe		
+15181	Sulca Espinoza Leoncio	liliana.mendez@synlab.pe			
+15891	Prestalab S.A.C.	gyclazo@gmail.com	liliana.mendez@synlab.pe		
+15901	Centro Medico Del Trabajador S.A.C.	cmt@synlab.pe	liliana.mendez@synlab.pe		
+16085	Centro De Reproduccion Humana De Lima Sociedad Anonima Cerra	jvdiaz@nacer.com.pe	liliana.mendez@synlab.pe		
+16559	Soluciones Medicas Inteligentes S.A.C.	agastromedic@gmail.com	liliana.mendez@synlab.pe		
+16563	Hablemos De Endocrino S.A.C.	citashablemosdeendocrino@gmail.com	liliana.mendez@synlab.pe		
+16617	Zamora Hoyos Carlos Enrique	enriquehoyos26@gmail.com	liliana.mendez@synlab.pe		
+16672	Asclepio Medic Salud E.I.R.L. - Asmedsa E.I.R.L.	Asclepiomedicsalud@gmail.com	liliana.mendez@synlab.pe		
+16701	Biogenes Lab S.A.C.	e.castello@biogeneslab.com	liliana.mendez@synlab.pe		
+16702	Creavita Sociedad Anonima Cerrada	creavita.sac@gmail.com	liliana.mendez@synlab.pe		
+12994	Doctor Express E.I.R.L.	Doctorexpress.eirl@gmail.com	liliana.mendez@synlab.pe		
+16721	Pirpalap Sociedad Anonima Cerrada	LABORATORIO@CLINICAMEGASALUD.COM	liliana.mendez@synlab.pe		
+16882	Li Marina Pedro Vicente	Carlaso.cso@gmail.com	liliana.mendez@synlab.pe		
+17029	Asociacion Peruano Japonesa	laboratorioccpj.org.pe	liliana.mendez@synlab.pe		
+15513	Biomedical Technologies Sociedad Anonima Cerrada	laboratorio@biomedical.com.pe	liliana.mendez@synlab.pe		
+593	Lab Peru Laboratorios Peruanos Sociedad Anonima	laboratorio@corporacionlabperu.com	liliana.mendez@synlab.pe		
+12831	Medicina Reproductiva Peru S.A.C.	germinaranalisis@gmail.com	liliana.mendez@synlab.pe		
+14338	Patologia Microscopica Y Molecular S.A.C.	labclisantabeatriz@gmail.com	liliana.mendez@synlab.pe		
+16087	Liga De Cirugia Contra La Obesidad E.I.R.L.	Ligadecirugiacontralaobesidad@gmail.com	liliana.mendez@synlab.pe		
+11983	Grupo Cerna S.A.C	recepcion.muestras@ccvlab.pe	liliana.mendez@synlab.pe		
+11800	V & V Imagen S.A.C.	laboclinicachorrillos@gmail.com	liliana.mendez@synlab.pe		
+11917	Centro De Medicina Regenerativa Y Terapias Celulares S.A.C. - Regencel S.A.C.	mgarces@primecellbio.com	liliana.mendez@synlab.pe		
+15748	Alerta Medica Lab S.A.C	alertalab@alertamedicaperu.com.pe	liliana.mendez@synlab.pe		
+17062	Rjep Institute Of Life Sciencies S.A.C.	rjepinstitute@gmail.com	liliana.mendez@synlab.pe		
+11586	Riamlab E.I.R.L.	Laboratorio_riamlab@hotmail.com	liliana.mendez@synlab.pe		
+11364	Bioteknia S.A.C.	fidelmujica@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16284	Mas Salud Andahuaylas” E.I.R.L.	lenintomaylla@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+1667	Clinica De Especialidades Virgen De Cocharcas E.I.R.L.	COCHARCASCLINICA@GMAIL.COM	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+1141	Inversiones Biosalud E.I.R.L.	lcbiosalud@hotmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+1265	Aranzabal Carrasco Guida	econolab70@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+2423	Farmacia Multiservicios San Carlos Empresa Individual De Responsabilidad Limitada	carloschallco073@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+7430	G Lab Cusco Sociedad Anonima Cerrada	glablaboratorio@hotmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11642	Genesis Rescue E.I.R.L.	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	linda.hurtado@synlab.pe	
+11706	Gdc Labclin Cusco S.R.L.	gdclabclin2022@yahoo.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11740	Quiza Lima Hugo	CIRalexiel@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11741	Acuña Rosas Ofelia	Laboratoriofamilab@hotmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11743	Bioerlab Cusco Sociedad Comercial De Responsabilidad Limitada - Bioerlab Cusco S.R.L.	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe		
+11757	Concha Chavez Manuel Jacinto	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe		
+11763	Poblete Caceres Lisbeth Angelica	lianpoca@hotmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11784	Laboratorio Clinico Cabema E.I.R.L.	cabema.laboratorio@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11803	Socielab S.R.L.	socielabcusco@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11821	Integramedica Sociedad Comercial De Responsabilidad Limitada-Integ S.R.L	informes@integramedicaperu.pe	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11826	Laboratorio Louis Pasteur S.R. Ltda.	labpasteurcusco@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11843	Familia Feliz Servicio Integral De La Mujer Y Adolescente	maruch28@hotmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11846	Medicusco S.A.C.	cirnapacheco@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11934	Chumbes Herrera Manuel Edver	nefipusaclla@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11965	Biomedic Del Sur Sociedad Anonima Cerrada	biomedic.sur@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11972	Contreras Zuniga Katey Elizabeth	innovalab2021@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11981	Jaño Fernandez Daysi Rosalvina	laboratoriogya@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11996	Reyes Llaqui Rebeca Rut	geolab.8@hotmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+12024	Espichan  Fernandez Alci William	monespichan@hotmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+12525	Aguayo Morales Carlos Teodomiro	laboratoriocamlab@gamil.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+12527	Laboratorio Clinico Wintrobe W.V.B. Empresa Individual De Responsabilidad Limitada	labclinwintrobe@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+12577	Laboratorio Isalab Sociedad Comercial Responsable Limitada	LABLICUONA@GMAIL.COM	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+12832	Cemed Sr. De Qoylloriti S.R.L.	laboratorios.qoylloriti@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+13278	Gastro Ecomedic E.I.R.L	gastroecomedic1@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+13354	Medicina Antioxidante Empresa Individual De Responsabilidad Limitada - Medicina Antioxidante E.I.R.L	ipressintegralsantiago@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+13955	Vilca Portugal Guiveth Ishabel	ishabel.vip@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+14096	Centro Ginecologico Mujer E.I.R.L.	ggaraymarquez@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+14108	S.O.S. Medical Group Sociedad Comercial De Responsabilidad Limitada	eabanto@sos-mg.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+14219	Medicos Asociados Cusco Sociedad Anonima Mac-Sac	rlanda@macsalud.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+14326	Tesla Life S.R.L.	laboratorioclinicoteslalife@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+14538	Mamani Chara Jesusa	Laboratoriolinfolab01@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15033	Diagnostic Alfalab E.I.R.L.	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe		
+15211	Puyo Hancco Eduardo	EDUARDITOKUMA@OUTLOOK.COM	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15467	Laboratorio Clinico Especializado Neocells Sociedad Anonima Cerrada	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe		
+15520	Sislab E.I.R.L.	adgenfalab@hotmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15558	Laboratorio Bioblas Empresa Individual De Responsabilidad Li	laboratoriobioblas25@hotmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15565	Servilab Urubamba E.I.R.L.	servilab-urubamba@outlook.es	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15613	Blumedic Medicina Integral Y Salud Ocupacional E.I.R.L.	LABORATORIOBLUMEDIC@GMAIL.COM	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15660	San Marquinos Lab S.A.C.	sanmarquinoslab@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15709	Grupo Medico Santa Teresa Sociedad Anonima Cerrada - G.M. Sa	laboratoriocusco@omed.pe	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15755	Eco Innova Profesionales E.I.R.L.	teresallyc@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15784	Bioservisalud Sociedad Anonima Cerrada- Bioservisalud S.A.C.	rocioferro999@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15806	Ozonoclinica Empresa Individual De Responsabilidad Limitada	raulvegavasquez@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15811	Bio Laboratorios Clinicos Y Salud S.A.C. - Biolab Salud S.A.	biolabsalud@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15818	Laboratorio De Biologia Molecular San Gabriel E.I.R.L.	labmolsangabriel@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15840	Inversiones Lc Lab Empresa Individual De Responsabilidad Lim	lclaboratorioclinico@hotmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+15994	Grupo Empresarial Natura Sociedad Comercial De Responsabilid	ojflores2-es@udabol.edu.bo	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16004	Castelo Consultores Medicos Sociedad Anonima Cerrada	casteloconsultoresmedicos@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16008	Asociacion Benefico Cristiana Promotora De Desarrollo Integral - Abc Prodein	resultadoshnajosefina23@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16028	Genomacusco S.A.C.	genomacuscolab@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16108	Ayte Flores Yovana	bioanalisis.cusco@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16114	Meding E.I.R.L.	meding.laboratorios@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16241	Huisa Chura Claudia	claudiahc0826@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16261	Pelaez Campos Katy Rocio	fleminglaboratorio@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16280	Genomiclab S.A.C.	genomiclabcusco@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16311	Gold Studio Lab Empresa Individual De Responsabilidad Limita	csernaque@goldmedical.org	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16357	Centro Medico San Martin De Porres Delgado & Merma S.A.C.	marcobejarano@live.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16377	Transportes Y Servicios Guevara Sociedad Comercial De Respon	consultoriossano@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16402	Centro Medico Gamaleya F Y J S.R.L.	emilybustinza@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16449	Servicios Medicos Fortaleza E.I.R.L. - Sermedifor E.I.R.L.	Laboratorio.cusco2@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16521	Clinica Pardo Sociedad Anonima Cerrada - Clinica Pardo S.A.C	ASESORIALEGAL.CLINICAPARDO@GMAIL.COM	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16536	Corporacion Chale Sociedad Comercial De Responsabilidad Limi	corporacionchalesrllab@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16573	Guadalupe Servicios Integrales Sociedad Comercial De Respons	clinicaguadalupelaboratorio1@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16598	Clinical And Biological Laboratory S.R.L.	cblabcusco@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+14602	Servicios Medicos Arzobispo Loayza Sociedad Anonima Cerrada	Jeancarlo.lima@outlook.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16604	Cuellar Valdez Stefany	stefanycv.18.4@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11751	Caballero Huaman Gustavo	guselfs2015@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16633	Quispe Cuchuyrumi Alcione	qalcione8@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16634	Santos Barrientos Ramiro Eleazar	ramiro_esb@outlook.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16586	Venero Garcia Rocio	biomedical.labclin@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16655	Ferro Olivera Rocio	rocioferro999@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11804	Meneses Yepez Eliana Virginia	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe		
+1632	Centro De Inv Biocientifica S.R.Ltda	biolab.ayacucho@yahoo.es	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+11767	Preventive Medical Center Ergonomic Empresa Individual De Responsabilidad Limitada	labergonomic@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16724	Fuentes Borda Jharol Cristian	Laboratorioalelab@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16811	Izquierdo Luna Maricielo De Los Angeles	maricieloroacarmen@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16821	Centro Medico Especializado Linfolab E.I.R.L.	laboratoriolinfolab01@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16938	Centro De Reproduccion Humana Cusco S.A.C.	clinicamelocusco@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+14108	S.O.S. Medical Group Sociedad Comercial De Responsabilidad Limitada - S.O.S Mg S.R.L.	laboratoriososmedicalgroup@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16996	Nebri Lab Solutions E.I.R.L.	nebrilabcusco@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+16997	Entro Medico Especializado San Carlos S.A.C.	ceafarmalab@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+17015	Taco Huamani Valery Stefany	stacohuamani1995@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+17041	Ticona Apaza Jeus Reuel	jeusreuelticonaapaza@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+17066	D'Warmis Salud Belleza De La Mujer Empresa Individual De Responsabilidad Limitada	lifer_282@hotmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+17078	Llontop Effio Enrique David	david29enrique@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+14099	Clinica San Jose S.A.C.	clinicasanjosecusco.2025@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+17109	Gestion Medica Sagrada Familia S.A.C.	grupo.visu7@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+17121	Chirapa Condori Miguel Ariel	vidasanalab0@gmail.com	referencia.cusco@synlab.pe	linda.hurtado@synlab.pe	
+130	Asoc.Past.Serv.Medico Asist.Juliaca Iasd	secretaria.laboratorio@clinicaamericana.org.pe	laboratorio.jefe@clinicaamericana.org.pe	laboratorio.superv@clinicaamericana.org.pe	referencias.arequipa@synlab.pe
+400	Sosa Ugarte Maritza	maritzamedilab@yahoo.com.pe	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+1440	Chequeos Medicos Las Condes S.R.L.	chequeosmedicoslascondes@yahoo.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+4498	Centro De Diagnosticos Doctor Atahualpa S.A.C.	Lab.atahualpa@hotmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+4529	Laboratorio Clinico Velarde S.A.C.	resultados@laboratoriosvelarde.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+7354	Exacta Lab S.A.C.	exactalabsac@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+7436	Laboratorios Medina S.R.L.	lab.medina@laboratoriosmedina.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11265	Laboratorio Lacym E.I.R.L	laboratoriolacym75@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11367	Ecomedic Aqp S.R.L.	salmon336@hotmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11416	Salas Quispe Martin Jorge	martinsalas197@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11441	Garcia Bragagnini S.R.L.	laboratorio@garciabragagnini.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11451	Flores Maquera Nori Nilda	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe		
+11517	Garcia Bragagnini S.R.L.	laboratorio@garciabragagnini.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11518	Garcia Bragagnini S.R.L.	laboratorio@garciabragagnini.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11703	Lopez Cruz Glenda Mireya	LABORATORIODIVINON.2010@HOTMAIL.COM	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11705	Servicios Medicos Daniel A. Carrion E.I.R.L.	laboratorioclinico.dac@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11789	Centro Medico Divino Niño - Mollendo Sociedad Anonima Cerrada	laboratorio@cmdnmollendo.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11792	Salud Ocupacional Integral San Gabriel Sociedad Anonima	subgerencia@policlinicosangabriel.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11842	Cardenas Galvez Rossana Virginia	saidita09@hotmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11889	Laboratorios Bioproyect Sociedad Anonima Cerrada	sg.bioproyect@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11891	Alvarez Pilco Adela Maria	Laboratorio_juliaca@hotmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11903	Arela Ochoa Shirley Eliana	yelrihs_11@hotmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11997	Centro Medico Familiar El Sagrario E.I.R.L. - Cm Famelsa E.I.R.L.	cmfamelsaadm@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+12003	Laboratorios Fag Sociedad Anonima Cerrada - Labfag S.A.C.	laboratorioseva2018@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+12058	Hito Paricahua Jorge Fernando	cmregional2011@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+12073	Servicios Medicos Y Dialisis Del Sur Virgen De La Candelaria S.A.C.	laboratorio@sermedial.pe	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+12495	Centro Medico Maria De Los Angeles E.I.R.Ltda.	cmmalab@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+12507	Qualab Sociedad Anonima Cerrada	produccionarequipa@qualab.com.pe	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+12617	Jara Huamani Renato	diagnolabd@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+12709	Servicios De Diagnostico Llerena Sociedad Anonima Cerrada	resultados@laboratoriosllerena.com.pe	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+12741	Clinica De Enfermedades Renales Y Dialisis Del Sur S.A.C.	maria.teresa.meza@freseniusmedicalcare.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+13022	Salazar Zavala Valery Lisette	valery.salazar.zavala@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+13612	Laboratorio Clinico Llerena Ames Eirl	arturollerenaames@gmial.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+14027	Laboratorio De Analisis Clinicos Sumak S.A.C	SUMAKLABORATORIO@GMAIL.COM	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+14907	Servimediq Eirl	policlinico.servimediq.ilo@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+14972	Clin Lab S.A.C.	arequipa.admision@bermanlab.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15208	Centro De Endoscopia Del Sur-Zevallos Y Asociados Sociedad A	Labcendesursac@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15209	Laboratorio Clinico Labsalud E.I.R.L.	labsaludaqp@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15296	Juarez Lab Center Sociedad Comercial De Responsabilidad Limi	juarezlabcenter@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15392	Laboratorio Clinico Especializado Salto Angel E.I.R.L.	Marianelalcg.mc@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15440	Luque Arapa Alvaro	lab.clinico.virgendelasnieves@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15503	Laboratorio Clinico Integral Especializado Bendita Empresa I	benditawilber.a@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15596	Policlinico De La Salud Y Medicina Laboral S.A.C.	laboratorioclinicopsml123@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15616	Laboratorio Muñoz Venero E.I.R.L.	cruzllosa@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15619	Clisante Sociedad Comercial De Responsabilidad Limitada	clisanteservice@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15622	Navarro Vargas Brenon Marco	mnavarroturpo@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15671	Ginecologoperez E.I.R.L.	Gynlab07@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15773	Ivd Labclin S.A.C	administracion@labclin.com.pe	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15778	Huaraca Sullcahuaman Noe Bacilides	laboratoriocliniconeoclar@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15903	Jalab Jla E.I.R.L.	lab.clinicojalab.jla@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15926	Centro Medico Internacional Peru - Cuba E.I.R.L.	adm.ciperucuba@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16094	Laboratorios Clinicos San Francisco E.I.R.L. - Labsan E.I.R.L.	labsanfrancisco36@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16118	Laboratorios Pls , Centro De Investigacion E.I.R.L.	arequipasalud.informes@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16183	Lc Insulab 5.0 Empresa Individual De Responsabilidad Limitada	insulabmollendo@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16218	Hemomedic Laboratorio Clinico Y Servicios Medicos S.A.C.	fidel.fmq@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16245	Rinofe Empresa Individual De Responsabilidad Limitada	kareliasamanezponce@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16294	David Rosas Wilber	wilberbio@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16296	L C L Laboratorios S.A.C.	galloydelgadolab@hotmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16318	B & M Biomedic S.R.L.	laboratorioclinicobiogenlab@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16427	Centro Medico De Urologia-Vidas Empresa Individual De Respon	julioabarca@urologiavidas.pe	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16512	Yulmari Multiservicios Empresa Individual De Responsabilidad	julianamanrique83@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16513	Tito Carcasi Virgilio Marco	titocarcasimarco1986@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+12754	Laboratorios Muñoz E.I.R.Ltda.	calidad@laboratoriosmunoz.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11904	Hanan Sul Sociedad Anónima Cerrada - Hanan Sul S.A.C.	pluque@hanansul.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11449	Valdivia Romero Soluciones Integrales S.A.C.	lab_corazondejesus@hotmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+12815	Servicios Medicos Virgen Del Carmen Sociedad Anonima Cerrada	Serv.med.virgendelcarmen@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15643	Nexus Salud Ocupacional S.A.C	laboratorio.nexusmed@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16164	Engloba Empresa & Medicina S.A.C.	administracion@engloba-empresa.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15955	Ttito Ccorimanya Alfredo Roel	roelmed2009@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16709	Laboratorio Biociencias Peru. Analisis Clinico, Biologico Y 	laboratorio.biociencias.peru@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16722	Policlinico Medisur Sociedad Comercial De Responsabilidad Li	yesicaholguino.2015@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16766	Centro Ginecologico-Obstetrico Bebe Empresa Individual De Re	fredyureta@hotmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16768	Labclinics Aqp S.A.C.	facturacionlabclinicsaqp@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16775	Optima Laboratorio Clinico S.A.C.	laboratoriooptimalab@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16786	Corporacion Bioproyect S.A.C.	corporacionbioproyect@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15886	Servicios Medicos Asistenciales Vida Empresa Individual De Responsabilidad Limitada	labdiagnosismv@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16830	Blue Medical S.R.L.	clientesblue@bluemedicalperu.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16886	Cayo Sucasaca Fredy Jhohan	fredyjhohancayosucasaca@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+11720	Policlinico Salud E.I.R.L.	alejandrabandazuniga@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16921	Francis Medic Center S.A.C.	sanfranciscomediccenter@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+15619	Clisante Sociedad Comercial De Responsabilidad Limitada	clisante.aqp@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16982	Policlinico Santa Ines E.I.R.L.	Policlinicosantaines@outlook.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+17060	Laboratorios D & H De La Sota Hernandez E.I.R.L.	delasotahernandez@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+17079	Hope Salud Y Bienestar S.A.C.	Hopesaludybienestar@gmail.com	referencias.arequipa@synlab.pe	luis.bernedo@synlab.pe	
+16849	Corporacion Milan Y Growth S.A.C.	isolaboficial@gmail.com	magdana.postigo@synlab.pe		
+13791	Herrera Sanchez Eugenio	eugenio-63@hotmail.com	magdana.postigo@synlab.pe		
+16615	Osmed Salud Peru E.I.R.L.	osmedsaludperu@gmail.com	magdana.postigo@synlab.pe		
+1314	Laboratorios Vesalio Srltda	Resultadoslabvesalio@gmail.com	magdana.postigo@synlab.pe		
+1583	Salus Laboris S.A.C.	LABORATORIO.LIMA@SALUSLABORIS.COM	magdana.postigo@synlab.pe		
+2396	Consorcio Ems S.A.C.	luke_cs14@hotmail.com	magdana.postigo@synlab.pe		
+2416	J C Soluciones Diagnosticas S.A.C.	lesante2416@synlabRZV.onmicrosoft.com	magdana.postigo@synlab.pe		
+11626	Centro Medico Sanel S.A.C.	medicenter.2011@gmail.com	magdana.postigo@synlab.pe		
+12696	R Y R Patologos Asociados S.A.C.	12696INCIDENCIASAUNA@synlabRZV.onmicrosoft.com	magdana.postigo@synlab.pe		
+12756	Centro De Diagnostico Mayo S.A.C.	centrodediagnosticomayo1@gmail.com	magdana.postigo@synlab.pe		
+13044	Salus Preventiva S.A.C.	administracion@preventiva.com.pe	magdana.postigo@synlab.pe		
+13858	Medicina & Diagnostico Clinico S.A.C	bettyprieto05@gmail.com	magdana.postigo@synlab.pe		
+14087	Vasa Lab E.I.R.L.	vasalab@yahoo.com	magdana.postigo@synlab.pe		
+14356	Cardiopac S.A.C	jsiguas1312@gmail.com	magdana.postigo@synlab.pe		
+14846	Corporacion Gda S.A.C.	infolaboratorioeuler@gmail.com	magdana.postigo@synlab.pe		
+14884	Laboratorio Clinico Jej Empresa Individual De Responsabilidad Limitada	mrussiriquelme@gmail.com	magdana.postigo@synlab.pe		
+15144	Laboratorio De Analisis Clinicos Y De Investigacion Biologica Oav E.I.R.L.	SALANYA.LABORATORIO.OAV@GMAIL.COM	magdana.postigo@synlab.pe		
+15543	Ssc Asociados S.A.C.	laboratorio.ssc.asociados@gmail.com	magdana.postigo@synlab.pe		
+15631	Huarcaya Auccapuclla Lourdes Dora	teflabdomicilio@gmail.com	magdana.postigo@synlab.pe		
+15823	Laboratorio Clinico Intermaf E.I.R.L.	laboratorioclinicointermaf@gmail.com	magdana.postigo@synlab.pe		
+15951	Euroasia Lab S.R.L.	manolox28@hotmail.com	magdana.postigo@synlab.pe		
+16042	Rodelab Sociedad Anonima Cerrada - Rodelab S.A.C.	coordinacion@rodelab.com.pe	magdana.postigo@synlab.pe		
+16053	Pulso Corporacion Medica Sociedad Anonima Cerrada	laboratorio.lima@pulsosalud.com	magdana.postigo@synlab.pe		
+16086	Urologia Y Dolor Pelvico E.I.R.L.	urologomiguelcardenas@gmail.com	magdana.postigo@synlab.pe		
+16090	Centro Especializado Obstetric Care E.I.R.L.	salmaobstetricare@gmail.com	magdana.postigo@synlab.pe		
+16153	Servicios Petroleros Y Construcciones Sepcon S.A.C.	svela@sepcon.net	magdana.postigo@synlab.pe		
+16344	Bio Laboratorio Cg S.A.C.	biolabperusac@gmail.com	magdana.postigo@synlab.pe		
+16404	Salus Preventiva S.A.C.	administracion@preventiva.com.pe	magdana.postigo@synlab.pe		
+16416	Grupo Casta Sociedad Anonima Cerrada - Grupo Casta S.A.C.	patologiaclinica@clinicasanmarcos.com	magdana.postigo@synlab.pe		
+16425	Grupo Santov Sociedad Anonima Cerrada - Santov S.A.C.	consultas@mioma.pe	magdana.postigo@synlab.pe		
+16477	Centro Especializado Obstetric Care E.I.R.L.	salmaobstetricare@gmail.com	magdana.postigo@synlab.pe		
+11435	San Marcos Laboratorio Clinico E.I.R.L.	labsan556@gmail.com	magdana.postigo@synlab.pe		
+16082	Grupo De Salud Y Seguridad Ciss S.A.C.	administracion@grupociss.pe	magdana.postigo@synlab.pe		
+14059	Medical Group A E.I.R.L.	medicalgouparz@gmail.com	magdana.postigo@synlab.pe		
+15524	Socios En Salud Sucursal Peru	laboratorio@policlinicoses.com	magdana.postigo@synlab.pe		
+16551	Laboratorios Euler S.A.C.	infolaboratorioeuler@gmail.com	magdana.postigo@synlab.pe		
+7355	Valera Hurtado Bruno Ernesto	referencias@labexpressperu.com	magdana.postigo@synlab.pe		
+1273	Etel Medic Srl	etelmedic@hotmail.com	magdana.postigo@synlab.pe		
+4447	Osmed E.I.R.L.	laboratorioclinicoservan@gmail.com	magdana.postigo@synlab.pe		
+11508	Vl Salud Sociedad Anonima Cerrada - Vls Sac	laboratorio@vialibre.org.pe	magdana.postigo@synlab.pe		
+11532	Muñoz Laboratorio Clinico E.I.R.L.	labmedicadelperu@hotmail.com	magdana.postigo@synlab.pe		
+16461	Muñoz Retamozo Edgar Enmanuel	Lima@laboratoriosmunoz.com	magdana.postigo@synlab.pe		
+15744	Lab. Oncoser S.A.C.	magdana.postigo@synlab.pe			
+15822	Mejia Robles Daniel Fernando	flor.manrique15@gmail.com	magdana.postigo@synlab.pe		
+15943	Advincula Espino Rolando Eduardo	TECNOLABICA3@GMAIL.COM	magdana.postigo@synlab.pe		
+16177	Clinica Hernani S.A.C.	npauyac@clinicanuevasalud.pe	magdana.postigo@synlab.pe		
+15759	Huarcaya Suray Leidy Stefany	Precision.ica@gmail.com	magdana.postigo@synlab.pe		
+94	Medicina Integrada S.A.	laboratorio@clinicavistaalegre.com.pe	magdana.postigo@synlab.pe		
+4484	Policlinico Santiago Apostol Eirl	aranalab@hotmail.com	magdana.postigo@synlab.pe		
+11422	Parroquia La Trinidad	cmtrinidadlab@gmail.com	magdana.postigo@synlab.pe		
+11646	Laboratorio Clinico Safety Lab E.I.R.L.	labsafety44@gmail.com	magdana.postigo@synlab.pe		
+11953	Servicios Medicos Galdos Sociedad Anonima Cerrada	counterservimedic@gmail.com	magdana.postigo@synlab.pe		
+12740	Centro Nefrologico Villa Sur S.A.C.	jose.millones@neframedicalcare.com	magdana.postigo@synlab.pe		
+12783	W & H Investment S.A.C	laboratorio@wh.com.pe	magdana.postigo@synlab.pe		
+15014	Laboratorio Clinico Safety Lab E.I.R.L.	Administracion_losolivos@laboratoriosafety.pe	magdana.postigo@synlab.pe		
+15577	Instituto Peruano De Neurociencias Surco S.A.C.	laboratoriosurcoipn@gmail.com	magdana.postigo@synlab.pe		
+14721	Tecsur S.A.	rchia@tecsur.com.pe	magdana.postigo@synlab.pe		
+11289	Centro Diagnóstico Lilabs E.I.R.L.	laboratoriolilabs@gmail.com	magdana.postigo@synlab.pe		
+15918	Servicios Medical Solutions E.I.R.L	pedrocarrascoy@gmail.com	magdana.postigo@synlab.pe		
+16460	Jampi Service E.I.R.L.	laboratoriosavaz@gmail.com	magdana.postigo@synlab.pe		
+16712	Jireh & Rafa Medicos Asociados E.I.R.L.	albany-s17@hotmail.com	magdana.postigo@synlab.pe		
+16713	Jsr Salud Peru E.I.R.L.	laboratorio@buenaventurasalud.com	magdana.postigo@synlab.pe		
+16714	Jsr Salud Peru E.I.R.L.	laboratorio@buenaventurasalud.com	magdana.postigo@synlab.pe		
+16790	Medical Wsg S.R.L.	Wendyseminario@gmail.com	magdana.postigo@synlab.pe		
+17056	Hope Salud Y Bienestar S.A.C.	Hopesaludybienestar@gmail.com	magdana.postigo@synlab.pe		
+17088	Sanchez Santome Genoveva Noemi	miguel.tasaycov@outlook.com	magdana.postigo@synlab.pe		
+17105	Vida Sociedad Americana De Laboratorios Y Policlinicos Eirl	LABORATORIOSYPOLICLINICOSVIDA@GMAIL.COM	magdana.postigo@synlab.pe		
+17123	Cersso Vergara Valiery Stabry	dr.valiery.laboratorios1@gmail.com	magdana.postigo@synlab.pe		
+1478	Arce Bruffau, Gerardo Alfonso	gab2849@hotmail.com	referencias.chiclayo@synlab.pe		
+1824	Jose Martin Salazar Murillo	muri_labs@hotmail.com	referencias.chiclayo@synlab.pe		
+1826	Laboratorio De Analisis Clinicos Mc Scrl	marimgargurevich@gmail.com	referencias.chiclayo@synlab.pe		
+1827	Ñique Lab S.R.L.	robert.zhuin@gmail.com	referencias.chiclayo@synlab.pe		
+1831	Vivilab S.A.C.	vivilab2009@hotmail.com	referencias.chiclayo@synlab.pe		
+1905	Damian Litano Gregorio	gredami@hotmail.com	referencias.chiclayo@synlab.pe		
+1907	Anaya Diaz Wagner	wagnerlab30@hotmail.com	referencias.chiclayo@synlab.pe		
+1940	Vasquez Zapata Ydelson	ydelvaza1501@hotmail.com	referencias.chiclayo@synlab.pe		
+2077	Arce Salcedo Daniela Celeste	daniarces_2@hotmail.com	referencias.chiclayo@synlab.pe		
+2444	Bellodas Paredes Rosana Del Carmen	rosanabellodas@hotmail.com	referencias.chiclayo@synlab.pe		
+4515	Alvarez Vasquez Fidelia	Fidely82@hotmail.com	referencias.chiclayo@synlab.pe		
+4533	Flores Lloclla Miguel	laboratoriosmyc123@gmail.com	referencias.chiclayo@synlab.pe		
+7248	Dpi Dr. Rosas Eirl	laboratorio@dpichiclayo.com	referencias.chiclayo@synlab.pe		
+7322	Azcarate Chinchayan Julia Yrene	julyazcachin@hotmail.com	referencias.chiclayo@synlab.pe		
+7387	Cebinor Eirl	cebinor_lucas@hotmail.com	referencias.chiclayo@synlab.pe		
+11267	Murrugarra Bardales Nelson Eduardo	nelsontm150462@gmail.com	referencias.chiclayo@synlab.pe		
+11436	Bravo Cubas Fabrissio Alejandro	fabrissio0412@gmail.com	referencias.chiclayo@synlab.pe		
+11466	Acuña Estela Geovanna Adeli	referencias.chiclayo@synlab.pe			
+11468	Salus Laboris S.A.C.	laboratorio.chiclayo@saluslaboris.com	referencias.chiclayo@synlab.pe		
+11689	Moreto Santos Segundo Alindor	Segumor_aries@hotmail.com	referencias.chiclayo@synlab.pe		
+11732	Alarcon Vega Nilger	nike359@hotmail.com	referencias.chiclayo@synlab.pe		
+11893	Deka Lab E.I.R.L.	consultas.dekalab@gmail.com	referencias.chiclayo@synlab.pe		
+11928	Zurita Julca David Martin	alternativalab19@gmail.com	referencias.chiclayo@synlab.pe		
+11966	Laboratorio De Analisis Clinicos Biomedic S.R.L.	biomlablambayeque@gmail.com	referencias.chiclayo@synlab.pe		
+11969	Laboratorio Llontop S.R.L.	ervasquezll@hotmail.com	referencias.chiclayo@synlab.pe		
+11982	Laboratorio Biomedico Sigma Empresa Individual De Resonsabilidad Limitada	sigmalaboratoriobiomedico@gmail.com	referencias.chiclayo@synlab.pe		
+12034	Diaz Liza Jenny Elizabeth	Jennyeli_leo@hotmaul.com	referencias.chiclayo@synlab.pe		
+12074	Clinica Oftalmologica Vidava'S	laboratorio@clinicavidavas.com.pe	referencias.chiclayo@synlab.pe		
+12491	Eberth William Seclen Bernabe	ebr_sb53@hotmail.com	referencias.chiclayo@synlab.pe		
+12504	Laboratorio Labcenter S.A.C	Labcenterchepen@hotmail.com	referencias.chiclayo@synlab.pe		
+12546	Unionlab E.I.R.L.	unionlabchiclayo@gmail.com	referencias.chiclayo@synlab.pe		
+12563	Lau Cuba Lidia Luz	laboratoriolau@gmail.com	referencias.chiclayo@synlab.pe		
+12585	Calidad Y Salud T & F S.A.C.	chelysam23@hotmail.com	referencias.chiclayo@synlab.pe		
+12591	Sanikids S.A.C.	sanikids.chiclayo@synlab.pe	referencias.chiclayo@synlab.pe		
+12604	Galvez Gonzales Marlon Gianfranco	mg.referencenter@gmail.com	referencias.chiclayo@synlab.pe		
+12628	Centro Medico Ganimed S.A.C.	ganimedlaboratorio@gmail.com	referencias.chiclayo@synlab.pe		
+12630	Multiples Laboratorios Medicos Belen S.A.C.	ADIPACAM@HOTMAIL.COM	referencias.chiclayo@synlab.pe		
+12650	Davila Sobrino Aldo Wilinton	Benitopretels@hotmail.com	referencias.chiclayo@synlab.pe		
+12653	Precisa Diagnostica S.A.C.	laboratorioprocesos@precisadx.com	referencias.chiclayo@synlab.pe		
+12654	Garcia Carassas Jorge Luis	garcialaboratorios.chiclayo@gmail.com	referencias.chiclayo@synlab.pe		
+12680	Eco Ray Diagnostico S.A.C.	Frank_c15_4@hotmail.com	referencias.chiclayo@synlab.pe		
+12681	Castro Racchumi Mario Napoleon	anatomiapatologicado@gmail.com	referencias.chiclayo@synlab.pe		
+12742	Nefro Salud Chiclayo S.A.C.	referencias.chiclayo@synlab.pe			
+12759	Intelab S.A.C.	mitchell.romero@intelab.com.pe	referencias.chiclayo@synlab.pe		
+12774	Centro Medico Salud Y Bienestar Familiar S.A.C.	miguelantoniodv@hotmail.com	referencias.chiclayo@synlab.pe		
+12791	Laboratorio Cerin S.A.C.	anyi130@hotmail.com	referencias.chiclayo@synlab.pe		
+13017	Laboratorio Analisis Clinicos Reyes E.I.R.L.	laboratorioreyes_2020@hotmail.com	referencias.chiclayo@synlab.pe		
+13884	World Lab Peru S.A.C.	leydi13_13@hotmail.com	referencias.chiclayo@synlab.pe		
+14035	Amoroz Escarate Tim Mc-Coy	tim_amoroz@hotmail.com	referencias.chiclayo@synlab.pe		
+14106	Gonzales Cornejo Lizandro	mmir102830@hotmail.com	referencias.chiclayo@synlab.pe		
+14354	Muñoz Huaman Deyvi Jhoan	deyvidjhoan@gmail.com	referencias.chiclayo@synlab.pe		
+14414	Marvin Sersalud E.I.R.L.	referencias.chiclayo@synlab.pe			
+14487	Clinica Union S.A.C.	laboratorio_clinicaunionchiclayo.com	referencias.chiclayo@synlab.pe		
+14590	Delgado Burgos Gladys Ysabel	referencias.chiclayo@synlab.pe			
+14964	Cosmos Servicios & Comercializacion Empresa Individual De Re	referencias.chiclayo@synlab.pe			
+15129	Soluciones Medicas El Salvador S.A.C.	smelsalvadorsac@gmail.com	referencias.chiclayo@synlab.pe		
+15162	Gonzales Santos Roy Brayan	referencias.chiclayo@synlab.pe			
+15175	Grupo Omin Srl	bioserlab.info@gmail.com	referencias.chiclayo@synlab.pe		
+15230	Nebri Lab E.I.R.L	nebrilabcix@gmail.com	referencias.chiclayo@synlab.pe		
+15258	Laboratorio De Analisis Clinicos Y Citopatologicos Myalab E.	referencias.chiclayo@synlab.pe			
+15318	Servicios Medicos Especializados De Chiclayo S.A.C.	referencias.chiclayo@synlab.pe			
+15319	Fyr Lab – Servicios Generales S.A.C.	referencias.chiclayo@synlab.pe			
+15395	Hospital Metropolitano Sociedad Anonima	referencias.chiclayo@synlab.pe			
+15500	Mundo Integral De Salud Ocupacional S.A.C.	giulianabravo28@gmail.com	referencias.chiclayo@synlab.pe		
+15567	Consultorio Medico Y Laboratorio San Martin De Thours E.I.R.	viraveal20@gmail.com	referencias.chiclayo@synlab.pe		
+15614	Sama Medic Empresa Individual De Responsabilidad Limitada	laboratoriochiclayo@gruposama.pe	referencias.chiclayo@synlab.pe		
+15640	Inkasalud S.A.C.	armando.tm1311@gmail.com	referencias.chiclayo@synlab.pe		
+15645	Benites Santisteban Julio Cesar	benilab2022@gmail.com	referencias.chiclayo@synlab.pe		
+15656	Clavo Horna Carlos Percy	clavohornac@gmail.com	referencias.chiclayo@synlab.pe		
+15675	Laboratorios Y Servicios De Salud Valdivia Cumpa S.A.C.	alezza.23@hotmail.com	referencias.chiclayo@synlab.pe		
+15723	Servicios De Salud Integral Medi Control Sac	medicontrol.sac@gmail.com	referencias.chiclayo@synlab.pe		
+15779	Innovacion Medica Del Peru E.I.R.L.	ENRIQUEIDROBA@GMAIL.COM	referencias.chiclayo@synlab.pe		
+15781	Davila Castro Carlos Ramiro	Yrimarachinvallejos12@gmail.com	referencias.chiclayo@synlab.pe		
+15852	Dadylab Servicios Medicos Integrales S.A.C.	wadh5@hotmail.com	referencias.chiclayo@synlab.pe		
+15861	Servicios Medicos Astromedic S.A.C.	pierrine.carrasco@gmail.com	referencias.chiclayo@synlab.pe		
+15993	Laboratorios Labmed S.R.L.	laboratorioslabmed@gmail.com	referencias.chiclayo@synlab.pe		
+16000	Stlym E.I.R.L.	Stlym.eirl@gmail.com	referencias.chiclayo@synlab.pe		
+16018	S & J Laboratorios Peru E.I.R.L.	scarlyfarrodiaz14@gmail.com	referencias.chiclayo@synlab.pe		
+16062	Lider Medica S.A.	laboratoriolidermedica23@gmail.com	referencias.chiclayo@synlab.pe		
+16126	Genetica Lab Sociedad Anonima Cerrada	jorgelimo@labgenetica.com	referencias.chiclayo@synlab.pe		
+16140	Asociados En Salud S.A.C.	fjdha_1714@hotmail.com	referencias.chiclayo@synlab.pe		
+16143	Sipion Diaz Laboratorio S.R.L.	sipdilab@gmail.com	referencias.chiclayo@synlab.pe		
+16148	Lab Bio Analisis E.I.R.L.	diazbioanalisis@gmail.com	referencias.chiclayo@synlab.pe		
+16185	Lopez Lozano Paulo Cesar	norlab1@hotmail.com	referencias.chiclayo@synlab.pe		
+16224	Laboratorio Clinico Hc Diagnostic E.I.R.L.	hcdiagnostic2@gmail.com	referencias.chiclayo@synlab.pe		
+16242	V.O.M. Laboratorio Clinico Y De Investigacion E.I.R.L	yvasquezm03@gmail.com	referencias.chiclayo@synlab.pe		
+16368	Bustamante Aquino Yngrid	analista.fleminglcsm@gmail.com	referencias.chiclayo@synlab.pe		
+16389	Verona Velasquez Julia Esperanza	jveve5rubi@gmail.com	referencias.chiclayo@synlab.pe		
+16407	Divino Niño Jesus Centro De Ayuda Diagnostica S.A.C. - Divin	Native.zelada.hernandez@gmail.com	referencias.chiclayo@synlab.pe		
+16457	Perez Romero Katherine	Katyp6245@gmail.com	referencias.chiclayo@synlab.pe		
+16468	Calidad Y Salud J & R S.A.C.	CLOTI8_VB@HOTMAIL.COM	referencias.chiclayo@synlab.pe		
+16469	Laboratorio Clinico Tecnolab E.I.R.L.	tecnolabcajamarca@gmail.com	referencias.chiclayo@synlab.pe		
+16491	Risco Leon Karina Del Pilar	luisrisco2729@gmail.com	referencias.chiclayo@synlab.pe		
+2492	Garcia Segura Yngrid Medalid	labclinicsgs@gmail.com	referencias.chiclayo@synlab.pe		
+4442	Soluciones Medicas Del Norte Sociedad Anonima Cerrada	ventas@solucionesmedicas.com.pe	referencias.chiclayo@synlab.pe		
+16528	Cix Health E.I.R.L.	sthefani2197@gmail.com	referencias.chiclayo@synlab.pe		
+14752	Bernal Fiestas Jaime Miguel	milber0505@hotmail.com	referencias.chiclayo@synlab.pe		
+16571	Garnique Capuñay Leonardo Franco	Libra_238_3@hotmail.com	referencias.chiclayo@synlab.pe		
+16572	Centro Medico Analizate E.I.R.L.	centromedicoanalizate@gmail.com	referencias.chiclayo@synlab.pe		
+16662	Consultorio Medico Ecografico Gl E.I.R.L.	emyli_95@hotmail.com	referencias.chiclayo@synlab.pe		
+1622	Clinica Del Pacifico S.A.	CVELIZ@CLIPAC.PE	referencias.chiclayo@synlab.pe		
+16685	Seminario Leon Diego Alonso	cerfisio08@gmail.com	referencias.chiclayo@synlab.pe		
+16687	Centro Medico Cepresalud & Urolab E.I.R.L.	urolabsaludchiclayo@gmail.com	referencias.chiclayo@synlab.pe		
+16693	San Isidro Laboratorio Clinico Y Servicios Medicos E.I.R.L.	jzguerrero176@gmail.com	referencias.chiclayo@synlab.pe		
+13937	Cieza Montalvo Julio Cesar	jcciezam@gmail.com	referencias.chiclayo@synlab.pe		
+16710	Centro De Apoyo Al Diagnostico Dr. Berly Manrique Ugarte S.A	laboratorio@bermanlab.com	referencias.chiclayo@synlab.pe		
+16716	Medic Solutions Preventiva Sac	jimmybazanvasquez@gmail.com	referencias.chiclayo@synlab.pe		
+16717	Dorcas Salud De La Mujer S.R.L.	arearecepcion2024@gmail.com	referencias.chiclayo@synlab.pe		
+16735	Medicalcare Lambayeque S.A.C.	diana17ful@gmail.com	referencias.chiclayo@synlab.pe		
+12015	Mejia Vasquez Ketty	kettymejiavasquez@gmail.com	referencias.chiclayo@synlab.pe		
+16741	Chafloque Zevallos Junior Antonio	antoniochafloquec@gmail.com	referencias.chiclayo@synlab.pe		
+13690	Tumba Gomez Jesus Jorge	jesustumbagomez@gmail.com	referencias.chiclayo@synlab.pe		
+16198	Tenorio Pizarro Anthony Edie	libra_10_22180@hotmail.com	referencias.chiclayo@synlab.pe		
+16779	Corporacion Centro Medico Del Norte S.A.C.	gerenciacomercial@centromedicodelnorte.com.pe	referencias.chiclayo@synlab.pe		
+16780	Diaz Ortiz Jenny Soledad	jennydiazortiz95@gmail.com	referencias.chiclayo@synlab.pe		
+16803	Teledoc-Lab Sociedad Por Acciones Cerrada Simplificada	Teledoc.lab@gmail.com	referencias.chiclayo@synlab.pe		
+16805	Centro De Excelencia En Reumatologia Aqr S.A.C	administración@ceraqr.com	referencias.chiclayo@synlab.pe		
+16827	Clinica Enfoque Salud S.A.C.	mpilarpc_7@hotmail.com	referencias.chiclayo@synlab.pe		
+16907	Alvarado Yacila Edin Joel	Joalya2307@gmail.com	referencias.chiclayo@synlab.pe		
+16909	Investigacion Y Tecnologia Para La Salud Y El Ambiente S.A.C.	intesa.lab@gmail.com	referencias.chiclayo@synlab.pe		
+16937	Salud Y Vida Del Norte E.I.R.L.	serviciosdesalud.savinor@gmail.com	referencias.chiclayo@synlab.pe		
+16943	Coronel Rimarachin Ledis Yoseli	yoselab2019@gmail.com	referencias.chiclayo@synlab.pe		
+16962	De La Cruz Cruz Graciela Esperanza	gdelacruzcruz356@gmail.com	referencias.chiclayo@synlab.pe		
+17026	Encalada Morocho Hellen Kimberly	margoth0406line@gmail	referencias.chiclayo@synlab.pe		
+17045	Ramirez Castro Jose Luis	jlsepsf@gmail.com	referencias.chiclayo@synlab.pe		
+12984	Quiliche Mantilla Jose Edgar	tecnolabcajmarca@gmail.com	marlon.galvez@synlab.pe		
+15964	Mori Sigüeñas Jorge Luis	morilab.24@gmail.com	marlon.galvez@synlab.pe		
+11968	Urquizo Garcia Er Menebal	ermenebal_92@hotmail.com	marlon.galvez@synlab.pe		
+15103	Ingenio Y Soluciones Sociedad Anonima	administracion@laboratorioelingenio.com	marlon.galvez@synlab.pe		
+15890	Silva Rojas Kelly Elizabeth	Cklab_clinico@hotmail.com	marlon.galvez@synlab.pe		
+15907	Lujan Ramos Ronald Smith	medilabs2020@gmail.com	marlon.galvez@synlab.pe		
+15968	Reyna Vigo Carlos Yoel	cyrv2013@gmail.com	marlon.galvez@synlab.pe		
+16026	Servicios De Salud Y Patologia Clinica Silab E.I.R.L.	silabcajamarca@gmail.com	marlon.galvez@synlab.pe		
+16071	Laboratorio Llontop S.R.L.	laboratoriollontop@gmail.com	marlon.galvez@synlab.pe		
+16078	Genericos Peru Y Servicios Generales S.R.L.	labnacer_cajamarca@hotmail.com	marlon.galvez@synlab.pe		
+16110	Eritrolab S.R.L.	eritrolaboratorio12@gmail.com	marlon.galvez@synlab.pe		
+16205	Laboratorio Cadi Eirl	Cadi_lab1@hotmail.com	marlon.galvez@synlab.pe		
+16239	Laboratorio De Analisis Clinicos Labcenter S.A.C.	labcentercax@gmail.com	marlon.galvez@synlab.pe		
+16247	Pardo Medic S.A.C	JDPARDOFER@OUTLOOK.COM	marlon.galvez@synlab.pe		
+16076	Clinica Limatambo Cajamarca S.A.C.	laboratorio@limatambo.com.pe	marlon.galvez@synlab.pe		
+16880	Laboratorio El Ingenio S.A.	carmensilva@laboratorioelingenio.com	marlon.galvez@synlab.pe		
+16994	Corporacion Corva Servicios Generales S.R.L.	medicenter@gmail.com	marlon.galvez@synlab.pe		
+17053	Biocenter Eirl	humbertto333@gmail.com	marlon.galvez@synlab.pe		
+17057	Lora Vera Patricia	patricialoravera@gmail.com	marlon.galvez@synlab.pe		
+17069	Alburuqueque Cabrera Liz Carolina	Carolina_4_3@hotmail.com	marlon.galvez@synlab.pe		
+17086	Julca Mendoza Francisco Joel	joeljulcamen@gmail.com	marlon.galvez@synlab.pe		
+2246	Garcia Duran Mena	megadu1276@gmail.com	rosali.herrera@synlab.pe		
+1726	Laboratorio Medico Santa Rosa S.A.C.	Sonia.urbano.obregon@gmail.com	rosali.herrera@synlab.pe		
+7407	Labcell Laboratorio Clinico E.I.R.L.	labcellaboratorios@outlook.com.pe	rosali.herrera@synlab.pe		
+16178	Laboratorio De Analisis Clinico Analizate Dm S.A.	Laboratorioanalizatehuaraz@gmail.com	rosali.herrera@synlab.pe		
+77	Centro De Apoyo Al Diagnostico Dr. Berly Manrique Ugarte S.A.C.	marianelita_20@hotmail.com	rosali.herrera@synlab.pe		
+110	Laboratorio Quintanilla Srl	tcastilloc@labquintanilla.com.pe	rosali.herrera@synlab.pe		
+1445	Yupanqui Ynfantes Alex Oswaldo	orilab2013@hotmail.com	rosali.herrera@synlab.pe		
+1566	Clinica Santa Ana S.A.C.	santaanalab@hotmail.com	rosali.herrera@synlab.pe		
+1625	Laboratorio De Ensayos Clinicos Biologicos E Industriales Eirl	laboratorio_lecbi@yahoo.es	rosali.herrera@synlab.pe		
+1648	Miranda Borjas Nicolaza Gregoria	Miranda257@hotmail.com	rosali.herrera@synlab.pe		
+1750	Clinica San Antonio Sac	laboratorio@clinicasanantonio.pe	rosali.herrera@synlab.pe		
+1790	Escacorp S.A.C.	laboratorio@escalabs.com	rosali.herrera@synlab.pe		
+2001	Diaglab Eirl	lab_diaglab@hotmail.com	rosali.herrera@synlab.pe		
+2088	Cuba Jauregui Edward Enrique	Corelabcuba@hotmail.com	rosali.herrera@synlab.pe		
+2361	Laboratorio Clinico Metropolitano E.I.R.L.	labcmetropolitano@hotmail.com	rosali.herrera@synlab.pe		
+2362	Reyes Alfaro Wilder Adamir	ccitolab@hotmail.com	rosali.herrera@synlab.pe		
+2404	Martin Alva Enrique Aurelio	aice_conta@hotmail.com	rosali.herrera@synlab.pe		
+2497	Salud Ocupacional Norte S.A.C.	mlaura@sano.com.pe	rosali.herrera@synlab.pe		
+7246	Plasencia Mostacero Rosario Violeta	rosario.pm@outlook.com	rosali.herrera@synlab.pe		
+7416	Vargas Chavez Maria Del Socorro	maravargas2008@gmail.com	rosali.herrera@synlab.pe		
+7422	Zavaleta Obeso Margarita Lucina	lucy_zavaleta@hotmail.com	rosali.herrera@synlab.pe		
+7428	Laboratorio Clinico Funegra E.I.R.L.	laboratoriofunegra@gmail.com	rosali.herrera@synlab.pe		
+7434	Ecolida S.A.C.	ecolida.med@gmail.com / victorlin15@hotmail.com	rosali.herrera@synlab.pe		
+11558	Vasquez Rodriguez Rolland Adalberto	rollandvasquez@gmail.com	rosali.herrera@synlab.pe		
+11559	Puicon Yaipen Cesar Augusto	puiconlabs_2003@hotmail.com	rosali.herrera@synlab.pe		
+11566	Escobar Lopez Carlos Alberto	kael100279@hotmail.com	rosali.herrera@synlab.pe		
+11605	Tejada Torres De Pretel Magaly Cecilia	pretlab.laboratorios@hotmail.com	rosali.herrera@synlab.pe		
+11643	Clinica Medsalud S.A.C.	josedi_AZZ@hotmail.com	rosali.herrera@synlab.pe		
+11708	Asociacion Civil Servicios Generales Madre De Cristo	laboratorio@clinicamadredecristo.pe	rosali.herrera@synlab.pe		
+11841	Quintanilla Medicos S.A.C	quintanillamedicos@gmail.com	rosali.herrera@synlab.pe		
+11881	Wong Lab E.I.R.L.	Kiara Amaya Romero	rosali.herrera@synlab.pe		
+12060	Vivas Castro Jessica Brunilda	lablima1@hotmail.com	rosali.herrera@synlab.pe		
+12444	Negociaciones Iparraguirre S.A.C.	wilmer.iparraguirre@gmail.com	rosali.herrera@synlab.pe		
+12513	Julca Leon Gina Elizabeth	julcalegina@gmail.com	rosali.herrera@synlab.pe		
+12612	Centro De Consultoria, Auditoria Y Educacion Vithales S.A.C.	centrovithales@gmail.com	rosali.herrera@synlab.pe		
+12834	Diaz Vigo Rosa Amelia	pardilab@hotmail.com	rosali.herrera@synlab.pe		
+13005	Centro Medico Santa Maria De Los Angeles S.R.L.	gtelloalv@gmail.com	rosali.herrera@synlab.pe		
+13569	Vigo Salinas Anderson Jesus	jesusvigosalinas@gmail.com	rosali.herrera@synlab.pe		
+13616	Segura Armas Bertha Juliana	bertha_seguraa@yahoo.com	rosali.herrera@synlab.pe		
+13626	Osorio Salvador Johana Lourdes Elena Esther	johana.osario954@gmail.com	rosali.herrera@synlab.pe		
+13935	Inversiones Javsan S.A.C.	labjavsan07@hotmail.com	rosali.herrera@synlab.pe		
+14166	Laboratorio Clinico Rsc S.A.C.	syrclab@gmail.com	rosali.herrera@synlab.pe		
+14191	Chilquillo Anticona Kattia Soledad	katy_mats1@hotmail.com	rosali.herrera@synlab.pe		
+14361	Biopar Laboratorios E.I.R.L.	bioparlaboratorios@gmail.com	rosali.herrera@synlab.pe		
+14412	Laboratorio Y Servicios Gallardlab E.I.R.L.	jenngorz@gmail.com	rosali.herrera@synlab.pe		
+14413	Laboratorio Yparraguirre E.I.R.L.	rodrigorafaelvalentintrujillo@gmail.com	rosali.herrera@synlab.pe		
+14492	Quirusalud Trujillo E.I.R.L.	quirusalud.eirl@gmail.com	rosali.herrera@synlab.pe		
+14798	Laboratorio Rodriguez De Analisis Clinicos S.A.C.	maritzamarchan28@gmail.com	rosali.herrera@synlab.pe		
+15098	Biolab & Inmunomed Del Peru Sac	claudia.lizarzaburu@biolabinmunomed.com	rosali.herrera@synlab.pe		
+15178	Imeqsa S.A.C.	inovalab.asist@gmail.com	rosali.herrera@synlab.pe		
+15463	Plus De Vie S.A.C.	allegra.lab.trujillo@gmail.com	rosali.herrera@synlab.pe		
+15473	Centro De Diagnostico Por Imagenes Del Norte S.A.C.	cdidelnortesac@gmail.com	rosali.herrera@synlab.pe		
+15481	Los Angeles Laboratorio Clinico E.I.R.L.	angeleslabperu@gmail.com	rosali.herrera@synlab.pe		
+15501	Labclin Servicios De Salud E.I.R.L.	consultas.labclin@gmail.com	rosali.herrera@synlab.pe		
+15502	Sanar Laboratorios Del Peru E.I.R.L.	sanarlaboratoriosperu@gmail.com	rosali.herrera@synlab.pe		
+15581	Alvarado Portilla Jessica Karin	jorgelui663@hotmail.com	rosali.herrera@synlab.pe		
+15714	Corporacion Clinica Igs E.I.R.L.	laboratorioclinicoigscorp@gmail.com	rosali.herrera@synlab.pe		
+15715	Janilabs E.I.R.L.	Laboratoriojanilabs@hotmail.com	rosali.herrera@synlab.pe		
+15761	Servicio Medico Complementario S.A.C.	dfarronan@amiasistencia.com	rosali.herrera@synlab.pe		
+15774	Amaya Diaz Yesica Hermorita	LEONLAB1@HOTMAIL.COM	rosali.herrera@synlab.pe		
+15776	Versilabs E.I.R.L.	versilabs0520@gmail.com	rosali.herrera@synlab.pe		
+15829	Vega Cabanillas Rubby Lissett	rosali.herrera@synlab.pe			
+15832	Huañap Luciano Anita Pamela	any_2128@hotmail.com	rosali.herrera@synlab.pe		
+15906	Servicios Medicos Generales California S.A.C.	ADMISION.CALIFORNIA@GMAIL.COM	rosali.herrera@synlab.pe		
+15912	J & O Ingenieros Soluciones E.I.R.L.	jesicaartazac@gmail.com	rosali.herrera@synlab.pe		
+15965	Pastor Polo Kelvin William	tecnolab1.laboratorio@gmail.com	rosali.herrera@synlab.pe		
+16038	Corporacion Eslab E.I.R.L.	estefi.ar@outlook.com.pe	rosali.herrera@synlab.pe		
+16047	Empresa Fissalab S.A.C.	fissalabsac@gmail.com	rosali.herrera@synlab.pe		
+16227	Sanamed S.A.C.	sanalab030@gmail.com	rosali.herrera@synlab.pe		
+16255	Centro De Diagnostico Peruano Aleman S.A.C.	kidsalud@hotmail.com	rosali.herrera@synlab.pe		
+16323	Gutierrez Mendoza Lady Genesis	mendoza.labclinic@gmail.com	rosali.herrera@synlab.pe		
+16349	Rivera Aznaran Jose Alberto	rivelab.laboratorio@hotmail.com	rosali.herrera@synlab.pe		
+16379	Correa Angulo Jorge Teofilo Martin	angeladeybis1928@gmail.com	rosali.herrera@synlab.pe		
+16394	Corporacion Medica E Inversiones S.A.C.	corporacionmedicaeinversiones@gmail.com	rosali.herrera@synlab.pe		
+16414	Sanchez Grados Jacqueline Melissa	melissa_18_17@hotmail.com	rosali.herrera@synlab.pe		
+16424	Topicos Y Laboratorios Labynort S.A.C.	ATENCIONES.LABYNORT@GMAIL.COM	rosali.herrera@synlab.pe		
+16445	Laboratorio Clinico Argoslab E.I.R.L.	eliargomedo@gmail.com	rosali.herrera@synlab.pe		
+11622	Labp Medic E.I.R.L.	labpmedic2024@gmail.com	rosali.herrera@synlab.pe		
+1467	Melendez Villanueva Giovanna Paola	melendez_lab@hotmail.com	rosali.herrera@synlab.pe		
+16265	Medina Amaya Mayuli Yameli	laboratorioamayalab@gmail.com	rosali.herrera@synlab.pe		
+16673	De Velasco Guzman Julio	drjuliodevelasco@gmail.com	rosali.herrera@synlab.pe		
+16257	Hosanna Pach Medic S.A.C.	herlesspachecolab@gmail.com	rosali.herrera@synlab.pe		
+15626	Centro Medico Ocupacional San Juan S.R.L.	eddy_ef_15@hotmail.com	rosali.herrera@synlab.pe		
+15897	Servicios Medicos Generales M & G E.I.R.L.	lacruznichojaviereduardo7@hotmail.com	rosali.herrera@synlab.pe		
+16006	Apar Diagnostics S.A.C.	Daponte@hotmail.com	rosali.herrera@synlab.pe		
+16535	Inversiones Adn Laboratorios E.I.R.L. - Inversiones Adn E.I.	dnaq8@hotmail.com	rosali.herrera@synlab.pe		
+16707	Enpaluma Servicios Medicos S.A.C.	medsalud_laredo@hotmail.com	rosali.herrera@synlab.pe		
+16366	Sociedad Misionera El Milagro De Dios	pbenitesquispe@gmail.com	rosali.herrera@synlab.pe		
+16740	Radimedica J.A. E.I.R.L.	M3RCEMAC@GMAIL.COM	rosali.herrera@synlab.pe		
+15928	Lezma Villanueva Mariela	mary_escorpio_3amores@hotmail.com	rosali.herrera@synlab.pe		
+15805	Inversiones Medicas Mp E.I.R.L.	inversiones.medicasmpeirl@gmail.com	rosali.herrera@synlab.pe		
+2409	Asociacion Fomentar Ongd	cinthibel19@gmail.com	rosali.herrera@synlab.pe		
+16904	Romero Torres Jeysi Milagritos	villalobos.milagritos76@gmail.com	rosali.herrera@synlab.pe		
+16920	Centro Medico Stella Maris Hz- S.A.C.	Clinicastellamaris@gmail.com	rosali.herrera@synlab.pe		
+17089	Doc Cancer Center E.I.R.L.	articuloslando@gmail.com	rosali.herrera@synlab.pe		
+17113	Empresa De Servicios Medicos San Felipe Huaraz S.A.C.	policlinicosanfelipe@gmail.com	rosali.herrera@synlab.pe		
+17115	Vidalab J & J Laboratorio S.A.C.	laboratorio.vidalabs1@gmail.com	rosali.herrera@synlab.pe		
+17122	Finamedic S.A.C.	info@finamedic.pe	rosali.herrera@synlab.pe		
+4393	Roca Gonzales Nelly Margot	nelly_margot12@hotmail.com	jose.perez@synlab.pe		
+351	Centro Medico Clinica Las Palmeras Sociedad Anonima Cerrada - C.M. Las Palmeras S.A.C.	laspalmeras.recepcion@gmail.com	jose.perez@synlab.pe		
+11594	Velare Servicios Sociedad Anonima Cerrada	laboratorionovoclinic@gmail.com	jose.perez@synlab.pe		
+15307	Velare Servicios Sociedad Anonima Cerrada	novoclinic0117@gmail.com	jose.perez@synlab.pe		
+15324	Velare Servicios Sociedad Anonima Cerrada	novoclinic0117@gmail.com	jose.perez@synlab.pe		
+16568	Meplab Sac	logisticameplabsac@gmail.com	jose.perez@synlab.pe		
+16608	International Genesis Corporation S.A.C.	CEO@CLINICAGENESIS.PE	jose.perez@synlab.pe		
+16667	Genetica Molecular S.A.C.	administracion@genetica-molecular.com	jose.perez@synlab.pe		
+15308	Reproduccionperu S.A.C.	fertilidadvitra@gmail.com	jose.perez@synlab.pe		
+16043	Rodelab Sociedad Anonima Cerrada - Rodelab S.A.C.	coordinacion@rodelab.com.pe	jose.perez@synlab.pe		
+16428	Laboratorio De Analisis Clinicos Y De Investigacion Biologic	Salanya.laboratorio.oav@gmail.com	jose.perez@synlab.pe		
+11679	Aids Healthcare Foundation Perú Sucursal	11679ahf@synlabRZV.onmicrosoft.com	jose.perez@synlab.pe		
+14998	Embryofertility Sac	jgarciaferreyra@embryofertility.com			
+16124	Intervenciones En Ginecologia Obstetricia Y Reproduccion (Ig	Vane.192626@gmail.com	jose.perez@synlab.pe		
+2392	Rodelab Sociedad Anonima Cerrada - Rodelab S.A.C.	administración@rodelab.com.pe	jose.perez@synlab.pe		
+15942	Grupo Savaz S.A.C.	laboratoriosavaz@gmail.com	jose.perez@synlab.pe		
+2320	Garcia Aquino Alan Martin	labhouse.sac@gmail.com	jose.perez@synlab.pe		
+14228	B.Bios International S.A.C.	bioslab@biosmed.net	jose.perez@synlab.pe		
+1362	Promotora Asistencial S.A.C Clinica Lima Tambo	laboratoriosi@clinicalimatambo.com	jose.perez@synlab.pe		
+2330	Promotora Asistencial S.A.C Clinica Lima Tambo	laboratorio3sjl@clinicalimatambo.com	jose.perez@synlab.pe		
+4505	Promotora Asistencial S.A.C Clinica Lima Tambo	LABORATORIOMINKA@GMAIL.COM	jose.perez@synlab.pe		
+12535	Pat Medic Laboratorios S.A.C. - Pat Medic S.A.C	sanbernardolab01@gmail.com	jose.perez@synlab.pe		
+15862	Yahve-Rafha S.A.C.	healthathomeenfer@gmail.com	jose.perez@synlab.pe		
+15900	Morris Ferrand Anunziata	amorrisf@gmail.com	jose.perez@synlab.pe		
+1451	Milenium Salud - Daleth Lab S.A.C.	mileniumocupacional@gmail.com	jose.perez@synlab.pe		
+1359	Pontificia Universidad Catolica Del Peru	pfernan@pucp.edu.pe	jose.perez@synlab.pe		
+15277	Nova Lab Service E.I.R.L.	atencion@novalabservice.com	jose.perez@synlab.pe		
+1972	Asoc. Pastoral De Servicios Medico Asistenciales Good Hope De La Iglesia Adventista Del Septimo Dia	coord.med.ucis@goodhope.org.pe	jose.perez@synlab.pe		
+1756	Citolab Eirl	citolab_cells@yahoo.es	jose.perez@synlab.pe		
+2328	Gonzalez Moscoso Servicios Medicos S.A.C.	ADMINISTRACION@GAMMAMEDICA.COM.PE	jose.perez@synlab.pe		
+2337	Luis Nakandakari Y Eirl	lab_nakandakari@hotmail.com	jose.perez@synlab.pe		
+11909	Inversiones Mds Peru Sociedad Anonima Cerrada - Inversiones Mds Peru S.A.C.	Info@sandolab.com.pe	jose.perez@synlab.pe		
+14388	S & S Negocios Corporativos S.A.C.	tusresultados@labservicesperu.com	jose.perez@synlab.pe		
+16380	Gamma Medica Diagnostica S.A.C.	laboratorio@gammamedica.com.pe	jose.perez@synlab.pe		
+16507	Gestsalud A & M E.I.R.L.	gestsaludam26@gmail.com	jose.perez@synlab.pe		
+52	Anglolab S A	Tecnicos2@anglolab.com	jose.perez@synlab.pe		
+1065	Suiza Lab S.A.C.	control.muestra@suizalab.com	resultados@suizalab.com	superv.miraflores@suizalab.com	jose.perez@synlab.pe
+1468	Instituto De Criopreservacion Y Terapia Celular S.A.C.	jpando@criocord.com.pe	jose.perez@synlab.pe		
+1573	Mendez Castillo De Quito Rosa Elizabeth	amparo_612@hotmail.com	jose.perez@synlab.pe		
+11423	Dilab - Diagnostico E Investigacion En Medicina Laboratorial S.A.C.	dilabsac@hotmail.com	jose.perez@synlab.pe		
+14068	Oxybarika E.I.R.L. - Oxybarika	drawendyvera@gmail.com	jose.perez@synlab.pe		
+15670	Western Lab S.A.C.	erojas@westernlab.pe	jose.perez@synlab.pe		
+16317	Cuidamed Servicios Medicos S.A.C.	laboratorio@cuidamed.pe	jose.perez@synlab.pe		
+1348	Centro De Fertilidad Y Reproducción Asistida Sac	cefra@synlab.pe	jose.perez@synlab.pe		
+2071	Centro Medico Avendaño S.A.C.	avendano@synlab.pe	jose.perez@synlab.pe		
+14109	Fertivida E.I.R.L.	hola@fertividaperu.com	jose.perez@synlab.pe		
+16807	Proyecto Alfa Beta S.A.C.	VICTORLARA@CEFRA.COM.PE	jose.perez@synlab.pe		
+16833	Laboratorio Nakandakari S.A.C.	Cecilia_castro_salas@hotmail.com	jose.perez@synlab.pe		
+16875	Laboratorio Anatomopatologico Biolabc S.A.C.	laboratorio@enmedico.com	jose.perez@synlab.pe		
+1448	Santa Rita Centro De Analisis E Investigacion Empresa Individual De Responsabilidad Limitada	grupo_santarita@hotmail.com	rosali.herrera@synlab.pe		
+1466	Laboratorios Rivera S.A.C.	laboratoriosrivera@hotmail.com	rosali.herrera@synlab.pe		
+1743	Calla Quevedo Jose Luis	sanjoselabs@hotmail.com	rosali.herrera@synlab.pe		
+2075	Ulloa Villacorta Ellyn Betty	Johncruzcruz512@gmail.com	rosali.herrera@synlab.pe		
+2245	Policlinico Señor De Los Milagros De Trujillo S.R.L.	labclisermilagros@gmail.com	rosali.herrera@synlab.pe		
+2359	Bio Lab E.I.R.L.	biolabperu@yahoo.com	rosali.herrera@synlab.pe		
+2391	Beltran Morales Jose Manuel	maricucha211@gmail.com	rosali.herrera@synlab.pe		
+2393	Anhuaman Leyva Gary Antonio	Garylab2016@gmail.com	rosali.herrera@synlab.pe		
+2401	Laboratorio De Analisis Clinicos Cantella S.A.C.	laboratorioclinico@diagnostica.pe	rosali.herrera@synlab.pe		
+4441	Centro De Atencion Medica Virgen De La Puerta S.R.L.	clinicavirgendelapuertasrl@gmail.com	rosali.herrera@synlab.pe		
+7356	Fondo Prest.Asis.Y Serv.Fun.De Los Trab.,Pensionista Y Ex Tr-	rosali.herrera@synlab.pe			
+7374	Universidad Privad Antenor Orrego	sarroyog2@upao-edu.pe	rosali.herrera@synlab.pe		
+7388	Prosalud Laboratorio Clinico S.A.C	prosalud.laboratorio2019@gmail.com	rosali.herrera@synlab.pe		
+7392	Organizacion De Servicios Asistenciales De Salud S.A.C.	cmpa.laboratorio@gmail.com	rosali.herrera@synlab.pe		
+11297	Utes N06-Servicios Perifericos Trujillo	francofrias1@gmail.com	rosali.herrera@synlab.pe		
+11346	Sanar Staff Salud S.A.C.	admisanar@gmail.com	rosali.herrera@synlab.pe		
+11415	Ocusaq Peru S.R.L.	diagnostika.humanidad@gmail.com // diagnostikalabs@gmail.com // dra.teresacusma@gmail.com	rosali.herrera@synlab.pe		
+11447	Dale Salud S.A.C.	soguego2810@gmail.com	rosali.herrera@synlab.pe		
+11479	Control Salud S.A.C	vramirez@controlsalud.net	rosali.herrera@synlab.pe		
+11497	Centro Medico Ocupacional Y Asistencial S.A.C.	recepcion.cemoa@gmail.com	rosali.herrera@synlab.pe		
+11575	Centro Medico Pacifico Del Norte S.A.C.	cmpacifodelnorte@gmail.com	rosali.herrera@synlab.pe		
+11775	Magnolab Centro De Apoyo Diagnostico E.I.R.L.	magnolab@hotmail.com	rosali.herrera@synlab.pe		
+11941	Qualab Sociedad Anonima Cerrada	cesquerre@qualab.com.pe	rosali.herrera@synlab.pe		
+11954	Empresa De Servicios Medicos Cristo Redentor S.A.C.	laboratorioclínicacr@gmail.com	rosali.herrera@synlab.pe		
+12033	Corzo Jara Giovanni Kely	laboratoriolizdan@hotmail.com	rosali.herrera@synlab.pe		
+12384	Perez Alcedo Elena	elpeal21@gmail.com	rosali.herrera@synlab.pe		
+12492	Medicina Reproductiva S.A.C.	recepcion@fertilita.pe	rosali.herrera@synlab.pe		
+12520	Laboratorio Clinico Velart Lab S.A.C. - Velart Lab S.A.C.	velartlablaboratorioclinico@gmail.com	rosali.herrera@synlab.pe		
+12627	Corporacion Medica De Servicios Integrales S.A.C. Cormesein S.A.C.	laboratorio@euroclinic.com.pe	rosali.herrera@synlab.pe		
+12772	Inversiones Medicsalud Servicios Medicos Ocupacionales S.R.L.	ATENCIONALCLIENTE@MEDICSALUD.PE	rosali.herrera@synlab.pe		
+12835	Navez Villarreal Raquel Maria	raquelnavez8@gmail.com	rosali.herrera@synlab.pe		
+12837	Nixamedic S.A.C.	nixalab16@gmail.com	rosali.herrera@synlab.pe		
+13445	Corporacion Peruana De Centros Medicos S.A.C.	admision.trujillo@horizontemedic.com	rosali.herrera@synlab.pe		
+13741	J & M Laboratorio Clinico Vidalabs S.A.C.	mairaalzugaray3@gmail.com	rosali.herrera@synlab.pe		
+14066	Grupo Quito S.A.C.	drquito.trujillo@gmail.com	rosali.herrera@synlab.pe		
+14163	Ventura Lopez Amner Kempes	lopez_saguitario_19@hotmail.com	rosali.herrera@synlab.pe		
+14192	Corporacion Universal Projects E.I.R.L.	jodar@homesafetysac.com	rosali.herrera@synlab.pe		
+14218	Biocuba S.A.C.	biocubatrujillo@gmail.com	rosali.herrera@synlab.pe		
+14395	Inversiones Jimenez S.R.L.	clinicabellmed@hotmail.com	rosali.herrera@synlab.pe		
+14804	Servicios Herrera Sevilla E.I.R.L.	laboratorioheslab@gmail.com	rosali.herrera@synlab.pe		
+14974	Casimiro Reyes Romelia Sujey	rs.casimiro39@gmail.com	rosali.herrera@synlab.pe		
+14985	Empresa De Bienes Y Servicios Nesava E.I.R.L.	sanfelipe.trujillo@synlab.pe	rosali.herrera@synlab.pe		
+14988	Consorcio Neolabb S.A.C.	neolab365@gmail.com	rosali.herrera@synlab.pe		
+15231	Nebri Lab E.I.R.L	labinkamaytru@gmail.com	rosali.herrera@synlab.pe		
+15248	In Vitro Ayuda Diagnostica S.A.C.	invitroad@gmail.com	rosali.herrera@synlab.pe		
+15266	Castro Horna De Palma Marjolie Rosario	Marjolie@hotmail.com	rosali.herrera@synlab.pe		
+15305	Amilab E.I.R.L.	rosali.herrera@synlab.pe			
+15442	Guzman Aranguri Bertha Teofila	berthagcapri@hotmail.com	rosali.herrera@synlab.pe		
+15538	Biolab & Inmunomed Del Peru Sac	biolabinmunomedchimbote@hotmail.com	rosali.herrera@synlab.pe		
+15560	Alva Sevilla Juan Miguel	jennyrubio2506@hotmail.com	rosali.herrera@synlab.pe		
+15609	Carbonell Julca Enrique Manuel	medsalud_laredo@hotmail.com	rosali.herrera@synlab.pe		
+15698	G & K Lab Empresa Individual De Responsabilidad Limitada	garyalc_611@hotmail.com	rosali.herrera@synlab.pe		
+15702	Centro De Investigacion Y Servicios De Salud Cialab S.A.C.	laboratoriocialabsac@hotmail.com	rosali.herrera@synlab.pe		
+15792	Corporacion Bonamedic S.A.C.	Bonamedicperu@gmail.com	rosali.herrera@synlab.pe		
+15807	Laboratorio Mercelab S.A.C.	asistente@mercelab.com	rosali.herrera@synlab.pe		
+15808	Instituto De Investigacion Biomedica Dr. Victor Antonio Zavaleta Gonzalez Sac	dianaelizet27@gmail.com	rosali.herrera@synlab.pe		
+15920	Avalos Horna Sheyla Milena	avalabs2022@outlook.com	rosali.herrera@synlab.pe		
+15929	Clinica Fertinorte S.A.C.	dra.veronicaquevedo@gmail.com	rosali.herrera@synlab.pe		
+15932	Roman & Ruiz Asociados S.A.C.	laboratorio@clinicasanroman.pe	rosali.herrera@synlab.pe		
+15950	Centro Medico Santa Maria De Los Angeles S.R.L.	laboratorio.trujillo@sama.com.pe	rosali.herrera@synlab.pe		
+15972	Centro Clinico Salud Del Sur S.A.C.	lucerolara17@gmail.com	rosali.herrera@synlab.pe		
+15973	Lauri Lab S.A.C	laurilab.resultados@gmail.com	rosali.herrera@synlab.pe		
+15976	Laboratorios Ceslab E.I.R.L.	laboratorioceslab@hotmail.com	rosali.herrera@synlab.pe		
+16007	Biohm Laboratorio Clinico S.A.C.	laboratoriobiohm@gmail.com	rosali.herrera@synlab.pe		
+16033	Valdivieso Ruiz Carmen Ruth	valdiviesoruizsmith@gmail.com	rosali.herrera@synlab.pe		
+16103	Real Salud E.I.R.L.	Mariana270291.mr@gmail.com	rosali.herrera@synlab.pe		
+16147	Corporacion Medica Maklau S.A.C.	lucianacg1986@hotmail.com	rosali.herrera@synlab.pe		
+16163	Espinoza Lopez Stheyssi Kimberly Michell	yonny_tamayo@hotmail.com	rosali.herrera@synlab.pe		
+16176	Chancafe Popuche Maryori Rebeca	manuel_0701_unt@hotmail.com	rosali.herrera@synlab.pe		
+16254	Aznaran Caballero Luis Alberto	luis_aznaran@hotmail.com	rosali.herrera@synlab.pe		
+16264	Tomolab S.A.C.	laboratorio@tomolab.com.pe	rosali.herrera@synlab.pe		
+16281	Dimelab M & S E.I.R.L.	dimelab@outlook.com	rosali.herrera@synlab.pe		
+16282	Real Laboratorio De Análisis Clínicos Biológicos E.I.R.L.	aureus000@hotmail.com	rosali.herrera@synlab.pe		
+16320	Laboratorio Clinico Abielab E.I.R.L.	marcoramirezluna@outlook.es	rosali.herrera@synlab.pe		
+16356	Traumanorte E.I.R.L.	Dianialcalde1592@gmail.com	rosali.herrera@synlab.pe		
+16360	Inversiones Y Servicios Generales Andent E.I.R.L.	andentlab@gmail.com	rosali.herrera@synlab.pe		
+16376	Enco Ruiz Santos Bacilia	alessa.lenco@gmail.com	rosali.herrera@synlab.pe		
+16387	Centro Medico Cepresalud & Urolab E.I.R.L.	urolab23@gmail.com	rosali.herrera@synlab.pe		
+16398	Gineclinik Medicina Fetal Y Reproduccion E.I.R.L.	dchachavargas@gmail.com	rosali.herrera@synlab.pe		
+16432	Uro Vital E.I.R.L.	centromedicourovital@gmail.com	rosali.herrera@synlab.pe		
+15088	Gutti Labs S.A.C.	Evisgutti1@gmail.com	rosali.herrera@synlab.pe		
+16501	Jara Sanchez Juan Cesar	burga4341@gmail.com	rosali.herrera@synlab.pe		
+12730	Clinica Bahia S.A.C.	adm.clinicabahia@gmail.com	rosali.herrera@synlab.pe		
+16609	Ls Occupational Safety And Health S.A.C.	jefelaboratorio@corporacionlsos.com	rosali.herrera@synlab.pe		
+16671	Vasquez Zevallos Tatiana Milagros	laboratorioclinicodimiglab@gmail.com	rosali.herrera@synlab.pe		
+16055	Unimedik Corp S.A.C.	sthalinchc@gmail.com	rosali.herrera@synlab.pe		
+16452	Medibon Servic E.I.R.L.	pereztorrado01@gmail.com	rosali.herrera@synlab.pe		
+16695	Vasquez Diaz Juan De Dios Jaime	juansemi1966@gmail.com.pe	rosali.herrera@synlab.pe		
+16718	Leon Muñoz Eduar Fabian	topicolab.ebenezer@gmail.com	rosali.herrera@synlab.pe		
+16725	Siguas Mostacero Adriano	adrianosiguasmostacero@gmail.com	rosali.herrera@synlab.pe		
+13738	Gutierrez Castro Evelin Katia	EVISGUTTI1@GMAIL.COM	rosali.herrera@synlab.pe		
+16776	Corporacion Md Clinic S.A.C.	andinalabclinico@gmail.com	rosali.herrera@synlab.pe		
+15917	Centro Medico Belomedic S.A.C.	irismili777@gmail.com	rosali.herrera@synlab.pe		
+16806	Gutierrez Pereda Jerry Robinson	Robin04_1994@hotmail.com	rosali.herrera@synlab.pe		
+16814	Canaque Rodriguez Manuel Jesus	canaquerodriguez_25@hotmail.com	rosali.herrera@synlab.pe		
+16838	Bio Palmares Medical E,I,R,L.	franz077@hotmail.com	rosali.herrera@synlab.pe		
+16373	Centro Medico Ntra Sra Virgen De La Puerta S.A.C.	ntravirgendelapuertasac@gmail.com	rosali.herrera@synlab.pe		
+16848	Gensalud Centro De Apoyo Al Diagnostico E.I.R.L.	Sujey_tauro26@hotmail.com	rosali.herrera@synlab.pe		
+16852	Policlinico Los Angeles Bicentenario E.I.R.L.	jesymichel.sebastian@gmail.com	rosali.herrera@synlab.pe		
+16891	Nebri Lab Solutions E.I.R.L.	labinkamaytru@gmail.com	rosali.herrera@synlab.pe		
+16892	Nebri Lab Solutions E.I.R.L.	inkamayanticona2023@gmail.com	rosali.herrera@synlab.pe		
+16903	Isa Medic Sso S.A.C.	ayuda@isamedic.com	rosali.herrera@synlab.pe		
+16905	Ulloa Rodriguez Leonel	fabianleonel.al@gmail.com	rosali.herrera@synlab.pe		
+16906	Escalante Varas Danny Eduardo	Dannyescalante1192@gmail.com	rosali.herrera@synlab.pe		
+16959	Centro Medico Cristo Rey-Chao S.R.L.	mariajcubassegura@gmail.com	rosali.herrera@synlab.pe		
+16965	Clinica De Familia Chimbote S.A.C.	rosali.herrera@synlab.pe			
+16983	Adrilab E.I.R.L.	Villalobos.milagritos76@gmail.com	rosali.herrera@synlab.pe		
+17002	Muñoz Becerra Jean Pierre	samherlita915@gmail.com	rosali.herrera@synlab.pe		
+17028	Villanueva Alayo Juan Robert	laboratoriogerencial.rv@gmail.com	rosali.herrera@synlab.pe		
+17032	Zavaleta Hoyos Maritza Heseli	maritza.zavaleta.h@outlook.com	rosali.herrera@synlab.pe		
+17034	Pediamedic Rl S.R.L.	robelude@hotmail.com	rosali.herrera@synlab.pe		
+17061	Alvarez Chavez Fidel Alonso Alfredo	Laboratorio.algalab@gmail.com	rosali.herrera@synlab.pe		
+2223	Home Safety S.A.C.	laboratoriocentral@homesafetysac.com	rosali.herrera@synlab.pe		
+16093	Asto Sifuentes Marly Fiorela	biomaslaboratorio7@gmail.com	rosali.herrera@synlab.pe		
+16049	Etel Medic Srl	laboratoriotacna@clinicalaluz.com.pe	shirley.vera@synlab.pe		
+16330	Corporacion Medica Imagenes E.I.R.L.	cmimagenes23@gmail.com	shirley.vera@synlab.pe		
+1168	Southern Peru Copper Corporation, Sucursal Del Perú	ARamirezD@SouthernPeru.com.pe	shirley.vera@synlab.pe		
+1687	Centro Medico Estrella De Jerusalen S.R.L.	gerencia@cmjerusalen.com.pe	shirley.vera@synlab.pe		
+17033	Rojas Meza Diego Armando	kylerome93@gmail.com	shirley.vera@synlab.pe		
+1424	Flores Guerrero Jose Antonio	palmeras_lab@hotmail.com	shirley.vera@synlab.pe		
+1501	Laboratorio Clinico Patologico San Fernando Eirl	Lab_san_fernando@hotmail.com	shirley.vera@synlab.pe		
+1582	Quispe Laquita Rosario Graciela	laboratorio_clinico_ross@hotmail.com	shirley.vera@synlab.pe		
+1616	Sakuray Montalvo Silvia Isabel	LABORATORIOSAKURAY@HOTMAIL.COM	shirley.vera@synlab.pe		
+1946	Cussi Nieto Rosa Isabel	isabel.cussi@gmail.com	shirley.vera@synlab.pe		
+1978	Servicios Generales De Salud Santa Ana S.A.C.	gerencia@clinicaisabel.com	shirley.vera@synlab.pe		
+2293	Laboratorio Clinico Tacna Empresa Individual De Responsabilidad Limitada	Laboratorio.tacna@gmail.com	shirley.vera@synlab.pe		
+2378	Laboratorio Clinico Su Salud E.I.R.L.	lab.susalud@gmail.com	shirley.vera@synlab.pe		
+4491	Omylab Empresa Individual De Responsabilidad Limitada	OMYLAB@HOTMAIL.COM	shirley.vera@synlab.pe		
+7320	Laboratorio Clinico Romalab´S Sociedad Comercial De Responsabilidad Limitada-Lab.Clin.Romalab´S Srl	romalab2006@hotmail.com	shirley.vera@synlab.pe		
+11516	Bio Mc E.I.R.L.	mteresa969@gmail.com	shirley.vera@synlab.pe		
+12057	Clinica Del Sur S.A.C.	administracion@clinicadelsurperu.pe	shirley.vera@synlab.pe		
+12578	Servicios De Salud Rosado Chavez E.I.R.L Servisalud Rocha E.I.R.L	mydlab.tacna@gmail.com	shirley.vera@synlab.pe		
+12677	Biomedica Del Sur Sociedad Anonima Cerrada	biomedicatacna@gmail.com	shirley.vera@synlab.pe		
+12678	Asuncion Laboratorio De Analisis Clinico Especializados Controlando Su Salud E.I.R.L.	laboratorioclinicoasuncion@hotmail.com	shirley.vera@synlab.pe		
+15243	Laboratorio Clinico Bioclean E.I.R.L.	edus.922@hotmail.com	shirley.vera@synlab.pe		
+15629	Gemlab Diagnostic S.A.C.	gemlab.diagnostic.sac@gmail.com	shirley.vera@synlab.pe		
+15910	Centro De Salud Integral El Carmen E.I.R.L.	laboratoriotacnalab@gmail.com	shirley.vera@synlab.pe		
+16166	Asociacion Salud Integral Para La Familia - Asifa	asifa.salud@gmail.com	shirley.vera@synlab.pe		
+16226	J & R Marcan S.A.C.	laboratoriomarcan@gmail.com	shirley.vera@synlab.pe		
+16295	Cromoz Lab E.I.R.L.	cromozlab@gmail.com	shirley.vera@synlab.pe		
+16485	Uniidos Lab E.I.R.L.	enn.palli@gmail.com	shirley.vera@synlab.pe		
+16487	Laboratorio Clinico Dalmed E.I.R.L.	dalmedlaboratorio@gmail.com	shirley.vera@synlab.pe		
+16594	Laboratorio Clinico Clinlab S.A.C.	clinlab5001@gmail.com	shirley.vera@synlab.pe		
+16684	Mydlab Tacna Sociedad Anonima Cerrada	mydlab.tacna@gmail.com	shirley.vera@synlab.pe		
+11345	Servicios Medicos Multiples Servimedco Sociedad Comercial De Responsabilidad Limitada	laboratorio@servimedco.com	shirley.vera@synlab.pe		
+12417	Ilomed S.A.C.	POLICLINICOILOMED@GMAIL.COM	shirley.vera@synlab.pe		
+16785	Labross Laboratorio Clinico E.I.R.L.	laboratorio_clinico_ross@hotmail.com	shirley.vera@synlab.pe		
+16798	Novagen Salud S.A.C.	jefrankw11@gmail.com	shirley.vera@synlab.pe		
+16815	Servimed Corporacion Sac	laboratorioservimedco@gmail.com	shirley.vera@synlab.pe		
+16816	Corporacion Certa S.A.C.	certacna.crl@gmail.com	shirley.vera@synlab.pe		
