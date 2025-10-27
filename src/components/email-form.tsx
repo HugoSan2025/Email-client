@@ -198,23 +198,23 @@ export default function EmailForm() {
     const toEmailsString = toEmails.join(',');
     const ccEmailsString = ccEmails.join(',');
     
-    const baseUrl = 'https://outlook.live.com/mail/0/deeplink/compose';
-    const params = new URLSearchParams();
+    let baseUrl = 'https://outlook.live.com/mail/0/deeplink/compose';
+    const params = [];
 
     if (toEmailsString) {
-        params.set('to', toEmailsString);
+      params.push(`to=${toEmailsString}`);
     }
     if (ccEmailsString) {
-        params.set('cc', ccEmailsString);
+      params.push(`cc=${ccEmailsString}`);
     }
     if (subject) {
-        params.set('subject', subject);
+      params.push(`subject=${encodeURIComponent(subject)}`);
     }
     if (body) {
-        params.set('body', body);
+      params.push(`body=${encodeURIComponent(body)}`);
     }
 
-    const mailtoUrl = `${baseUrl}?${params.toString().replace(/\+/g, '%20')}`;
+    const mailtoUrl = `${baseUrl}?${params.join('&')}`;
 
     window.open(mailtoUrl, '_blank', 'noopener,noreferrer');
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
@@ -366,4 +366,3 @@ export default function EmailForm() {
     </div>
   );
 }
-
