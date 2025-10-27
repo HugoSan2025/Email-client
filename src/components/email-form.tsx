@@ -195,17 +195,17 @@ export default function EmailForm() {
     const toEmails = recipients.slice(0, 2);
     const ccEmails = recipients.slice(2);
   
-    const baseUrl = "https://outlook.live.com/mail/deeplink/compose";
+    const toEmailsString = toEmails.join(';');
+    const ccEmailsString = ccEmails.join(';');
+    
+    const baseUrl = 'https://outlook.live.com/';
     const params = new URLSearchParams();
-  
-    if (toEmails.length > 0) {
-      params.set('to', toEmails.join(','));
+    
+    params.set('path', '/mail/action/compose');
+    params.set('to', toEmailsString);
+    if (ccEmailsString) {
+      params.set('cc', ccEmailsString);
     }
-  
-    if (ccEmails.length > 0) {
-      params.set('cc', ccEmails.join(','));
-    }
-  
     if (subject) {
       params.set('subject', subject);
     }
@@ -213,15 +213,20 @@ export default function EmailForm() {
       params.set('body', body);
     }
   
-    // URLSearchParams encodes spaces as '+', but we want '%20' for better compatibility.
-    const mailtoUrl = `${baseUrl}?${params.toString().replace(/\+/g, '%20')}`;
+    const mailtoUrl = `${baseUrl}?${params.toString()}`;
   
     window.open(mailtoUrl, '_blank', 'noopener,noreferrer');
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
   };
 
-  let toEmails: string[] = recipients.slice(0, 2);
-  let ccEmails: string[] = recipients.slice(2);
+  let toEmails: string[] = [];
+  let ccEmails: string[] = [];
+
+  if (recipients.length > 0) {
+    toEmails = recipients.slice(0, 2);
+    ccEmails = recipients.slice(2);
+  }
+
 
   const wasSearched = !!searchedCode;
   const hasRecipients = recipients.length > 0;
