@@ -192,15 +192,17 @@ export default function EmailForm() {
       return;
     }
     
-    let toEmails: string[];
-    let ccEmails: string[];
+    let toEmails: string[] = [];
+    let ccEmails: string[] = [];
 
     if (recipients.length >= 3) {
       toEmails = recipients.slice(0, 2);
       ccEmails = recipients.slice(2);
+    } else if (recipients.length === 2) {
+      toEmails = [recipients[0]];
+      ccEmails = [recipients[1]];
     } else {
-      toEmails = recipients.slice(0, 1);
-      ccEmails = recipients.slice(1);
+      toEmails = recipients.slice(0,1);
     }
 
     const toEmailsString = toEmails.join(',');
@@ -232,15 +234,17 @@ export default function EmailForm() {
     handleMessage('Abriendo Outlook en la web...', "default", "Éxito");
   };
 
-  let toEmails: string[];
-  let ccEmails: string[];
+  let toEmails: string[] = [];
+  let ccEmails: string[] = [];
 
   if (recipients.length >= 3) {
     toEmails = recipients.slice(0, 2);
     ccEmails = recipients.slice(2);
+  } else if (recipients.length === 2) {
+    toEmails = [recipients[0]];
+    ccEmails = [recipients[1]];
   } else {
-    toEmails = recipients.slice(0, 1);
-    ccEmails = recipients.slice(1);
+    toEmails = recipients.slice(0,1);
   }
 
   const wasSearched = !!searchedCode;
