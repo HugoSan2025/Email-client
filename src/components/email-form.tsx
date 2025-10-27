@@ -184,28 +184,27 @@ export default function EmailForm() {
 
   const generateMailto = () => {
     if (!searchedCode) {
-        handleMessage('Por favor, introduce y busca un Código de Cliente.', "destructive", "Faltan datos");
-        return;
+      handleMessage('Por favor, introduce y busca un Código de Cliente.', "destructive", "Faltan datos");
+      return;
     }
     if (recipients.length === 0) {
-        handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
-        return;
+      handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
+      return;
     }
   
     const toEmails = recipients.slice(0, 2);
     const ccEmails = recipients.slice(2);
   
-    const toEmailsString = toEmails.join(',');
-    const ccEmailsString = ccEmails.join(',');
-  
     const baseUrl = "https://outlook.live.com/mail/deeplink/compose";
     const params = new URLSearchParams();
   
-    let path = `/v1/compose?to=${toEmailsString}`;
-    if (ccEmailsString) {
-      path += `&cc=${ccEmailsString}`;
+    if (toEmails.length > 0) {
+      params.set('to', toEmails.join(','));
     }
-    params.set('path', path);
+  
+    if (ccEmails.length > 0) {
+      params.set('cc', ccEmails.join(','));
+    }
   
     if (subject) {
       params.set('subject', subject);
@@ -214,7 +213,8 @@ export default function EmailForm() {
       params.set('body', body);
     }
   
-    const mailtoUrl = `${baseUrl}?${params.toString()}`;
+    // URLSearchParams encodes spaces as '+', but we want '%20' for better compatibility.
+    const mailtoUrl = `${baseUrl}?${params.toString().replace(/\+/g, '%20')}`;
   
     window.open(mailtoUrl, '_blank', 'noopener,noreferrer');
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
