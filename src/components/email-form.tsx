@@ -202,7 +202,7 @@ export default function EmailForm() {
       toEmails = [recipients[0]];
       ccEmails = [recipients[1]];
     } else {
-      toEmails = recipients.slice(0,1);
+      toEmails = recipients.slice(0, 1);
     }
 
     const toEmailsString = toEmails.join(',');
@@ -246,6 +246,7 @@ export default function EmailForm() {
   } else {
     toEmails = recipients.slice(0,1);
   }
+
 
   const wasSearched = !!searchedCode;
   const hasRecipients = recipients.length > 0;
@@ -384,3 +385,4 @@ export default function EmailForm() {
     </div>
   );
 }
+
