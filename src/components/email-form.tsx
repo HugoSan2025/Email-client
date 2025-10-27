@@ -1,10 +1,11 @@
 
 "use client";
 
-import { useState, useEffect, useRef, useTransition } from 'react';
+import { useState, useEffect, useTransition } from 'react';
 import { enhanceEmail } from '@/app/actions';
 import { useToast } from "@/hooks/use-toast";
 import { getClients } from '@/lib/client-data';
+import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -12,13 +13,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Mic, Loader2, Sparkles, X, Search } from 'lucide-react';
-
-declare global {
-  interface Window {
-    SpeechRecognition: any;
-    webkitSpeechRecognition: any;
-  }
-}
 
 interface Client {
   code: string;
@@ -35,60 +29,32 @@ export default function EmailForm() {
   const [body, setBody] = useState('');
   const [searchedCode, setSearchedCode] = useState('');
   
-  const [isDictating, setIsDictating] = useState(false);
-  const [dictationStatus, setDictationStatus] = useState('');
-  
   const [isPending, startTransition] = useTransition();
   const [isEnhancing, startEnhancingTransition] = useTransition();
   const { toast } = useToast();
 
-  const recognitionRef = useRef<any>(null);
-  const [recognitionAvailable, setRecognitionAvailable] = useState(false);
+  const {
+    isDictating,
+    transcript,
+    error: speechError,
+    isAvailable: recognitionAvailable,
+    startDictation,
+    stopDictation,
+  } = useSpeechRecognition();
 
+  // Update the email body with the transcript from the hook
   useEffect(() => {
-    // This check runs only on the client.
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (SpeechRecognition) {
-      setRecognitionAvailable(true);
-      const recognition = new SpeechRecognition();
-      recognition.lang = 'es-ES';
-      recognition.interimResults = false;
-      recognition.maxAlternatives = 1;
-
-      recognition.onstart = () => {
-        setIsDictating(true);
-        setDictationStatus('Escuchando...');
-      };
-
-      recognition.onresult = (event: any) => {
-        const transcript = event.results[0][0].transcript;
-        setBody(prevBody => (prevBody ? prevBody.trim() + ' ' : '') + transcript + '.');
-      };
-
-      recognition.onerror = (event: any) => {
-        let errorMsg = `Error de dictado: ${event.error}`;
-        if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
-          errorMsg = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
-        } else if (event.error === 'no-speech') {
-          errorMsg = 'No se detectó voz. Inténtalo de nuevo.';
-        } else if (event.error === 'network') {
-          errorMsg = 'Error de red. Revisa tu conexión a internet.';
-        }
-        setDictationStatus(errorMsg);
-        handleMessage(errorMsg, 'destructive', 'Error de Dictado');
-      };
-
-      recognition.onend = () => {
-        setIsDictating(false);
-        setDictationStatus('Dictado finalizado.');
-        setTimeout(() => setDictationStatus(''), 2000); // Clear status after 2 seconds
-      };
-      
-      recognitionRef.current = recognition;
-    } else {
-      setRecognitionAvailable(false);
+    if (transcript) {
+      setBody(transcript);
     }
-  }, []);
+  }, [transcript]);
+
+  // Show a toast message if there's a speech recognition error
+  useEffect(() => {
+    if (speechError) {
+      handleMessage(speechError, 'destructive', 'Error de Dictado');
+    }
+  }, [speechError]);
 
   const handleMessage = (description: string, variant: "default" | "destructive" = "default", title?: string) => {
     toast({
@@ -149,15 +115,15 @@ export default function EmailForm() {
   };
 
   const toggleDictation = () => {
-    if (!recognitionRef.current) {
+    if (!recognitionAvailable) {
         handleMessage('El dictado por voz no está disponible en este navegador.', 'destructive');
         return;
     }
     
     if (isDictating) {
-        recognitionRef.current.stop();
+        stopDictation();
     } else {
-        recognitionRef.current.start();
+        startDictation();
     }
   };
 
@@ -185,24 +151,27 @@ export default function EmailForm() {
   
     const toEmails = recipients.slice(0, 2);
     const ccEmails = recipients.slice(2);
-  
+    
+    let mailtoLink = `https://outlook.live.com/mail/0/deeplink/compose?to=${toEmails.join(',')}`;
+
     const params = new URLSearchParams();
-    
-    if (toEmails.length > 0) {
-      params.append('to', toEmails.join(','));
+    if(ccEmails.length > 0) {
+        params.append('cc', ccEmails.join(','));
     }
-    if (ccEmails.length > 0) {
-      params.append('cc', ccEmails.join(','));
+    params.append('subject', subject);
+    params.append('body', body);
+
+    // Manually replace '+' with '%20' for spaces, which Outlook handles better
+    const paramString = params.toString().replace(/\+/g, '%20');
+
+    if (paramString) {
+        mailtoLink += `&${paramString}`;
     }
-    if (subject) {
-      params.append('subject', subject);
+
+    if(ccEmails.length > 0) {
+        mailtoLink += '&showcc=1';
     }
-    if (body) {
-      params.append('body', body);
-    }
-  
-    const mailtoLink = `mailto:?${params.toString()}`;
-    
+
     window.location.href = mailtoLink;
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
   };
@@ -324,16 +293,16 @@ export default function EmailForm() {
                   </Button>
                   
                   <div className="text-center">
-                    { (dictationStatus) && <p className={`text-sm ${isDictating ? 'text-green-600' : 'text-red-600'}`}>{dictationStatus}</p> }
+                    { isDictating && <p className="text-sm text-green-600 animate-pulse">Escuchando...</p> }
                   </div>
 
                   <Button
                     id="dictationButton"
                     size="icon"
                     onClick={toggleDictation}
-                    disabled={isDictating || !recognitionAvailable}
-                    className="p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 bg-blue-500 hover:bg-blue-600 disabled:bg-blue-500 disabled:opacity-70 disabled:cursor-not-allowed"
-                    title="Iniciar Dictado por Voz"
+                    disabled={!recognitionAvailable}
+                    className={`p-3 rounded-full shadow-3xl transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 ${isDictating ? 'bg-red-500 hover:bg-red-600 animate-pulse' : 'bg-blue-500 hover:bg-blue-600'} disabled:bg-gray-400 disabled:cursor-not-allowed`}
+                    title={isDictating ? "Detener Dictado" : "Iniciar Dictado por Voz"}
                   >
                     <Mic className="h-6 w-6" />
                   </Button>
