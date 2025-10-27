@@ -191,16 +191,23 @@ export default function EmailForm() {
       handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
       return;
     }
-  
-    const toEmails = recipients.length >= 3 ? recipients.slice(0, 2) : recipients.slice(0, 1);
-    const ccEmails = recipients.length >= 3 ? recipients.slice(2) : recipients.slice(1);
+    
+    let toEmails: string[];
+    let ccEmails: string[];
+
+    if (recipients.length >= 3) {
+      toEmails = recipients.slice(0, 2);
+      ccEmails = recipients.slice(2);
+    } else {
+      toEmails = recipients.slice(0, 1);
+      ccEmails = recipients.slice(1);
+    }
 
     const toEmailsString = toEmails.join(',');
     const ccEmailsString = ccEmails.join(',');
   
     const baseUrl = "https://outlook.live.com/mail/deeplink/compose";
     
-    // Manually build the query string to control encoding
     let paramsArray: string[] = [];
 
     if (toEmailsString) {
@@ -210,12 +217,10 @@ export default function EmailForm() {
       paramsArray.push(`cc=${encodeURIComponent(ccEmailsString)}`);
     }
     if (subject) {
-      // Manually encode to use %20 for spaces
       const encodedSubject = encodeURIComponent(subject).replace(/%20/g, '+');
       paramsArray.push(`subject=${encodedSubject.replace(/\+/g, '%20')}`);
     }
     if (body) {
-      // Manually encode to use %20 for spaces
       const encodedBody = encodeURIComponent(body).replace(/%20/g, '+');
       paramsArray.push(`body=${encodedBody.replace(/\+/g, '%20')}`);
     }
@@ -227,8 +232,16 @@ export default function EmailForm() {
     handleMessage('Abriendo Outlook en la web...', "default", "Éxito");
   };
 
-  const toEmails = recipients.length >= 3 ? recipients.slice(0, 2) : recipients.slice(0, 1);
-  const ccEmails = recipients.length >= 3 ? recipients.slice(2) : recipients.slice(1);
+  let toEmails: string[];
+  let ccEmails: string[];
+
+  if (recipients.length >= 3) {
+    toEmails = recipients.slice(0, 2);
+    ccEmails = recipients.slice(2);
+  } else {
+    toEmails = recipients.slice(0, 1);
+    ccEmails = recipients.slice(1);
+  }
 
   const wasSearched = !!searchedCode;
   const hasRecipients = recipients.length > 0;
@@ -367,3 +380,5 @@ export default function EmailForm() {
     </div>
   );
 }
+
+    
