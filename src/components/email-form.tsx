@@ -192,16 +192,11 @@ export default function EmailForm() {
       return;
     }
     
-    let toEmails: string[] = [];
-    let ccEmails: string[] = [];
+    const toEmails = recipients.slice(0, 2);
+    const ccEmails = recipients.slice(2);
 
-    if (recipients.length > 0) {
-      toEmails = recipients.slice(0, 2);
-      ccEmails = recipients.slice(2);
-    }
-
-    const toEmailsString = toEmails.join(',');
-    const ccEmailsString = ccEmails.join(',');
+    const toEmailsString = toEmails.join(';');
+    const ccEmailsString = ccEmails.join(';');
   
     const baseUrl = "https://outlook.live.com/mail/deeplink/compose";
     
@@ -214,12 +209,10 @@ export default function EmailForm() {
       paramsArray.push(`cc=${encodeURIComponent(ccEmailsString)}`);
     }
     if (subject) {
-      const encodedSubject = encodeURIComponent(subject).replace(/%20/g, '+');
-      paramsArray.push(`subject=${encodedSubject.replace(/\+/g, '%20')}`);
+      paramsArray.push(`subject=${encodeURIComponent(subject)}`);
     }
     if (body) {
-      const encodedBody = encodeURIComponent(body).replace(/%20/g, '+');
-      paramsArray.push(`body=${encodedBody.replace(/\+/g, '%20')}`);
+      paramsArray.push(`body=${encodeURIComponent(body)}`);
     }
     
     const paramsString = paramsArray.join('&');
@@ -229,14 +222,8 @@ export default function EmailForm() {
     handleMessage('Abriendo Outlook en la web...', "default", "Éxito");
   };
 
-  let toEmails: string[] = [];
-  let ccEmails: string[] = [];
-
-  if (recipients.length > 0) {
-    toEmails = recipients.slice(0, 2);
-    ccEmails = recipients.slice(2);
-  }
-
+  let toEmails: string[] = recipients.slice(0, 2);
+  let ccEmails: string[] = recipients.slice(2);
 
   const wasSearched = !!searchedCode;
   const hasRecipients = recipients.length > 0;
@@ -375,5 +362,3 @@ export default function EmailForm() {
     </div>
   );
 }
-
-    
