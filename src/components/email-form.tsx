@@ -11,7 +11,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mic, Loader2, Sparkles, X, Search } from 'lucide-react';
+import { Loader2, Sparkles, X, Search } from 'lucide-react';
 
 interface Client {
   code: string;
@@ -31,54 +31,6 @@ export default function EmailForm() {
   const [isPending, startTransition] = useTransition();
   const [isEnhancing, startEnhancingTransition] = useTransition();
   const { toast } = useToast();
-
-  // Speech Recognition state
-  const [isDictating, setIsDictating] = useState(false);
-  const [recognitionAvailable, setRecognitionAvailable] = useState(false);
-  const recognitionRef = useRef<any>(null);
-
-  useEffect(() => {
-    const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (SpeechRecognitionAPI) {
-      setRecognitionAvailable(true);
-      const recognition = new SpeechRecognitionAPI();
-      recognition.continuous = true;
-      recognition.lang = 'es-ES';
-      recognition.interimResults = false;
-
-      recognition.onstart = () => {
-        setIsDictating(true);
-      };
-
-      recognition.onend = () => {
-        setIsDictating(false);
-      };
-
-      recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
-        let errorMessage = `Error de dictado: ${event.error}`;
-        if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
-          errorMessage = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
-        } else if (event.error === 'no-speech') {
-          errorMessage = 'No se detectó voz. Inténtalo de nuevo.';
-        }
-        handleMessage(errorMessage, 'destructive', 'Error de Dictado');
-        setIsDictating(false);
-      };
-
-      recognition.onresult = (event: SpeechRecognitionEvent) => {
-        let finalTranscript = '';
-        for (let i = event.resultIndex; i < event.results.length; ++i) {
-          if (event.results[i].isFinal) {
-            finalTranscript += event.results[i][0].transcript;
-          }
-        }
-        setBody(prev => (prev ? prev.trim() + ' ' : '') + finalTranscript.trim());
-      };
-
-      recognitionRef.current = recognition;
-    }
-  }, []);
-
 
   const handleMessage = (description: string, variant: "default" | "destructive" = "default", title?: string) => {
     toast({
@@ -136,19 +88,6 @@ export default function EmailForm() {
     setSubject('');
     setBody('');
     setSearchedCode('');
-  };
-
-  const toggleDictation = () => {
-    if (!recognitionAvailable) {
-        handleMessage('El dictado por voz no está disponible en este navegador.', 'destructive');
-        return;
-    }
-    
-    if (isDictating) {
-      recognitionRef.current.stop();
-    } else {
-      recognitionRef.current.start();
-    }
   };
 
   const handleEnhanceClick = () => {
@@ -265,7 +204,7 @@ export default function EmailForm() {
 
         <Card className="p-4 rounded-lg border-gray-700 shadow-3xl bg-card text-card-foreground transition duration-200 transform hover:-translate-y-0.5">
           <CardHeader className="p-0 mb-3 px-2">
-            <h2 className="text-2xl font-bold">2. Redactar correo o dictado</h2>
+            <h2 className="text-2xl font-bold">2. Redactar correo</h2>
           </CardHeader>
           <CardContent className="p-2">
             <div className="space-y-4">
@@ -303,7 +242,7 @@ export default function EmailForm() {
                   value={body}
                   onChange={(e) => setBody(e.target.value)}
                   className="w-full p-3 rounded-lg text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
-                  placeholder="Escribe tu mensaje o usa el dictado por voz..."
+                  placeholder="Escribe tu mensaje..."
                 />
                  <div className="flex justify-between items-center mt-2">
                    <Button
@@ -316,20 +255,9 @@ export default function EmailForm() {
                     {isEnhancing ? <Loader2 className="h-6 w-6 animate-spin" /> : <Sparkles className="h-6 w-6" />}
                   </Button>
                   
-                  <div className="text-center">
-                    { isDictating && <p className="text-sm text-green-600 animate-pulse">Escuchando...</p> }
-                  </div>
-
-                  <Button
-                    id="dictationButton"
-                    size="icon"
-                    onClick={toggleDictation}
-                    disabled={!recognitionAvailable}
-                    className={`p-3 rounded-full shadow-3xl transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed`}
-                    title={isDictating ? "Detener Dictado" : "Iniciar Dictado por Voz"}
-                  >
-                    <Mic className="h-6 w-6" />
-                  </Button>
+                  <div></div>
+                  
+                  <div></div>
                 </div>
               </div>
             </div>
