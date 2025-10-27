@@ -69,6 +69,7 @@ export default function EmailForm() {
         let errorMsg = `Error en el dictado: ${event.error}.`;
         if (event.error === 'not-allowed') {
           errorMsg = 'Acceso al micrófono denegado.';
+          handleMessage(errorMsg, "destructive", "Error de Permiso");
         } else if (event.error === 'no-speech') {
             errorMsg = 'No se detectó voz. Inténtalo de nuevo.';
         }
@@ -78,6 +79,9 @@ export default function EmailForm() {
 
       recognition.onend = () => {
         setIsDictating(false);
+        if(dictationStatus === 'Escuchando...'){
+            setDictationStatus('');
+        }
       };
       
       recognitionRef.current = recognition;
@@ -152,26 +156,35 @@ export default function EmailForm() {
 
   const toggleDictation = () => {
     if (!recognitionRef.current) {
-      handleMessage('La función de dictado no está disponible.', "destructive", "Error");
-      return;
+        handleMessage('La función de dictado no está disponible.', "destructive", "Error");
+        return;
     }
-    if (isDictating) {
-      recognitionRef.current.stop();
-      setIsDictating(false);
-      setDictationStatus('Dictado detenido.');
 
+    if (isDictating) {
+        recognitionRef.current.stop();
+        setIsDictating(false);
+        setDictationStatus('Dictado detenido.');
     } else {
-      try {
-        setDictationStatus('Escuchando...');
-        recognitionRef.current.start();
-        setIsDictating(true);
-      } catch (e) {
-        console.warn("Recognition start failed:", e);
-        setDictationStatus('No se pudo iniciar el dictado.');
-        handleMessage('No se pudo iniciar el dictado. Puede que ya esté activo.', "destructive", "Error");
-      }
+        try {
+            recognitionRef.current.start();
+            setIsDictating(true);
+            setDictationStatus('Escuchando...');
+        } catch (error) {
+            console.error('No se pudo iniciar el dictado:', error);
+            let errorMessage = 'No se pudo iniciar el dictado. Inténtalo de nuevo.';
+            // Catch specific errors if possible, though the 'onerror' event is more reliable.
+            if (error instanceof Error && (error.name === 'NotAllowedError' || error.message.includes('permission'))) {
+                errorMessage = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
+            } else if (error instanceof Error && error.name === 'InvalidStateError') {
+                 errorMessage = 'El dictado ya está activo. Deténlo antes de iniciar de nuevo.';
+            }
+            setDictationStatus(errorMessage);
+            handleMessage(errorMessage, "destructive", "Error de dictado");
+            setIsDictating(false); // Ensure we are not in a dictating state
+        }
     }
   };
+
 
   const handleEnhanceClick = () => {
     if (!body.trim()) {
