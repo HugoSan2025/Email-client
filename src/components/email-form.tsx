@@ -46,7 +46,7 @@ export default function EmailForm() {
   const [recognitionAvailable, setRecognitionAvailable] = useState(false);
 
   useEffect(() => {
-    // This check now runs only on the client, after the initial render.
+    // This check runs only on the client.
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (SpeechRecognition) {
       setRecognitionAvailable(true);
@@ -76,14 +76,18 @@ export default function EmailForm() {
         }
         setDictationStatus(errorMsg);
         handleMessage(errorMsg, 'destructive', 'Error de Dictado');
+        setIsDictating(false); // Make sure to turn off dictating state on error
       };
 
       recognition.onend = () => {
         setIsDictating(false);
-        setDictationStatus(''); // Clear status on end
+        setDictationStatus('Dictado finalizado.');
+        setTimeout(() => setDictationStatus(''), 2000); // Clear status after 2 seconds
       };
       
       recognitionRef.current = recognition;
+    } else {
+      setRecognitionAvailable(false);
     }
   }, []);
 
@@ -146,7 +150,7 @@ export default function EmailForm() {
   };
 
   const toggleDictation = () => {
-    if (!recognitionAvailable || !recognitionRef.current) {
+    if (!recognitionRef.current) {
         handleMessage('El dictado por voz no está disponible en este navegador.', 'destructive');
         return;
     }
