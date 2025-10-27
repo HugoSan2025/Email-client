@@ -207,7 +207,7 @@ export default function EmailForm() {
         mailtoLink += '&showcc=1';
     }
 
-    window.location.href = mailtoLink;
+    window.open(mailtoLink, '_blank');
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
   };
 
