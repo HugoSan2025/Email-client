@@ -192,8 +192,11 @@ export default function EmailForm() {
       return;
     }
   
-    const toEmailsString = recipients.slice(0, 1).join(',');
-    const ccEmailsString = recipients.slice(1).join(',');
+    const toEmails = recipients.length >= 3 ? recipients.slice(0, 2) : recipients.slice(0, 1);
+    const ccEmails = recipients.length >= 3 ? recipients.slice(2) : recipients.slice(1);
+
+    const toEmailsString = toEmails.join(',');
+    const ccEmailsString = ccEmails.join(',');
   
     const baseUrl = "https://outlook.live.com/mail/deeplink/compose";
     
@@ -224,8 +227,8 @@ export default function EmailForm() {
     handleMessage('Abriendo Outlook en la web...', "default", "Éxito");
   };
 
-  const toEmails = recipients.slice(0, 1);
-  const ccEmails = recipients.slice(1);
+  const toEmails = recipients.length >= 3 ? recipients.slice(0, 2) : recipients.slice(0, 1);
+  const ccEmails = recipients.length >= 3 ? recipients.slice(2) : recipients.slice(1);
 
   const wasSearched = !!searchedCode;
   const hasRecipients = recipients.length > 0;
