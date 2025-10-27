@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState, useEffect, useTransition, useRef } from 'react';
+import { useState, useTransition } from 'react';
 import { enhanceEmail } from '@/app/actions';
 import { useToast } from "@/hooks/use-toast";
 import { getClients } from '@/lib/client-data';
@@ -254,10 +254,6 @@ export default function EmailForm() {
                   >
                     {isEnhancing ? <Loader2 className="h-6 w-6 animate-spin" /> : <Sparkles className="h-6 w-6" />}
                   </Button>
-                  
-                  <div></div>
-                  
-                  <div></div>
                 </div>
               </div>
             </div>
