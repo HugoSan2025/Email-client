@@ -157,6 +157,9 @@ export default function EmailForm() {
     }
     if (isDictating) {
       recognitionRef.current.stop();
+      setIsDictating(false);
+      setDictationStatus('Dictado detenido.');
+
     } else {
       try {
         setDictationStatus('Escuchando...');
@@ -344,11 +347,11 @@ export default function EmailForm() {
                     id="dictationButton"
                     size="icon"
                     onClick={toggleDictation}
-                    disabled={!recognitionAvailable || isDictating}
+                    disabled={!recognitionAvailable}
                     className={`p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12
                       ${isDictating ? 'bg-red-500 hover:bg-red-600 animate-pulse' : 'bg-blue-500 hover:bg-blue-600'}
-                      disabled:bg-blue-500 disabled:opacity-70 disabled:cursor-not-allowed`}
-                    title="Iniciar/Detener Dictado por Voz"
+                      disabled:bg-blue-300 disabled:cursor-not-allowed`}
+                    title={isDictating ? "Detener Dictado" : "Iniciar Dictado por Voz"}
                   >
                     <Mic className="h-6 w-6" />
                   </Button>
