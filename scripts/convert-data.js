@@ -19,14 +19,18 @@ try {
     if (!line.trim()) continue;
 
     const parts = line.split('\t');
-    const [code, name, ...emails] = parts;
+    // Trim every part to be safe
+    const cleanedParts = parts.map(p => p.trim());
+    const [code, name, ...emails] = cleanedParts;
 
     if (code && name) {
-      const validEmails = emails.map(e => e.trim()).filter(e => e && e.includes('@'));
+      // Filter out any empty email strings that might result from trailing tabs
+      const validEmails = emails.filter(e => e && e.includes('@'));
+      
       if (validEmails.length > 0) {
         clients.push({
-          code: String(code).trim(),
-          name: name.trim(),
+          code: code, // Already trimmed
+          name: name, // Already trimmed
           emails: validEmails
         });
       }
@@ -49,5 +53,3 @@ export const clients = ${clientsJSON};
   console.error('An unexpected error occurred during conversion:', error);
   process.exit(1);
 }
-
-    
