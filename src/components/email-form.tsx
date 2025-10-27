@@ -57,9 +57,14 @@ export default function EmailForm() {
       recognition.interimResults = false;
       recognition.maxAlternatives = 1;
 
+      recognition.onstart = () => {
+        setIsDictating(true);
+        setDictationStatus('Escuchando...');
+      };
+      
       recognition.onresult = (event: any) => {
         const transcript = event.results[0][0].transcript;
-        setBody(prevBody => (prevBody ? prevBody + ' ' : '') + transcript + '.');
+        setBody(prevBody => (prevBody ? prevBody.trim() + ' ' : '') + transcript + '.');
         setDictationStatus('Dictado finalizado.');
         setTimeout(() => setDictationStatus(''), 2000);
       };
@@ -69,19 +74,20 @@ export default function EmailForm() {
         let errorMsg = `Error en el dictado: ${event.error}.`;
         if (event.error === 'not-allowed') {
           errorMsg = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
-          handleMessage(errorMsg, "destructive", "Error de Permiso");
         } else if (event.error === 'no-speech') {
             errorMsg = 'No se detectó voz. Inténtalo de nuevo.';
+        } else if (event.error === 'network'){
+            errorMsg = 'Error de red. Revisa tu conexión a internet.'
         }
         setDictationStatus(errorMsg);
+        handleMessage(errorMsg, "destructive", "Error de Permiso");
         setIsDictating(false);
       };
 
       recognition.onend = () => {
         setIsDictating(false);
-        if(dictationStatus === 'Escuchando...'){
-            setDictationStatus('');
-        }
+        // Clear status only if it was 'listening' to avoid overwriting error messages
+        setDictationStatus(prevStatus => prevStatus === 'Escuchando...' ? '' : prevStatus);
       };
       
       recognitionRef.current = recognition;
@@ -93,7 +99,7 @@ export default function EmailForm() {
             description: "Dictado por voz no es soportado en este navegador.",
         })
     }
-  }, [toast, dictationStatus]);
+  }, [toast]);
 
   const handleMessage = (description: string, variant: "default" | "destructive" = "default", title?: string) => {
     toast({
@@ -159,30 +165,10 @@ export default function EmailForm() {
         handleMessage('La función de dictado no está disponible.', "destructive", "Error");
         return;
     }
-
     if (isDictating) {
         recognitionRef.current.stop();
-        setIsDictating(false);
-        setDictationStatus('Dictado detenido.');
     } else {
-        try {
-            recognitionRef.current.start();
-            setIsDictating(true);
-            setDictationStatus('Escuchando...');
-        } catch (error) {
-            console.error('No se pudo iniciar el dictado:', error);
-            let errorMessage = 'No se pudo iniciar el dictado. Inténtalo de nuevo.';
-            if (error instanceof Error && (error.name === 'NotAllowedError' || error.message.includes('permission'))) {
-                errorMessage = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
-            } else if (error instanceof Error && error.name === 'InvalidStateError') {
-                 // This can happen if start() is called while it's already running.
-                 // The 'isDictating' state should prevent this, but as a fallback:
-                 errorMessage = 'El dictado ya está activo.';
-            }
-            setDictationStatus(errorMessage);
-            handleMessage(errorMessage, "destructive", "Error de dictado");
-            setIsDictating(false);
-        }
+        recognitionRef.current.start();
     }
   };
 
@@ -383,3 +369,5 @@ export default function EmailForm() {
     </div>
   );
 }
+
+    
