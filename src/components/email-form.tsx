@@ -46,7 +46,6 @@ export default function EmailForm() {
   const [recognitionAvailable, setRecognitionAvailable] = useState(false);
 
   useEffect(() => {
-    // Check for browser support once the component mounts
     const isAvailable = typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition);
     setRecognitionAvailable(isAvailable);
   }, []);
@@ -111,8 +110,8 @@ export default function EmailForm() {
 
   const setupRecognition = () => {
     if (!recognitionAvailable) {
-        handleMessage('Dictado por voz no es soportado en este navegador.', 'destructive', 'Error de compatibilidad');
-        return null;
+      handleMessage('Dictado por voz no es soportado en este navegador.', 'destructive', 'Error de compatibilidad');
+      return null;
     }
     
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -122,32 +121,33 @@ export default function EmailForm() {
     recognition.maxAlternatives = 1;
 
     recognition.onstart = () => {
-        setIsDictating(true);
-        setDictationStatus('Escuchando...');
+      setIsDictating(true);
+      setDictationStatus('Escuchando...');
     };
 
     recognition.onresult = (event: any) => {
-        const transcript = event.results[0][0].transcript;
-        setBody(prevBody => (prevBody ? prevBody.trim() + ' ' : '') + transcript + '.');
+      const transcript = event.results[0][0].transcript;
+      setBody(prevBody => (prevBody ? prevBody.trim() + ' ' : '') + transcript + '.');
     };
 
     recognition.onerror = (event: any) => {
-        let errorMsg = `Error de dictado: ${event.error}`;
-        if (event.error === 'not-allowed') {
-            errorMsg = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
-        } else if (event.error === 'no-speech') {
-            errorMsg = 'No se detectó voz. Inténtalo de nuevo.';
-        } else if (event.error === 'network') {
-            errorMsg = 'Error de red. Revisa tu conexión a internet.';
-        }
-        setDictationStatus(errorMsg);
-        handleMessage(errorMsg, 'destructive', 'Error de Dictado');
+      let errorMsg = `Error de dictado: ${event.error}`;
+      if (event.error === 'not-allowed') {
+        errorMsg = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
+      } else if (event.error === 'no-speech') {
+        errorMsg = 'No se detectó voz. Inténtalo de nuevo.';
+      } else if (event.error === 'network') {
+        errorMsg = 'Error de red. Revisa tu conexión a internet.';
+      }
+      setDictationStatus(errorMsg);
+      handleMessage(errorMsg, 'destructive', 'Error de Dictado');
+      setIsDictating(false); // Ensure state is reset on error
     };
 
     recognition.onend = () => {
-        setIsDictating(false);
-        setDictationStatus('Dictado finalizado.');
-        setTimeout(() => setDictationStatus(''), 2000);
+      setIsDictating(false);
+      setDictationStatus('Dictado finalizado.');
+      setTimeout(() => setDictationStatus(''), 2000);
     };
 
     recognitionRef.current = recognition;
@@ -164,28 +164,25 @@ export default function EmailForm() {
       if (recognitionRef.current) {
         recognitionRef.current.stop();
       }
-      setIsDictating(false); // Manually set state in case onend doesn't fire
       return;
     }
     
-    // Lazy initialization of recognition object
     let recognition = recognitionRef.current;
     if (!recognition) {
-        recognition = setupRecognition();
+      recognition = setupRecognition();
     }
     
-    // It's possible setupRecognition returns null if not available
     if (recognition) {
-        try {
-            recognition.start();
-        } catch (error) {
-            console.error("Error starting recognition:", error);
-            if (error instanceof DOMException && error.name === 'NotAllowedError') {
-                 handleMessage('Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.', 'destructive');
-            } else {
-                 handleMessage('No se pudo iniciar el dictado. Inténtalo de nuevo.', 'destructive');
-            }
+      try {
+        recognition.start();
+      } catch (error) {
+        console.error("Error starting recognition:", error);
+        if (error instanceof DOMException && error.name === 'NotAllowedError') {
+             handleMessage('Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.', 'destructive');
+        } else {
+             handleMessage('No se pudo iniciar el dictado. Inténtalo de nuevo.', 'destructive');
         }
+      }
     }
   };
 
@@ -204,37 +201,38 @@ export default function EmailForm() {
 
   const generateMailto = () => {
     if (!searchedCode) {
-        handleMessage('Por favor, introduce y busca un Código de Cliente.', "destructive", "Faltan datos");
-        return;
+      handleMessage('Por favor, introduce y busca un Código de Cliente.', "destructive", "Faltan datos");
+      return;
     }
     if (recipients.length === 0) {
-        handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
-        return;
+      handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
+      return;
     }
-
+  
     const toEmails = recipients.slice(0, 2);
     const ccEmails = recipients.slice(2);
-
-    const baseUrl = `https://outlook.live.com/mail/0/deeplink/compose`;
+  
+    const baseUrl = 'https://outlook.live.com/mail/0/deeplink/compose';
     const params = new URLSearchParams();
-
+  
     if (toEmails.length > 0) {
-        params.append('to', toEmails.join(','));
+      params.append('to', toEmails.join(','));
     }
     if (ccEmails.length > 0) {
-        params.append('cc', ccEmails.join(','));
-        params.append('showcc', '1');
+      params.append('cc', ccEmails.join(','));
+      params.append('showcc', '1');
     }
     if (subject) {
-        params.append('subject', subject);
+      params.append('subject', subject);
     }
     if (body) {
-        params.append('body', body);
+      params.append('body', body);
     }
-
+  
+    // Replace '+' with '%20' for spaces, which Outlook Web handles better.
     const queryString = params.toString().replace(/\+/g, '%20');
     const url = `${baseUrl}?${queryString}`;
-    
+      
     window.open(url, '_blank', 'noopener,noreferrer');
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
   };
@@ -386,3 +384,4 @@ export default function EmailForm() {
     </div>
   );
 }
+
