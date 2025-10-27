@@ -191,29 +191,27 @@ export default function EmailForm() {
       handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
       return;
     }
-  
+
     const toEmails = recipients.slice(0, 2);
     const ccEmails = recipients.slice(2);
   
-    const toEmailsString = toEmails.join(';');
-    const ccEmailsString = ccEmails.join(';');
+    const toEmailsString = toEmails.join(',');
+    const ccEmailsString = ccEmails.join(',');
     
-    const baseUrl = 'https://outlook.live.com/';
-    const params = new URLSearchParams();
-    
-    params.set('path', '/mail/action/compose');
-    params.set('to', toEmailsString);
+    const baseUrl = 'https://outlook.live.com/mail/0/action/compose';
+    let params = `?to=${toEmailsString}`;
+
     if (ccEmailsString) {
-      params.set('cc', ccEmailsString);
+      params += `&cc=${ccEmailsString}`;
     }
     if (subject) {
-      params.set('subject', subject);
+      params += `&subject=${encodeURIComponent(subject)}`;
     }
     if (body) {
-      params.set('body', body);
+      params += `&body=${encodeURIComponent(body)}`;
     }
   
-    const mailtoUrl = `${baseUrl}?${params.toString()}`;
+    const mailtoUrl = `${baseUrl}${params}`;
   
     window.open(mailtoUrl, '_blank', 'noopener,noreferrer');
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
