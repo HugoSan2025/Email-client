@@ -76,7 +76,6 @@ export default function EmailForm() {
         }
         setDictationStatus(errorMsg);
         handleMessage(errorMsg, 'destructive', 'Error de Dictado');
-        setIsDictating(false); // Make sure to turn off dictating state on error
       };
 
       recognition.onend = () => {
@@ -158,12 +157,7 @@ export default function EmailForm() {
     if (isDictating) {
         recognitionRef.current.stop();
     } else {
-        try {
-            recognitionRef.current.start();
-        } catch (error) {
-            console.error("Error starting recognition:", error);
-            handleMessage('No se pudo iniciar el dictado. Revisa los permisos del micrófono.', 'destructive');
-        }
+        recognitionRef.current.start();
     }
   };
 
@@ -192,15 +186,13 @@ export default function EmailForm() {
     const toEmails = recipients.slice(0, 2);
     const ccEmails = recipients.slice(2);
   
-    const baseUrl = 'https://outlook.live.com/mail/0/deeplink/compose';
     const params = new URLSearchParams();
-  
+    
     if (toEmails.length > 0) {
       params.append('to', toEmails.join(','));
     }
     if (ccEmails.length > 0) {
       params.append('cc', ccEmails.join(','));
-      params.append('showcc', '1');
     }
     if (subject) {
       params.append('subject', subject);
@@ -209,11 +201,9 @@ export default function EmailForm() {
       params.append('body', body);
     }
   
-    // Replace '+' with '%20' for spaces, which Outlook Web handles better.
-    const queryString = params.toString().replace(/\+/g, '%20');
-    const url = `${baseUrl}?${queryString}`;
-      
-    window.open(url, '_blank', 'noopener,noreferrer');
+    const mailtoLink = `mailto:?${params.toString()}`;
+    
+    window.location.href = mailtoLink;
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
   };
 
@@ -341,11 +331,9 @@ export default function EmailForm() {
                     id="dictationButton"
                     size="icon"
                     onClick={toggleDictation}
-                    disabled={!recognitionAvailable}
-                    className={`p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12
-                      ${isDictating ? 'bg-red-500 hover:bg-red-600 animate-pulse' : 'bg-blue-500 hover:bg-blue-600'}
-                      disabled:bg-gray-400 disabled:cursor-not-allowed`}
-                    title={isDictating ? "Detener Dictado" : "Iniciar Dictado por Voz"}
+                    disabled={isDictating || !recognitionAvailable}
+                    className="p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 bg-blue-500 hover:bg-blue-600 disabled:bg-blue-500 disabled:opacity-70 disabled:cursor-not-allowed"
+                    title="Iniciar Dictado por Voz"
                   >
                     <Mic className="h-6 w-6" />
                   </Button>
@@ -364,3 +352,5 @@ export default function EmailForm() {
     </div>
   );
 }
+
+    
