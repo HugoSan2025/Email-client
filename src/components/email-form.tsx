@@ -46,8 +46,9 @@ export default function EmailForm() {
   const [recognitionAvailable, setRecognitionAvailable] = useState(false);
 
   useEffect(() => {
+    // This check now runs only on the client, after the initial render.
     const isAvailable = typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition);
-    setRecognitionAvailable(isAvailable);
+    setRecognitionAvailable(!!isAvailable);
   }, []);
 
   const handleMessage = (description: string, variant: "default" | "destructive" = "default", title?: string) => {
@@ -109,10 +110,7 @@ export default function EmailForm() {
   };
 
   const setupRecognition = () => {
-    if (!recognitionAvailable) {
-      handleMessage('Dictado por voz no es soportado en este navegador.', 'destructive', 'Error de compatibilidad');
-      return null;
-    }
+    if (!recognitionAvailable) return null;
     
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
@@ -141,7 +139,6 @@ export default function EmailForm() {
       }
       setDictationStatus(errorMsg);
       handleMessage(errorMsg, 'destructive', 'Error de Dictado');
-      setIsDictating(false); // Ensure state is reset on error
     };
 
     recognition.onend = () => {
@@ -161,9 +158,7 @@ export default function EmailForm() {
     }
 
     if (isDictating) {
-      if (recognitionRef.current) {
-        recognitionRef.current.stop();
-      }
+      recognitionRef.current?.stop();
       return;
     }
     
@@ -176,12 +171,12 @@ export default function EmailForm() {
       try {
         recognition.start();
       } catch (error) {
-        console.error("Error starting recognition:", error);
-        if (error instanceof DOMException && error.name === 'NotAllowedError') {
-             handleMessage('Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.', 'destructive');
+        if (error instanceof DOMException && (error.name === 'NotAllowedError' || error.name === 'SecurityError')) {
+          handleMessage('Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.', 'destructive');
         } else {
-             handleMessage('No se pudo iniciar el dictado. Inténtalo de nuevo.', 'destructive');
+          handleMessage('No se pudo iniciar el dictado. Puede que ya esté activo en otra pestaña.', 'destructive');
         }
+        console.error("Error starting recognition:", error);
       }
     }
   };
@@ -385,3 +380,4 @@ export default function EmailForm() {
   );
 }
 
+    
