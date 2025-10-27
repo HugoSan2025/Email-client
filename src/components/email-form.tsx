@@ -195,17 +195,14 @@ export default function EmailForm() {
     const toEmails = recipients.slice(0, 2);
     const ccEmails = recipients.slice(2);
   
-    const toEmailsString = toEmails.join(',');
-    const ccEmailsString = ccEmails.join(',');
-    
-    let baseUrl = 'https://outlook.live.com/mail/0/deeplink/compose';
+    const baseUrl = 'https://outlook.live.com/mail/0/deeplink/compose';
     const params = [];
 
-    if (toEmailsString) {
-      params.push(`to=${toEmailsString}`);
+    if (toEmails.length > 0) {
+      params.push(`to=${toEmails.join(',')}`);
     }
-    if (ccEmailsString) {
-      params.push(`cc=${ccEmailsString}`);
+    if (ccEmails.length > 0) {
+      params.push(`cc=${ccEmails.join(',')}`);
     }
     if (subject) {
       params.push(`subject=${encodeURIComponent(subject)}`);
