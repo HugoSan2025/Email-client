@@ -1,3 +1,4 @@
+
 // src/hooks/useSpeechRecognition.ts
 'use client';
 

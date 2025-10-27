@@ -300,8 +300,8 @@ export default function EmailForm() {
                     id="dictationButton"
                     size="icon"
                     onClick={toggleDictation}
-                    disabled={!recognitionAvailable}
-                    className={`p-3 rounded-full shadow-3xl transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 ${isDictating ? 'bg-red-500 hover:bg-red-600 animate-pulse' : 'bg-blue-500 hover:bg-blue-600'} disabled:bg-gray-400 disabled:cursor-not-allowed`}
+                    disabled={isDictating || !recognitionAvailable}
+                    className={`p-3 rounded-full shadow-3xl transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed`}
                     title={isDictating ? "Detener Dictado" : "Iniciar Dictado por Voz"}
                   >
                     <Mic className="h-6 w-6" />
