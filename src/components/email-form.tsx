@@ -1,11 +1,10 @@
 
 "use client";
 
-import { useState, useEffect, useTransition } from 'react';
+import { useState, useEffect, useTransition, useRef } from 'react';
 import { enhanceEmail } from '@/app/actions';
 import { useToast } from "@/hooks/use-toast";
 import { getClients } from '@/lib/client-data';
-import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -33,28 +32,53 @@ export default function EmailForm() {
   const [isEnhancing, startEnhancingTransition] = useTransition();
   const { toast } = useToast();
 
-  const {
-    isDictating,
-    transcript,
-    error: speechError,
-    isAvailable: recognitionAvailable,
-    startDictation,
-    stopDictation,
-  } = useSpeechRecognition();
+  // Speech Recognition state
+  const [isDictating, setIsDictating] = useState(false);
+  const [recognitionAvailable, setRecognitionAvailable] = useState(false);
+  const recognitionRef = useRef<any>(null);
 
-  // Update the email body with the transcript from the hook
   useEffect(() => {
-    if (transcript) {
-      setBody(transcript);
-    }
-  }, [transcript]);
+    const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognitionAPI) {
+      setRecognitionAvailable(true);
+      const recognition = new SpeechRecognitionAPI();
+      recognition.continuous = true;
+      recognition.lang = 'es-ES';
+      recognition.interimResults = false;
 
-  // Show a toast message if there's a speech recognition error
-  useEffect(() => {
-    if (speechError) {
-      handleMessage(speechError, 'destructive', 'Error de Dictado');
+      recognition.onstart = () => {
+        setIsDictating(true);
+      };
+
+      recognition.onend = () => {
+        setIsDictating(false);
+      };
+
+      recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
+        let errorMessage = `Error de dictado: ${event.error}`;
+        if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
+          errorMessage = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
+        } else if (event.error === 'no-speech') {
+          errorMessage = 'No se detectó voz. Inténtalo de nuevo.';
+        }
+        handleMessage(errorMessage, 'destructive', 'Error de Dictado');
+        setIsDictating(false);
+      };
+
+      recognition.onresult = (event: SpeechRecognitionEvent) => {
+        let finalTranscript = '';
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+          if (event.results[i].isFinal) {
+            finalTranscript += event.results[i][0].transcript;
+          }
+        }
+        setBody(prev => (prev ? prev.trim() + ' ' : '') + finalTranscript.trim());
+      };
+
+      recognitionRef.current = recognition;
     }
-  }, [speechError]);
+  }, []);
+
 
   const handleMessage = (description: string, variant: "default" | "destructive" = "default", title?: string) => {
     toast({
@@ -121,9 +145,9 @@ export default function EmailForm() {
     }
     
     if (isDictating) {
-        stopDictation();
+      recognitionRef.current.stop();
     } else {
-        startDictation();
+      recognitionRef.current.start();
     }
   };
 
@@ -300,7 +324,7 @@ export default function EmailForm() {
                     id="dictationButton"
                     size="icon"
                     onClick={toggleDictation}
-                    disabled={isDictating || !recognitionAvailable}
+                    disabled={!recognitionAvailable}
                     className={`p-3 rounded-full shadow-3xl transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed`}
                     title={isDictating ? "Detener Dictado" : "Iniciar Dictado por Voz"}
                   >
