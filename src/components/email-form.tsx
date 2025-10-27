@@ -221,6 +221,7 @@ export default function EmailForm() {
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
   };
 
+
   let toEmails: string[] = [];
   let ccEmails: string[] = [];
 
