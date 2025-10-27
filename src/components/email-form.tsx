@@ -27,6 +27,7 @@ interface Client {
   emails: string[];
 }
 
+const clientData = getClients();
 
 export default function EmailForm() {
   const [clientCode, setClientCode] = useState('');
@@ -38,9 +39,6 @@ export default function EmailForm() {
   const [isDictating, setIsDictating] = useState(false);
   const [dictationStatus, setDictationStatus] = useState('');
   const [recognitionAvailable, setRecognitionAvailable] = useState(false);
-
-  // The client data is now loaded synchronously.
-  const clientDataRef = useRef<Client[]>(getClients());
   
   const [isPending, startTransition] = useTransition();
   const [isEnhancing, startEnhancingTransition] = useTransition();
@@ -102,7 +100,7 @@ export default function EmailForm() {
   };
 
   const findClient = (code: string): Client | undefined => {
-    return clientDataRef.current.find(c => c.code === code);
+    return clientData.find(c => c.code === code);
   };
 
   const handleSearch = (code: string) => {
@@ -366,3 +364,5 @@ export default function EmailForm() {
     </div>
   );
 }
+
+    
