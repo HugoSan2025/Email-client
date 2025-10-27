@@ -23,18 +23,17 @@ try {
     if (code && name) {
       const validEmails = emails.map(e => e.trim()).filter(e => e && e.includes('@'));
       if (validEmails.length > 0) {
-        // Escape backslashes and double quotes in the name
-        const sanitizedName = name.trim().replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+        // Using JSON.stringify on the name handles all special characters (quotes, backslashes, etc.) safely.
         clients.push({
           code: String(code).trim(),
-          name: sanitizedName,
+          name: name.trim(), // The name will be stringified later as a whole object
           emails: validEmails
         });
       }
     }
   }
 
-  // Using JSON.stringify with a replacer is safer for creating the string
+  // Using JSON.stringify with a replacer on the whole array is the safest way to build the final string.
   const tsContent = 'export const clients = ' + JSON.stringify(clients, null, 2) + ';\n';
   
   fs.writeFileSync(outputPath, tsContent);
