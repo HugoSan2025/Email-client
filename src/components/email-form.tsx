@@ -13,6 +13,13 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Loader2, Sparkles, X, Search, Mic, MicOff } from 'lucide-react';
 
+interface CustomWindow extends Window {
+  SpeechRecognition: typeof SpeechRecognition;
+  webkitSpeechRecognition: typeof SpeechRecognition;
+}
+
+declare let window: CustomWindow;
+
 interface Client {
   code: string;
   name: string;
@@ -32,72 +39,8 @@ export default function EmailForm() {
   const [isEnhancing, startEnhancingTransition] = useTransition();
   const { toast } = useToast();
 
-  // --- Dictation State and Logic ---
   const [isDictating, setIsDictating] = useState(false);
   const recognitionRef = useRef<SpeechRecognition | null>(null);
-
-  useEffect(() => {
-    // This effect runs once on component mount to set up speech recognition.
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (SpeechRecognition) {
-      const recognition = new SpeechRecognition();
-      recognition.continuous = true;
-      recognition.interimResults = false;
-      recognition.lang = 'es-ES';
-
-      recognition.onresult = (event) => {
-        let finalTranscript = '';
-        for (let i = event.resultIndex; i < event.results.length; ++i) {
-          if (event.results[i].isFinal) {
-            finalTranscript += event.results[i][0].transcript;
-          }
-        }
-        if (finalTranscript) {
-          setBody(prevBody => prevBody + finalTranscript + ' ');
-        }
-      };
-
-      recognition.onend = () => {
-        setIsDictating(false);
-      };
-
-      recognition.onerror = (event) => {
-        console.error('Speech recognition error', event.error);
-        if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
-            handleMessage('Acceso al micrófono denegado. Por favor, habilítalo en la configuración de tu navegador.', 'destructive', 'Error de dictado');
-        } else {
-            handleMessage(`Error de dictado: ${event.error}`, 'destructive', 'Error');
-        }
-        setIsDictating(false);
-      };
-      
-      recognitionRef.current = recognition;
-    } else {
-      console.warn("Speech Recognition not supported by this browser.");
-    }
-
-    return () => {
-      // Cleanup on component unmount
-      if (recognitionRef.current) {
-        recognitionRef.current.stop();
-      }
-    };
-  }, []); // Empty dependency array ensures this runs only once
-
-  const handleDictationClick = () => {
-    if (!recognitionRef.current) {
-        handleMessage('El dictado por voz no es compatible con este navegador.', 'destructive', 'Error');
-        return;
-    }
-
-    if (isDictating) {
-      recognitionRef.current.stop();
-    } else {
-      setIsDictating(true);
-      recognitionRef.current.start();
-    }
-  };
-  // --- End of Dictation Logic ---
 
   const handleMessage = (description: string, variant: "default" | "destructive" = "default", title?: string) => {
     toast({
@@ -106,6 +49,73 @@ export default function EmailForm() {
         description,
     });
   };
+
+  const setupSpeechRecognition = () => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      handleMessage('El dictado por voz no es compatible con este navegador.', 'destructive', 'Error');
+      return false;
+    }
+    
+    const recognition = new SpeechRecognition();
+    recognition.continuous = true;
+    recognition.interimResults = false;
+    recognition.lang = 'es-ES';
+
+    recognition.onresult = (event) => {
+      let finalTranscript = '';
+      for (let i = event.resultIndex; i < event.results.length; ++i) {
+        if (event.results[i].isFinal) {
+          finalTranscript += event.results[i][0].transcript;
+        }
+      }
+      if (finalTranscript) {
+        setBody(prevBody => (prevBody.trim() ? prevBody + ' ' : '') + finalTranscript.trim());
+      }
+    };
+
+    recognition.onend = () => {
+      setIsDictating(false);
+    };
+
+    recognition.onerror = (event) => {
+      console.error('Speech recognition error', event.error);
+      if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
+          handleMessage('Acceso al micrófono denegado. Por favor, habilítalo en la configuración de tu navegador.', 'destructive', 'Error de dictado');
+      } else {
+          handleMessage(`Error de dictado: ${event.error}`, 'destructive', 'Error');
+      }
+      setIsDictating(false);
+    };
+    
+    recognitionRef.current = recognition;
+    return true;
+  };
+  
+  const handleDictationClick = () => {
+    if (isDictating) {
+        recognitionRef.current?.stop();
+        return;
+    }
+
+    if (!recognitionRef.current) {
+        if (!setupSpeechRecognition()) {
+            return;
+        }
+    }
+    
+    recognitionRef.current?.start();
+    setIsDictating(true);
+  };
+  
+  // Cleanup on component unmount
+  useEffect(() => {
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.stop();
+      }
+    };
+  }, []);
 
   const findClient = (code: string): Client | undefined => {
     return clientData.find(c => c.code === code);
@@ -191,7 +201,6 @@ export default function EmailForm() {
     params.append('subject', subject);
     params.append('body', body);
 
-    // Manually replace '+' with '%20' for spaces, which Outlook handles better
     const paramString = params.toString().replace(/\+/g, '%20');
 
     if (paramString) {
@@ -327,7 +336,7 @@ export default function EmailForm() {
                   <Button
                       size="icon"
                       onClick={handleDictationClick}
-                      className={`p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 text-white ${isDictating ? 'bg-red-600 hover:bg-red-700' : 'bg-blue-500 hover:bg-blue-600'}`}
+                      className={`p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 text-white bg-blue-500 hover:bg-blue-600`}
                       title={isDictating ? "Detener dictado" : "Iniciar dictado"}
                   >
                       {isDictating ? <MicOff className="h-6 w-6" /> : <Mic className="h-6 w-6" />}
@@ -347,4 +356,3 @@ export default function EmailForm() {
     </div>
   );
 }
-
