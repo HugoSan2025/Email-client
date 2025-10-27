@@ -184,39 +184,37 @@ export default function EmailForm() {
 
   const generateMailto = () => {
     if (!searchedCode) {
-      handleMessage('Por favor, introduce y busca un Código de Cliente.', "destructive", "Faltan datos");
-      return;
+        handleMessage('Por favor, introduce y busca un Código de Cliente.', "destructive", "Faltan datos");
+        return;
     }
     if (recipients.length === 0) {
-      handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
-      return;
+        handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
+        return;
     }
-    
+
     const toEmails = recipients.slice(0, 2);
     const ccEmails = recipients.slice(2);
 
-    const toEmailsString = toEmails.join(';');
-    const ccEmailsString = ccEmails.join(';');
+    const toEmailsString = toEmails.join(',');
+    const ccEmailsString = ccEmails.join(',');
 
-    let mailtoUrl = `mailto:${toEmailsString}`;
-    
     const params = new URLSearchParams();
-
+    if (toEmailsString) {
+        params.append('to', toEmailsString);
+    }
     if (ccEmailsString) {
-      params.append('cc', ccEmailsString);
+        params.append('cc', ccEmailsString);
     }
     if (subject) {
-      params.append('subject', subject);
+        params.append('subject', subject);
     }
     if (body) {
-      params.append('body', body);
+        params.append('body', body);
     }
     
-    const paramsString = params.toString();
-    if (paramsString) {
-      mailtoUrl += `?${paramsString}`;
-    }
-  
+    const baseUrl = "https://outlook.live.com/mail/deeplink/compose";
+    const mailtoUrl = `${baseUrl}?${params.toString()}`;
+
     window.open(mailtoUrl, '_blank', 'noopener,noreferrer');
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
   };
