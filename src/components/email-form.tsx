@@ -50,7 +50,7 @@ export default function EmailForm() {
         description,
     });
   };
-
+  
   const handleDictationClick = () => {
     if (!recognitionRef.current) {
       const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -60,7 +60,7 @@ export default function EmailForm() {
       }
       const recognition = new SpeechRecognition();
       recognition.continuous = true;
-      recognition.interimResults = true; // Use interim for better feedback, though we only use final
+      recognition.interimResults = true;
       recognition.lang = 'es-ES';
 
       recognition.onstart = () => {
@@ -69,7 +69,6 @@ export default function EmailForm() {
 
       recognition.onend = () => {
         setIsDictating(false);
-        recognitionRef.current?.stop(); // Ensure it really stops
       };
 
       recognition.onerror = (event) => {
@@ -83,7 +82,7 @@ export default function EmailForm() {
       };
 
       recognition.onresult = (event) => {
-        let finalTranscript = body; // Start with current body
+        let finalTranscript = body;
         for (let i = event.resultIndex; i < event.results.length; ++i) {
           if (event.results[i].isFinal) {
             const transcriptChunk = event.results[i][0].transcript.trim();
@@ -99,11 +98,15 @@ export default function EmailForm() {
     if (isDictating) {
       recognitionRef.current?.stop();
     } else {
-      recognitionRef.current?.start();
+      try {
+        recognitionRef.current?.start();
+      } catch (e) {
+        console.error("Error starting recognition:", e)
+        // This can happen if it's already started.
+      }
     }
   };
   
-  // Cleanup on component unmount
   useEffect(() => {
     return () => {
       recognitionRef.current?.stop();
@@ -304,10 +307,7 @@ export default function EmailForm() {
               </div>
 
               <div>
-                <div className="flex justify-between items-center mb-1">
-                    <Label htmlFor="emailBody" className="block text-sm font-medium">Cuerpo del Correo</Label>
-                    {isDictating && <span className="text-sm text-red-500 animate-pulse">Escuchando...</span>}
-                </div>
+                <Label htmlFor="emailBody" className="block text-sm font-medium mb-1">Cuerpo del Correo</Label>
                 <Textarea
                   id="emailBody"
                   rows={8}
@@ -316,8 +316,8 @@ export default function EmailForm() {
                   className="w-full p-3 rounded-lg text-sm shadow-3xl transition duration-200 transform hover:-translate-y-0.5 bg-input text-foreground border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
                   placeholder="Escribe tu mensaje..."
                 />
-                 <div className="flex justify-between items-center mt-2">
-                   <Button
+                <div className="flex justify-between items-center mt-2">
+                  <Button
                     size="icon"
                     onClick={handleEnhanceClick}
                     disabled={isEnhancing}
@@ -326,17 +326,21 @@ export default function EmailForm() {
                   >
                     {isEnhancing ? <Loader2 className="h-6 w-6 animate-spin" /> : <Sparkles className="h-6 w-6" />}
                   </Button>
-                  <Button
-                      size="icon"
-                      onClick={handleDictationClick}
-                      className={cn(
-                        "p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 text-white",
-                        isDictating ? "bg-red-500 hover:bg-red-600" : "bg-blue-500 hover:bg-blue-600"
-                      )}
-                      title={isDictating ? "Detener dictado" : "Iniciar dictado"}
-                  >
-                      {isDictating ? <MicOff className="h-6 w-6" /> : <Mic className="h-6 w-6" />}
-                  </Button>
+                  
+                  <div className="flex items-center gap-4">
+                    {isDictating && <span className="text-sm text-white animate-pulse">Escuchando...</span>}
+                    <Button
+                        size="icon"
+                        onClick={handleDictationClick}
+                        className={cn(
+                          "p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12 text-white",
+                          isDictating ? "bg-red-500 hover:bg-red-600" : "bg-blue-500 hover:bg-blue-600"
+                        )}
+                        title={isDictating ? "Detener dictado" : "Iniciar dictado"}
+                    >
+                        {isDictating ? <MicOff className="h-6 w-6" /> : <Mic className="h-6 w-6" />}
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
