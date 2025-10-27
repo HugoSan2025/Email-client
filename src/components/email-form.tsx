@@ -191,29 +191,33 @@ export default function EmailForm() {
       handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
       return;
     }
-  
+
     const toEmails = recipients.slice(0, 2);
     const ccEmails = recipients.slice(2);
   
     const baseUrl = 'https://outlook.live.com/mail/0/deeplink/compose';
-    const params = [];
+    
+    let url = baseUrl;
+    let params = [];
 
     if (toEmails.length > 0) {
-      params.push(`to=${toEmails.join(',')}`);
+        params.push(`to=${toEmails.join(',')}`);
     }
     if (ccEmails.length > 0) {
-      params.push(`cc=${ccEmails.join(',')}`);
+        params.push(`cc=${ccEmails.join(',')}`);
     }
     if (subject) {
-      params.push(`subject=${encodeURIComponent(subject)}`);
+        params.push(`subject=${encodeURIComponent(subject)}`);
     }
     if (body) {
-      params.push(`body=${encodeURIComponent(body)}`);
+        params.push(`body=${encodeURIComponent(body)}`);
     }
 
-    const mailtoUrl = `${baseUrl}?${params.join('&')}`;
+    if (params.length > 0) {
+        url += '?' + params.join('&');
+    }
 
-    window.open(mailtoUrl, '_blank', 'noopener,noreferrer');
+    window.open(url, '_blank', 'noopener,noreferrer');
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
   };
 
