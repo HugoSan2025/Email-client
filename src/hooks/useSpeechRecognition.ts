@@ -13,89 +13,88 @@ interface UseSpeechRecognitionReturn {
   stopDictation: () => void;
 }
 
-// A global ref to hold the recognition instance.
-// This is outside the component to prevent re-creation on re-renders.
-let recognition: SpeechRecognition | null = null;
-
 export const useSpeechRecognition = (): UseSpeechRecognitionReturn => {
   const [isDictating, setIsDictating] = useState(false);
   const [transcript, setTranscript] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [isAvailable, setIsAvailable] = useState(false);
 
-  // We use a ref to hold the latest transcript to avoid stale closures in callbacks
-  const transcriptRef = useRef('');
+  const recognitionRef = useRef<SpeechRecognition | null>(null);
 
   useEffect(() => {
-    // This check runs only on the client-side
+    // This effect runs once on the client to check for API availability
+    // and set up the recognition instance.
     const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
 
     if (SpeechRecognitionAPI) {
       setIsAvailable(true);
+      const recognition = new SpeechRecognitionAPI();
+      recognition.lang = 'es-ES';
+      recognition.interimResults = false; // We only care about the final result
+      recognition.continuous = true; // Keep listening until stopped
+
+      recognition.onstart = () => {
+        setIsDictating(true);
+        setError(null);
+      };
+
+      recognition.onend = () => {
+        setIsDictating(false);
+      };
       
-      // Initialize recognition only once
-      if (!recognition) {
-        recognition = new SpeechRecognitionAPI();
-        recognition.lang = 'es-ES';
-        recognition.interimResults = false;
-        recognition.maxAlternatives = 1;
+      recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
+        let errorMessage = `Error de dictado: ${event.error}`;
+        if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
+          errorMessage = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
+        } else if (event.error === 'no-speech') {
+          errorMessage = 'No se detectó voz. Inténtalo de nuevo.';
+        } else if (event.error === 'network') {
+          errorMessage = 'Error de red. Revisa tu conexión a internet.';
+        }
+        setError(errorMessage);
+        setIsDictating(false);
+      };
 
-        recognition.onstart = () => {
-          setIsDictating(true);
-          setError(null);
-        };
-
-        recognition.onend = () => {
-          setIsDictating(false);
-          // Update the final transcript state
-          setTranscript(transcriptRef.current);
-        };
-
-        recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
-          let errorMessage = `Error de dictado: ${event.error}`;
-          if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
-            errorMessage = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
-          } else if (event.error === 'no-speech') {
-            errorMessage = 'No se detectó voz. Inténtalo de nuevo.';
-          } else if (event.error === 'network') {
-            errorMessage = 'Error de red. Revisa tu conexión a internet.';
+      recognition.onresult = (event: SpeechRecognitionEvent) => {
+        let finalTranscript = '';
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+          if (event.results[i].isFinal) {
+            finalTranscript += event.results[i][0].transcript;
           }
-          setError(errorMessage);
-          setIsDictating(false);
-        };
+        }
+        // Append new final results to the existing transcript
+        setTranscript(prev => (prev ? prev.trim() + ' ' : '') + finalTranscript.trim());
+      };
 
-        recognition.onresult = (event: SpeechRecognitionEvent) => {
-          const newTranscript = event.results[0][0].transcript;
-          // Append the new result to the existing transcript
-          const updatedTranscript = (transcriptRef.current ? transcriptRef.current.trim() + ' ' : '') + newTranscript + '.';
-          transcriptRef.current = updatedTranscript;
-          // We can update the state here for live feedback if needed, but the final update is on `onend`
-          setTranscript(updatedTranscript); 
-        };
-      }
+      recognitionRef.current = recognition;
+
     } else {
       setIsAvailable(false);
     }
-    
+
     // Cleanup function to stop recognition if the component unmounts
     return () => {
-        if (recognition && isDictating) {
-            recognition.stop();
-        }
+      if (recognitionRef.current) {
+        recognitionRef.current.stop();
+      }
     };
-  }, [isDictating]); // Depend on isDictating to manage cleanup
+  }, []); // Empty dependency array ensures this runs only once on mount
 
   const startDictation = useCallback(() => {
-    if (recognition && !isDictating) {
-        // Reset transcript ref before starting
-        transcriptRef.current = transcript;
-        recognition.start();
+    if (recognitionRef.current && !isDictating) {
+      // It's important to set the transcript before starting a new session
+      // if the user wants to append to existing text.
+      // We pass the current transcript via a closure.
+      setTranscript(currentTranscript => {
+        recognitionRef.current!.start();
+        return currentTranscript; // return the same state to start
+      });
     }
-  }, [isDictating, transcript]);
+  }, [isDictating]);
 
   const stopDictation = useCallback(() => {
-    if (recognition && isDictating) {
-        recognition.stop();
+    if (recognitionRef.current && isDictating) {
+      recognitionRef.current.stop();
     }
   }, [isDictating]);
 
