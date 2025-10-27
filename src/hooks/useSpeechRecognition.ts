@@ -3,7 +3,6 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 
-// Define the shape of the return value for our hook
 interface UseSpeechRecognitionReturn {
   isDictating: boolean;
   transcript: string;
@@ -22,16 +21,14 @@ export const useSpeechRecognition = (): UseSpeechRecognitionReturn => {
   const recognitionRef = useRef<SpeechRecognition | null>(null);
 
   useEffect(() => {
-    // This effect runs once on the client to check for API availability
-    // and set up the recognition instance.
     const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
 
     if (SpeechRecognitionAPI) {
       setIsAvailable(true);
       const recognition = new SpeechRecognitionAPI();
       recognition.lang = 'es-ES';
-      recognition.interimResults = false; // We only care about the final result
-      recognition.continuous = true; // Keep listening until stopped
+      recognition.interimResults = false;
+      recognition.continuous = true;
 
       recognition.onstart = () => {
         setIsDictating(true);
@@ -41,7 +38,7 @@ export const useSpeechRecognition = (): UseSpeechRecognitionReturn => {
       recognition.onend = () => {
         setIsDictating(false);
       };
-      
+
       recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
         let errorMessage = `Error de dictado: ${event.error}`;
         if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
@@ -62,7 +59,6 @@ export const useSpeechRecognition = (): UseSpeechRecognitionReturn => {
             finalTranscript += event.results[i][0].transcript;
           }
         }
-        // Append new final results to the existing transcript
         setTranscript(prev => (prev ? prev.trim() + ' ' : '') + finalTranscript.trim());
       };
 
@@ -72,29 +68,31 @@ export const useSpeechRecognition = (): UseSpeechRecognitionReturn => {
       setIsAvailable(false);
     }
 
-    // Cleanup function to stop recognition if the component unmounts
     return () => {
       if (recognitionRef.current) {
         recognitionRef.current.stop();
       }
     };
-  }, []); // Empty dependency array ensures this runs only once on mount
+  }, []);
 
   const startDictation = useCallback(() => {
     if (recognitionRef.current && !isDictating) {
-      // It's important to set the transcript before starting a new session
-      // if the user wants to append to existing text.
-      // We pass the current transcript via a closure.
-      setTranscript(currentTranscript => {
-        recognitionRef.current!.start();
-        return currentTranscript; // return the same state to start
-      });
+      try {
+        recognitionRef.current.start();
+      } catch (e) {
+        console.error("Error starting recognition:", e);
+        setError("No se pudo iniciar el dictado. Inténtalo de nuevo.");
+      }
     }
   }, [isDictating]);
 
   const stopDictation = useCallback(() => {
     if (recognitionRef.current && isDictating) {
-      recognitionRef.current.stop();
+      try {
+        recognitionRef.current.stop();
+      } catch(e) {
+        console.error("Error stopping recognition:", e);
+      }
     }
   }, [isDictating]);
 
