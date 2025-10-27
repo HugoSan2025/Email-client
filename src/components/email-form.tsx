@@ -13,7 +13,6 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Mic, Loader2, Sparkles, X, Search } from 'lucide-react';
 
-// SpeechRecognition might not exist on the window object type in TS.
 declare global {
   interface Window {
     SpeechRecognition: any;
@@ -38,7 +37,6 @@ export default function EmailForm() {
   
   const [isDictating, setIsDictating] = useState(false);
   const [dictationStatus, setDictationStatus] = useState('');
-  const [recognitionAvailable, setRecognitionAvailable] = useState(false);
   
   const [isPending, startTransition] = useTransition();
   const [isEnhancing, startEnhancingTransition] = useTransition();
@@ -46,60 +44,7 @@ export default function EmailForm() {
 
   const recognitionRef = useRef<any>(null);
 
-  // Setup Speech Recognition
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (SpeechRecognition) {
-      const recognition = new SpeechRecognition();
-      recognition.lang = 'es-ES';
-      recognition.interimResults = false;
-      recognition.maxAlternatives = 1;
-
-      recognition.onstart = () => {
-        setIsDictating(true);
-        setDictationStatus('Escuchando...');
-      };
-      
-      recognition.onresult = (event: any) => {
-        const transcript = event.results[0][0].transcript;
-        setBody(prevBody => (prevBody ? prevBody.trim() + ' ' : '') + transcript + '.');
-        setDictationStatus('Dictado finalizado.');
-        setTimeout(() => setDictationStatus(''), 2000);
-      };
-
-      recognition.onerror = (event: any) => {
-        console.error('Error de reconocimiento de voz:', event.error);
-        let errorMsg = `Error en el dictado: ${event.error}.`;
-        if (event.error === 'not-allowed') {
-          errorMsg = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
-        } else if (event.error === 'no-speech') {
-            errorMsg = 'No se detectó voz. Inténtalo de nuevo.';
-        } else if (event.error === 'network'){
-            errorMsg = 'Error de red. Revisa tu conexión a internet.'
-        }
-        setDictationStatus(errorMsg);
-        handleMessage(errorMsg, "destructive", "Error de Permiso");
-        setIsDictating(false);
-      };
-
-      recognition.onend = () => {
-        setIsDictating(false);
-        // Clear status only if it was 'listening' to avoid overwriting error messages
-        setDictationStatus(prevStatus => prevStatus === 'Escuchando...' ? '' : prevStatus);
-      };
-      
-      recognitionRef.current = recognition;
-      setRecognitionAvailable(true);
-    } else {
-        toast({
-            variant: "destructive",
-            title: "Error de compatibilidad",
-            description: "Dictado por voz no es soportado en este navegador.",
-        })
-    }
-  }, [toast]);
+  const recognitionAvailable = typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition);
 
   const handleMessage = (description: string, variant: "default" | "destructive" = "default", title?: string) => {
     toast({
@@ -141,7 +86,6 @@ export default function EmailForm() {
     });
   };
 
-
   const handleClientCodeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setClientCode(e.target.value);
   };
@@ -160,15 +104,78 @@ export default function EmailForm() {
     setSearchedCode('');
   };
 
-  const toggleDictation = () => {
-    if (!recognitionRef.current) {
-        handleMessage('La función de dictado no está disponible.', "destructive", "Error");
-        return;
+  const setupRecognition = () => {
+    if (!recognitionAvailable) {
+      handleMessage('Dictado por voz no es soportado en este navegador.', 'destructive', 'Error de compatibilidad');
+      return null;
     }
+    
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'es-ES';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.onstart = () => {
+      setIsDictating(true);
+      setDictationStatus('Escuchando...');
+    };
+
+    recognition.onresult = (event: any) => {
+      const transcript = event.results[0][0].transcript;
+      setBody(prevBody => (prevBody ? prevBody.trim() + ' ' : '') + transcript + '.');
+    };
+
+    recognition.onerror = (event: any) => {
+      let errorMsg = `Error de dictado: ${event.error}`;
+      if (event.error === 'not-allowed') {
+        errorMsg = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
+      } else if (event.error === 'no-speech') {
+        errorMsg = 'No se detectó voz. Inténtalo de nuevo.';
+      } else if (event.error === 'network') {
+        errorMsg = 'Error de red. Revisa tu conexión a internet.';
+      }
+      setDictationStatus(errorMsg);
+      handleMessage(errorMsg, 'destructive', 'Error de Dictado');
+      setIsDictating(false); // Ensure dictation stops on error
+    };
+
+    recognition.onend = () => {
+      setIsDictating(false);
+      setDictationStatus('Dictado finalizado.');
+      setTimeout(() => setDictationStatus(''), 2000);
+    };
+
+    recognitionRef.current = recognition;
+    return recognition;
+  };
+
+  const toggleDictation = () => {
+    if (!recognitionAvailable) {
+      handleMessage('Dictado por voz no soportado.', 'destructive');
+      return;
+    }
+
     if (isDictating) {
+      if (recognitionRef.current) {
         recognitionRef.current.stop();
-    } else {
-        recognitionRef.current.start();
+      }
+      setIsDictating(false);
+      return;
+    }
+    
+    let recognition = recognitionRef.current;
+    if (!recognition) {
+        recognition = setupRecognition();
+    }
+    
+    if (recognition) {
+        try {
+            recognition.start();
+        } catch (error) {
+            console.error("Error starting recognition:", error);
+            handleMessage('No se pudo iniciar el dictado. Inténtalo de nuevo.', 'destructive');
+        }
     }
   };
 
@@ -369,5 +376,3 @@ export default function EmailForm() {
     </div>
   );
 }
-
-    
