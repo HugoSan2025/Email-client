@@ -184,42 +184,41 @@ export default function EmailForm() {
 
   const generateMailto = () => {
     if (!searchedCode) {
-      handleMessage('Por favor, introduce y busca un Código de Cliente.', "destructive", "Faltan datos");
-      return;
+        handleMessage('Por favor, introduce y busca un Código de Cliente.', "destructive", "Faltan datos");
+        return;
     }
     if (recipients.length === 0) {
-      handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
-      return;
+        handleMessage(`No se encontraron correos para el código "${searchedCode}".`, "destructive", "Cliente no encontrado");
+        return;
     }
 
-    const toEmails = recipients.slice(0, 2);
-    const ccEmails = recipients.slice(2);
+    let toEmails = recipients.slice(0, 2);
+    let ccEmails = recipients.slice(2);
 
-    const baseUrl = 'https://outlook.live.com/mail/0/deeplink/compose';
+    let url = `https://outlook.live.com/mail/0/deeplink/compose`;
     const params = [];
 
     if (toEmails.length > 0) {
-      params.push(`to=${toEmails.join(',')}`);
+        params.push(`to=${toEmails.join(',')}`);
     }
-
     if (ccEmails.length > 0) {
-      params.push(`cc=${ccEmails.join(',')}`);
-      params.push('showcc=1'); // Force CC field to be visible
+        params.push(`cc=${ccEmails.join(',')}`);
+        params.push(`showcc=1`);
     }
-
     if (subject) {
-      params.push(`subject=${encodeURIComponent(subject)}`);
+        params.push(`subject=${encodeURIComponent(subject)}`);
     }
-    
     if (body) {
-      params.push(`body=${encodeURIComponent(body)}`);
+        params.push(`body=${encodeURIComponent(body)}`);
     }
 
-    const mailtoUrl = `${baseUrl}?${params.join('&')}`;
+    if (params.length > 0) {
+        url += `?${params.join('&')}`;
+    }
 
-    window.open(mailtoUrl, '_blank', 'noopener,noreferrer');
+    window.open(url, '_blank', 'noopener,noreferrer');
     handleMessage('Abriendo cliente de correo...', "default", "Éxito");
-  };
+};
 
 
   let toEmails: string[] = [];
@@ -347,7 +346,7 @@ export default function EmailForm() {
                     onClick={toggleDictation}
                     disabled={!recognitionAvailable || isDictating}
                     className={`p-3 rounded-full shadow-3xl transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-50 h-12 w-12
-                      ${isDictating ? 'bg-green-500 hover:bg-green-600 animate-pulse' : 'bg-red-500 hover:bg-red-600'}
+                      ${isDictating ? 'bg-green-500 hover:bg-green-600 animate-pulse' : 'bg-blue-500 hover:bg-blue-600'}
                       disabled:bg-blue-500 disabled:opacity-70 disabled:cursor-not-allowed`}
                     title="Iniciar/Detener Dictado por Voz"
                   >
