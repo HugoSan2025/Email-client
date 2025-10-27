@@ -4,7 +4,7 @@
 import { useState, useEffect, useRef, useTransition } from 'react';
 import { enhanceEmail } from '@/app/actions';
 import { useToast } from "@/hooks/use-toast";
-import { clients } from '@/lib/client-data';
+import { getClients } from '@/lib/client-data';
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -38,12 +38,27 @@ export default function EmailForm() {
   const [isDictating, setIsDictating] = useState(false);
   const [dictationStatus, setDictationStatus] = useState('');
   const [recognitionAvailable, setRecognitionAvailable] = useState(false);
+
+  const [isClientDataLoading, setIsClientDataLoading] = useState(true);
+  const clientDataRef = useRef<Client[]>([]);
   
   const [isPending, startTransition] = useTransition();
   const [isEnhancing, startEnhancingTransition] = useTransition();
   const { toast } = useToast();
 
   const recognitionRef = useRef<any>(null);
+
+  // Load all client data on initial component mount
+  useEffect(() => {
+    async function loadData() {
+      setIsClientDataLoading(true);
+      const clients = await getClients();
+      clientDataRef.current = clients;
+      setIsClientDataLoading(false);
+    }
+    loadData();
+  }, []);
+
 
   // Setup Speech Recognition
   useEffect(() => {
@@ -99,7 +114,7 @@ export default function EmailForm() {
   };
 
   const findClient = (code: string): Client | undefined => {
-    return clients.find(c => c.code.trim() === code.trim());
+    return clientDataRef.current.find(c => c.code.trim() === code.trim());
   };
 
   const handleSearch = (code: string) => {
@@ -229,6 +244,16 @@ export default function EmailForm() {
   const wasSearched = !!searchedCode;
   const hasRecipients = recipients.length > 0;
   
+  if (isClientDataLoading) {
+    return (
+      <div className="w-full max-w-4xl shadow-2xl rounded-xl p-6 md:p-10 border border-gray-700 bg-background flex flex-col items-center justify-center min-h-[50vh]">
+        <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
+        <p className="text-lg font-semibold text-foreground">Cargando base de datos de clientes...</p>
+        <p className="text-sm text-muted-foreground">Esto puede tardar un momento la primera vez.</p>
+      </div>
+    );
+  }
+
   return (
     <div className="w-full max-w-4xl shadow-2xl rounded-xl p-6 md:p-10 border border-gray-700 bg-background">
       <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent mb-6 pb-2 text-center border-b border-accent/50 text-shadow-md">
