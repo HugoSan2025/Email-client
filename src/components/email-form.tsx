@@ -102,7 +102,7 @@ export default function EmailForm() {
   };
 
   const findClient = (code: string): Client | undefined => {
-    return clientDataRef.current.find(c => c.code.trim() === code.trim());
+    return clientDataRef.current.find(c => c.code === code);
   };
 
   const handleSearch = (code: string) => {
@@ -116,7 +116,7 @@ export default function EmailForm() {
         setBody('');
         return;
       }
-
+      
       const client = findClient(codeToSearch);
 
       if (client) {
@@ -366,5 +366,3 @@ export default function EmailForm() {
     </div>
   );
 }
-
-    
