@@ -47,8 +47,44 @@ export default function EmailForm() {
 
   useEffect(() => {
     // This check now runs only on the client, after the initial render.
-    const isAvailable = typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition);
-    setRecognitionAvailable(!!isAvailable);
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+      setRecognitionAvailable(true);
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'es-ES';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.onstart = () => {
+        setIsDictating(true);
+        setDictationStatus('Escuchando...');
+      };
+
+      recognition.onresult = (event: any) => {
+        const transcript = event.results[0][0].transcript;
+        setBody(prevBody => (prevBody ? prevBody.trim() + ' ' : '') + transcript + '.');
+      };
+
+      recognition.onerror = (event: any) => {
+        let errorMsg = `Error de dictado: ${event.error}`;
+        if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
+          errorMsg = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
+        } else if (event.error === 'no-speech') {
+          errorMsg = 'No se detectó voz. Inténtalo de nuevo.';
+        } else if (event.error === 'network') {
+          errorMsg = 'Error de red. Revisa tu conexión a internet.';
+        }
+        setDictationStatus(errorMsg);
+        handleMessage(errorMsg, 'destructive', 'Error de Dictado');
+      };
+
+      recognition.onend = () => {
+        setIsDictating(false);
+        setDictationStatus(''); // Clear status on end
+      };
+      
+      recognitionRef.current = recognition;
+    }
   }, []);
 
   const handleMessage = (description: string, variant: "default" | "destructive" = "default", title?: string) => {
@@ -109,78 +145,23 @@ export default function EmailForm() {
     setSearchedCode('');
   };
 
-  const setupRecognition = () => {
-    if (!recognitionAvailable) return null;
-    
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    const recognition = new SpeechRecognition();
-    recognition.lang = 'es-ES';
-    recognition.interimResults = false;
-    recognition.maxAlternatives = 1;
-
-    recognition.onstart = () => {
-      setIsDictating(true);
-      setDictationStatus('Escuchando...');
-    };
-
-    recognition.onresult = (event: any) => {
-      const transcript = event.results[0][0].transcript;
-      setBody(prevBody => (prevBody ? prevBody.trim() + ' ' : '') + transcript + '.');
-    };
-
-    recognition.onerror = (event: any) => {
-      let errorMsg = `Error de dictado: ${event.error}`;
-      if (event.error === 'not-allowed') {
-        errorMsg = 'Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.';
-      } else if (event.error === 'no-speech') {
-        errorMsg = 'No se detectó voz. Inténtalo de nuevo.';
-      } else if (event.error === 'network') {
-        errorMsg = 'Error de red. Revisa tu conexión a internet.';
-      }
-      setDictationStatus(errorMsg);
-      handleMessage(errorMsg, 'destructive', 'Error de Dictado');
-    };
-
-    recognition.onend = () => {
-      setIsDictating(false);
-      setDictationStatus('Dictado finalizado.');
-      setTimeout(() => setDictationStatus(''), 2000);
-    };
-
-    recognitionRef.current = recognition;
-    return recognition;
-  };
-
   const toggleDictation = () => {
-    if (!recognitionAvailable) {
-      handleMessage('Dictado por voz no soportado.', 'destructive');
-      return;
+    if (!recognitionAvailable || !recognitionRef.current) {
+        handleMessage('El dictado por voz no está disponible en este navegador.', 'destructive');
+        return;
     }
-
+    
     if (isDictating) {
-      recognitionRef.current?.stop();
-      return;
-    }
-    
-    let recognition = recognitionRef.current;
-    if (!recognition) {
-      recognition = setupRecognition();
-    }
-    
-    if (recognition) {
-      try {
-        recognition.start();
-      } catch (error) {
-        if (error instanceof DOMException && (error.name === 'NotAllowedError' || error.name === 'SecurityError')) {
-          handleMessage('Acceso al micrófono denegado. Por favor, revisa los permisos del navegador.', 'destructive');
-        } else {
-          handleMessage('No se pudo iniciar el dictado. Puede que ya esté activo en otra pestaña.', 'destructive');
+        recognitionRef.current.stop();
+    } else {
+        try {
+            recognitionRef.current.start();
+        } catch (error) {
+            console.error("Error starting recognition:", error);
+            handleMessage('No se pudo iniciar el dictado. Revisa los permisos del micrófono.', 'destructive');
         }
-        console.error("Error starting recognition:", error);
-      }
     }
   };
-
 
   const handleEnhanceClick = () => {
     if (!body.trim()) {
@@ -379,5 +360,3 @@ export default function EmailForm() {
     </div>
   );
 }
-
-    
